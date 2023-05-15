@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
@@ -25,6 +33,78 @@ form {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+}
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: "MalgunGothic", "맑은 고딕", "돋움", "dotom", Tahoma, Geneva,
+    sans-serif;
+  line-height: 22px;
+  color: #555;
+  letter-spacing: -1px;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+  border: 0;
+}
+
+/*------------------------------------*\
+    $LINK
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+a img {
+  border: none;
+  vertical-align: top;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+body {
+  font-size: 14px;
 }
 
 /* color */
@@ -69,6 +149,14 @@ form {
 }
 .black {
   color: #000 !important;
+}
+
+/* float */
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
 }
 
 /* align */
@@ -178,23 +266,6 @@ form {
 }
 .mt30 {
   margin-top: 30px !important;
-}
-
-/* float */
-.fl {
-  float: left !important;
-}
-.fr {
-  float: right !important;
-}
-.fn {
-  float: none !important;
-}
-.cb {
-  clear: both !important;
-}
-.cbn {
-  clear: inherit !important;
 }
 
 /* clear */
