@@ -1,0 +1,224 @@
+/* 서브메인 */
+.sm-visual {
+  width: 633px;
+  height: 255px;
+  background: url(../../images/고객지원/bg_sm_visual.gif) no-repeat;
+}
+
+.sm-visual h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.sm-visual h3 span {
+  color: #03838e;
+  font-size: 36px;
+  display: block;
+  margin-top: 21px;
+}
+.sm-visual p {
+  font-family: 나눔고딕, NanumGothic, ng, "NanumGothicWeb", 굴림, Gulim,
+    sans-serif;
+  letter-spacing: 0;
+}
+.sm-visual .search {
+  width: 290px;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+}
+.sm-visual .search .word {
+  background: url(../../images/고객지원/bg_sm_search.gif) no-repeat left;
+  width: 232px;
+  height: 34px;
+}
+.sm-visual .search .word input {
+  border: none !important;
+  background: none !important;
+  margin: 6px 15px;
+}
+.sm-visual .search .btn {
+  /* 그림 못찾음 */
+  background: url(../../images/고객지원/img_sm_searchbar.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 13px;
+  top: 8px;
+}
+.sm-visual .search ul {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.sm-visual .search ul li {
+  float: left;
+  font-size: 13px;
+  margin-right: 7px;
+  padding-right: 10px;
+  background: url(../../images/고객지원/img_sideline.gif) no-repeat right 6px;
+  border-top: 2px #fff solid !important;
+}
+
+.sm-quick {
+  width: 306px;
+  height: 255px;
+  padding: 35px 30px 10px;
+  background: url(../../images/고객지원/bg_sm_quick.gif) no-repeat;
+}
+.sm-quick ul li > ul li span {
+  display: block;
+  margin-top: 12px;
+}
+.sm-quick ul li > ul li span a {
+  color: inherit;
+}
+.sm-quick ul li > ul li {
+  float: left;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sm-box dl {
+  width: 160px;
+}
+.sm-box dt {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #333;
+}
+.sm-box dd {
+  line-height: 120%;
+}
+.sm-box .up {
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  background: url(../../images/고객지원/img_dotline.gif) repeat-x bottom;
+  padding: 20px 20px;
+  height: 147px;
+}
+.sm-box .up ul li {
+  text-align: center;
+  border-right: 1px solid #f1f1f1;
+  float: left;
+}
+.sm-box .up ul li span {
+  display: block;
+  margin-top: 10px;
+}
+.sm-box .down {
+  border: 1px solid #dbdbdb;
+  border-top: none !important;
+  padding: 25px 20px;
+  height: 144px;
+}
+.sm-box .more {
+  padding-bottom: 1px;
+  font-size: 13px;
+  color: #888;
+  background: url(../../images/고객지원/icon_more.gif) no-repeat right 6px;
+  display: block;
+  width: 73px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.sm-box .more a {
+  color: inherit;
+}
+
+.sm-box1 h4 {
+  height: 40px;
+  background: url(../../images/고객지원/bg_sm_boxtit1.gif) no-repeat;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 19px;
+  padding-top: 7px;
+}
+.sm-box2 h4 {
+  height: 40px;
+  background: url(../../images/고객지원/bg_sm_boxtit2.gif) no-repeat;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 19px;
+  padding-top: 7px;
+}
+.sm-box .img1 {
+  background: url(../../images/고객지원/bg_sm_box01.gif) no-repeat 200px 30px;
+}
+.sm-box .img2 {
+  background: url(../../images/고객지원/bg_sm_box02.gif) no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 10px;
+  top: 80px;
+}
+.sm-box .img3 {
+  background: url(../../images/고객지원/bg_sm_box03.gif) no-repeat 200px 30px;
+}
+.sm-box .img4 {
+  background: url(../../images/고객지원/bg_sm_box04.gif) no-repeat bottom right;
+}
+
+.sm-list h4 {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #313131;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.sm-list .more {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/common/icon_more.gif) no-repeat 0 0;
+}
+.sm-list li {
+  position: relative;
+  padding: 2px 75px 2px 9px;
+  background: url(../img/common/bu_dot.gif) no-repeat 0 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sm-list li .date {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  letter-spacing: 0;
+}
+.sm-list dl {
+  background: url(../img/CS/img_sideline2.gif) repeat-y right;
+  float: left;
+}
+.sm-list dl.dl1 dt {
+  background: url(../img/common/bu_arrow_3dep.gif) no-repeat left 9px;
+  padding-left: 10px;
+  font-weight: bold;
+  color: #333;
+  float: left;
+  width: 110px;
+}
+.sm-list dl.dl1 dd {
+  float: left;
+  width: 130px;
+  margin-bottom: 8px;
+}
+.sm-list dl.dl2 dt {
+  display: block;
+  background: url(../img/common/bu_arrow_3dep.gif) no-repeat left 9px;
+  padding-left: 10px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #333;
+}
+.sm-list dl.dl2 dd {
+  margin-right: -15px !important;
+}

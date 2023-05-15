@@ -1,0 +1,209 @@
+@charset "utf-8";
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+html,
+body,
+div,
+span,
+h3,
+h4,
+p,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* color */
+.white {
+  color: #ffffff;
+}
+.orange {
+  color: #ff3300;
+}
+.red {
+  color: #cd2214;
+}
+.blue {
+  color: #1c6fb1;
+}
+.gray {
+  color: #66667d;
+}
+.sky {
+  color: #4f84c1;
+}
+.black {
+  color: #030303;
+}
+.darkgray {
+  color: #333333;
+}
+.navy {
+  color: #345483;
+}
+.pink {
+  color: #ed564a;
+}
+.brown {
+  color: #985e34;
+}
+.gold {
+  color: #d6a100;
+}
+.green {
+  color: #017f66;
+}
+.black {
+  color: #000 !important;
+}
+
+/* align */
+.tac {
+  text-align: center !important;
+}
+
+/* position */
+.pr {
+  position: relative !important;
+}
+
+/* padding */
+.pr13 {
+  padding-right: 13px !important;
+}
+.pr15 {
+  padding-right: 15px !important;
+}
+.pl2 {
+  padding-left: 5px !important;
+}
+.pl13 {
+  padding-left: 13px !important;
+}
+
+/*height*/
+.h150 {
+  height: 150px !important;
+}
+.h255 {
+  height: 255px !important;
+}
+.h330 {
+  height: 330px !important;
+}
+
+/*width*/
+.w50p {
+  width: 50% !important;
+}
+.w50 {
+  width: 50px !important;
+}
+.w120 {
+  width: 120px !important;
+}
+.w180 {
+  width: 180px !important;
+}
+.w190 {
+  width: 190px !important;
+}
+.w260 {
+  width: 260px !important;
+}
+.w306 {
+  width: 306px !important;
+}
+.w633 {
+  width: 633px !important;
+}
+
+/* background */
+.bgg {
+  background: #f8f8f8 !important;
+}
+.bgn {
+  background: none !important;
+}
+
+/* border */
+.bon {
+  border: none !important;
+}
+
+/* margin */
+.mb50 {
+  margin-bottom: 50px !important;
+}
+.mr5 {
+  margin-right: 5px !important;
+}
+.mr20 {
+  margin-right: 20px !important;
+}
+.mr21 {
+  margin-right: 21px !important;
+}
+.ml20 {
+  margin-left: 20px !important;
+}
+.ml21 {
+  margin-left: 21px !important;
+}
+.ml30 {
+  margin-left: 30px !important;
+}
+.mt7 {
+  margin-top: 7px !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+
+/* float */
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.fn {
+  float: none !important;
+}
+.cb {
+  clear: both !important;
+}
+.cbn {
+  clear: inherit !important;
+}
+
+/* clear */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
