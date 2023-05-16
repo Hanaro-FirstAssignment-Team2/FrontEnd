@@ -202,12 +202,12 @@
   top: 6px;
   width: 16px;
   height: 16px;
-  background: url(../img/common/icon_more.gif) no-repeat 0 0;
+  background: url(../../images/고객지원/icon_more.gif) no-repeat 0 0;
 }
 .sm-list li {
   position: relative;
   padding: 2px 75px 2px 9px;
-  background: url(../img/common/bu_dot.gif) no-repeat 0 14px;
+  background: url(../../images/고객지원/bu_dot.gif) no-repeat 0 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -219,11 +219,11 @@
   letter-spacing: 0;
 }
 .sm-list dl {
-  background: url(../img/CS/img_sideline2.gif) repeat-y right;
+  background: url(../../images/고객지원/img_sideline2.gif) repeat-y right;
   float: left;
 }
 .sm-list dl.dl1 dt {
-  background: url(../img/common/bu_arrow_3dep.gif) no-repeat left 9px;
+  background: url(../../images/고객지원/bu_arrow_3dep.gif) no-repeat left 9px;
   padding-left: 10px;
   font-weight: bold;
   color: #333;
@@ -237,7 +237,7 @@
 }
 .sm-list dl.dl2 dt {
   display: block;
-  background: url(../img/common/bu_arrow_3dep.gif) no-repeat left 9px;
+  background: url(../../images/고객지원/bu_arrow_3dep.gif) no-repeat left 9px;
   padding-left: 10px;
   margin-bottom: 2px;
   font-weight: bold;
