@@ -15,7 +15,7 @@
     <link
     rel="stylesheet"
     type="text/css"
-    href="../styles/고객지원/common.css"/>
+    href="../styles/고객지원/default.css"/>
     <link
     rel="stylesheet"
     type="text/css"
@@ -36,10 +36,6 @@
     rel="stylesheet"
     type="text/css"
     href="../styles/고객지원/hana_common.css"/>
-    <!-- <link
-    rel="stylesheet"
-    type="text/css"
-    href="../styles/고객지원.css"/> -->
 
     
   </head>
@@ -82,20 +78,22 @@
       <div id="mainContainer">
         <div class="wrap">
           <div id="container">
-            <div class="mb50 h255">
+            <div class="mb30 h255">
               <div class="sm-visual fl pr">
                 <h3>고객센터 <span>친절한 고객상담</span></h3>
                 <p>고객님의 목소리에 항상 귀 기울이겠습니다.</p>
-                <div class="search">
+                
+                <div class="search" >
                   <!-- 검색 버튼 누르면 FAQ 페이지로 이동 -->
                   <form
                     id="searchFaq"
                     method="post"
                     action="https://www.hanaw.com/corebbs5/faq/list/list.cmd"
                   >
-                    <div class="fl w50 mr5">
+                    <div class="fl w50 mr15">
                       <img
                         src="../images/고객지원/img_search_tit.gif"
+                        style="height:40px; width:46px;"
                         alt="FAQ"
                       />
                     </div>
@@ -104,7 +102,7 @@
                         type="text"
                         name="srchWord"
                         title="검색"
-                        class="w180"
+                        class="w220 h30"
                       />
                       <div>
                         <a
@@ -125,7 +123,10 @@
                   </form>
                 </div>
               </div>
-              <div class="sm-quick fr">
+              
+            </div>
+            <div class="mb30 h150">
+              <div class="sm-quick fl">
                 <ul>
                   <li>
                     <a
@@ -137,7 +138,7 @@
                       /><span>계좌개설안내</span>
                     </a>
                   </li>
-                  <li class="ml20 mr20">
+                  <li >
                     <a
                       href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd"
                       ><img
@@ -164,7 +165,7 @@
                       /><span>수수료안내</span></a
                     >
                   </li>
-                  <li class="ml20 mr20">
+                  <li >
                     <a
                       href="https://www.hanaw.com/main/customer/customer/CS_060301.cmd"
                       ><img
@@ -185,6 +186,7 @@
                 </ul>
               </div>
             </div>
+            
             <!-- box area -->
             <div class="mb50 cb h330 sm-box">
               <div class="sm-box1 fl w306">
