@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"> <!--메타태그 수정-->
+<meta charset="utf-8"> <!--메타태그 수정--> <!-- 주석 수정 -->
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 "/>
@@ -11,7 +11,7 @@
 <meta name="Distribution" content="global" />
 <meta name="author" content="Hana Financial Investment Co.,Ltd." />
 <meta name="viewport" content="width=1024" />
-<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png"> <!--파비콘-->
 <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
@@ -29,15 +29,15 @@
 <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
     <title>해외주식파생 : 하나증권</title>
-    <link rel="stylesheet" type="text/css" href="해외주식파생.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="해외주식파생.css" /> <!--css 삽입-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--웹폰트 나눔고딕-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
     
 <div id="gnb-area">
-    <!-- GNB : START -->
+    <!-- GNB -->
     <div id="gnb-wrap">
         <ul id="gnb">
             <li class="gnb_01">
@@ -84,10 +84,9 @@
                     </li>
                 </ul>
     </div>
-    <!-- GNB : END -->
 </div>
 
-<!-- INCLUDE : QUICK NAVI -->
+<!--QUICK NAVI -->
 <div id="quick-navi-wrap">
     <ul id="quick-navi">
         
@@ -123,16 +122,13 @@
                 </ul>
             </div>
         </li>
-
-        
-        
     </ul>
 </div>
 <div class="clear"></div>
 
     <div id="container">
 
-        <div class="wt-submenu mb30">
+        <div class="wt-submenu mb30"> <!--해외주식파생 서브메뉴-->
             <ul>
                 <li>
                     <ul class="wt-submenuT"> 
@@ -147,12 +143,9 @@
             </ul>
         </div>
 
-
-        
-        <!-- info area -->
         <div id="jisuInfo" data-realbldinfo="{r:&#39;U00&#39;,r:&#39;V00&#39;}">
-            <div class="wt-box2 w260 fl mb45">
-                <h4>지수정보</h4>
+            <div class="wt-box2 w260 fl mb45"> <!--지수 정보-->
+                <h4>지수정보</h4> 
                 <div class="wt_kospi">
                     <div class="tac pt20 h172" style="padding-right: 13px; padding-left: 13px;">
                         <div class="chart06-ctnr" style="height:144px;">
@@ -180,14 +173,10 @@
                     </div>
                 </div>
             </div>
-            <!-- //box area -->
 
-            <!-- box area -->
-            <div class="wt-box2 w260 fr mb45">
+            <div class="wt-box2 w260 fr mb45"> <!--금리/환율-->
                 <h4>금리/환율</h4>
-                <!-- table -->
                 <div class="wt_rate">
-                    <!-- li 방식 -->
                     <ul class="indexgrp ls-1 type02" data-bind="_this.withItem(jisuObject,false)" data-rowgroup="1">
                         <li class="goUp">
                             <span class="index-tit">원/달러</span><span class="index-sum" data-bind="USDKRWSMBS[&#39;NowPrc&#39;]" data-bind-bypass="true">1,338.60</span><span class="index-arr" data-bind="checkUpDownJisu(USDKRWSMBS[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="USDKRWSMBS[&#39;PrdayCmp&#39;]" data-bind-bypass="true">1.60</span>
@@ -220,9 +209,7 @@
                             <span class="index-tit">은(현물)</span><span class="index-sum" data-bind="COM_SI[&#39;NowPrc&#39;]" data-bind-bypass="true">24.291</span><span class="index-arr" data-bind="checkUpDownJisu(COM_SI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="COM_SI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.137</span>
                         </li>
                     </ul>
-                    <!-- //li 방식 -->
                 </div>
-                <!-- //table -->
             </div>
 
 <!-- 
@@ -248,17 +235,11 @@
 	            </div> -->
 
             </div>
-
-            
         </div>
-        <!-- //info area -->
 
         <div class="cb sm-list" id="maincon-board">
-            <!-- table area -->
-            <div class="cb pt50">
-	            <!-- 뉴스, 시황 -->
-	            <!-- table area -->
-	            <div class="fl w330"><!-- class="fl w330" -->
+            <div class="cb pt50"> <!-- 뉴스, 시황 -->
+	            <div class="fl w330">
 	                <h4>뉴스/시황<a href="#" class="more" title="뉴스/시황 더보기"><img src="./img/btn_more_board.png"></a></h4>
 	                <ul class="submainBoardList mw245">
 	                    <li class="isNew">
@@ -278,12 +259,7 @@
 	                        <span class="date">2023-05-16</span>
 	                    </li></ul>
 	            </div>
-	            <!-- //table area -->
-	            <!-- //뉴스, 시황 -->
             </div>
-
-
-
 
     </div>
 </body> <!--footer 사이에 공간 만들기-->
