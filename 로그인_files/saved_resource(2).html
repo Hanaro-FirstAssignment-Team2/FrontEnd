@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://127.0.0.1:14098/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+</head>
+<body>
+    <script type="text/javascript" src="./json.js.다운로드"></script>
+    <script type="text/javascript">
+
+        var messageFunction = function (e) {
+
+            var originalReq = JSON.parse(e.data);
+            var origin = e.origin;
+            var req = e.data;
+
+            function query(req, resultCallback) {
+                var xhr;
+                var target;
+                var myRep = {};
+                target = 'https://' + location.host;
+                target += '/VestCert';
+
+                if (typeof originalReq.manager !== 'undefined') {
+                    if (originalReq.manager == 'Manager')
+                        target += '/Manager';
+                    else if (originalReq.manager == 'Cipher') {
+                        target += '/Cipher';
+                    }
+                }
+
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject('Microsoft.XMLHTTP')
+                }
+                xhr.open('POST', target, true);
+                xhr.onreadystatechange = function (e) {
+                    if (xhr.readyState == 4) {
+                        if (xhr.status != 200) {
+                            myRep.operation = originalReq.operation;
+                            myRep.messageNumber = originalReq.messageNumber;
+                            myRep.resultCode = 33434461;
+                            myRep.resultMessage = 'unexpected answer from Security Server :' + xhr.status;
+                            resultCallback(JSON.stringify(myRep));
+                        } else {
+                            resultCallback(xhr.responseText);
+                        }
+                    }
+                }
+                /*
+                xhr.ontimeout = function () {
+                alert ("Timed out!!");
+                }
+                */
+                xhr.send(req);
+            }
+
+            query(req, function (rep) {
+                /* 반드시 요청지로 반환. */
+                window.parent.postMessage(rep, origin);
+            });
+        }
+
+        
+
+        if (window.addEventListener) {
+            window.addEventListener('message', messageFunction, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onmessage', messageFunction);
+        } else {
+            window.onmessage = messageFunction;
+            console.log("unknown addEvent method");
+        }
+
+</script>
+
+
+전자서명 전용 로컬 페이지.
+
+
+
+
+
+</body></html>
