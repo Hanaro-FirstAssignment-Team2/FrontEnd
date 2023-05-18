@@ -1,3 +1,7 @@
+#mainContainer {
+  margin-top: 34px;
+}
+
 /* layout */
 #container {
   position: relative;
