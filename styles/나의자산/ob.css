@@ -213,21 +213,23 @@
   border: #d2d2d2 solid 1px;
   border-radius: 20px;
   position: relative;
+/* position: inline; */
   /* background: url(../img/OB/bg_sm_right_1208.gif) no-repeat; */
-  height: 160px;
+  height: 120px;
   width: 960px;
-  padding: 25px;
-  margin-left: 20px;
-  margin-top: 15px;
+  /* padding: 15px; */
+  /* margin-left: 20px; */
+  /* margin-top: 0px; */
 }
 .ob-right .sm-info1 {
   /* display: flex; */
+  
   position: absolute;
-  height: 100px;
+  height: 120px;
   /* flex-direction: column; */
-  top: 26px;
-  left: 26px;
-  width: 180px;
+  top: 8px;
+  left: 20px;
+  /* width: 180px; */
 }
 .ob-right .sm-info1 ul {
   margin-top: 5px;
@@ -235,6 +237,7 @@
 }
 .ob-right .sm-info1 ul li {
   position: relative;
+  /* position: block; */
 }
 .ob-right .sm-info1 ul li img {
   position: absolute;
@@ -245,44 +248,108 @@
   /* background: #03838e; */
   height: 100%;
   transform: translateY(-25%);
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 40px;
   color: #333;
-  width: 500px;
+  /* width: 500px; */
   word-wrap: break-word;
-  margin-left: 35px;
-  overflow: hidden;
+  margin-left: 90px;
+  /* overflow: hidden; */
 }
 
 .ob-right .sm-info1 ul li p span {
   /* background: #03838e; */
-
   color: #03838e;
-  font-size: 45px;
+  font-size: 35px;
   height: 100%;
   font-weight: bold;
   text-align: center;
 }
 
-.ob-right .sm-info1 ul li > ul {
-  border-top: 1px solid #e0e0e0;
-  padding-top: 15px;
-  margin-top: 20px;
+.ob-right .sm-info2{
+  /* display: absolute; */
+  height: 50%;
+  margin-top: 25px;
+  margin-left: 400px;
+  width: 210px;
+  /* background: #03838e; */
 }
-.ob-right .sm-info1 ul li > ul li {
+
+.ob-right .sm-info2 ul{
+  border-left: 1px solid #e0e0e0;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+.ob-right .sm-info2 ul li{
   position: relative;
   background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
   padding-left: 8px;
   color: #333;
   height: 25px;
 }
-.ob-right .sm-info1 ul li > ul li span {
+
+.ob-right .sm-info2 ul li span {
   position: absolute;
   right: 0;
   color: #555;
 }
+
+
+.ob-right .sm-info3{
+  display: absolute;
+  height: 50%;
+  margin-top: 25px;
+  margin-left: 610px;
+  width: 310px;
+  background: #03838e;
+}
+
+.ob-right .sm-info3 ul{
+  border-left: 1px solid #e0e0e0;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+.ob-right .sm-info3 ul li{
+  position: relative;
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
+  padding-left: 8px;
+  color: #333;
+  height: 25px;
+}
+
+.ob-right .sm-info3 ul li span {
+  position: absolute;
+  right: 0;
+  color: #555;
+}
+
+
+/* 구분선 */
+/* .ob-right .sm-info1 ul li > ul {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  margin-top: 20px;
+} */
+/* .ob-right .sm-info1 ul li > ul li {
+  position: relative;
+
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
+  padding-left: 8px;
+  color: #333;
+  height: 25px;
+} */
+/* .ob-right .sm-info1 ul li > ul li span {
+  position: absolute;
+  right: 0;
+  color: #555;
+} */
+
+
+
+
+
 
 .sm-list {
   padding: 37px 30px 0 0;

@@ -181,6 +181,28 @@ textarea {
 }
 
 /*------------------------------------*\
+    $LINK
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+a img {
+  border: none;
+  vertical-align: top;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+/*------------------------------------*\
     $BASE
 \*------------------------------------*/
 body {
@@ -1542,6 +1564,9 @@ body {
 /*height*/
 .ha {
   height: auto;
+}
+.h0 {
+  height: 0px !important;
 }
 .h5 {
   height: 5px !important;
