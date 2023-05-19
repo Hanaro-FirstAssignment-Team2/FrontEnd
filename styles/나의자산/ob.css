@@ -213,7 +213,7 @@
   border: #d2d2d2 solid 1px;
   border-radius: 20px;
   position: relative;
-/* position: inline; */
+  /* position: inline; */
   /* background: url(../img/OB/bg_sm_right_1208.gif) no-repeat; */
   height: 120px;
   width: 960px;
@@ -223,7 +223,7 @@
 }
 .ob-right .sm-info1 {
   /* display: flex; */
-  
+
   position: absolute;
   height: 120px;
   /* flex-direction: column; */
@@ -268,7 +268,7 @@
   text-align: center;
 }
 
-.ob-right .sm-info2{
+.ob-right .sm-info2 {
   /* display: absolute; */
   height: 50%;
   margin-top: 25px;
@@ -277,12 +277,12 @@
   /* background: #03838e; */
 }
 
-.ob-right .sm-info2 ul{
+.ob-right .sm-info2 ul {
   border-left: 1px solid #e0e0e0;
   padding-left: 15px;
   margin-left: 20px;
 }
-.ob-right .sm-info2 ul li{
+.ob-right .sm-info2 ul li {
   position: relative;
   background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
   padding-left: 8px;
@@ -296,22 +296,22 @@
   color: #555;
 }
 
-
-.ob-right .sm-info3{
-  display: absolute;
-  height: 50%;
+.ob-right .sm-info3 {
+  position: absolute;
+  /* right: 0; */
+  top: 0;
   margin-top: 25px;
-  margin-left: 610px;
-  width: 310px;
-  background: #03838e;
+  margin-left: 640px;
+  margin-right: 10px;
+  width: 280px;
 }
 
-.ob-right .sm-info3 ul{
+.ob-right .sm-info3 ul {
   border-left: 1px solid #e0e0e0;
   padding-left: 15px;
   margin-left: 20px;
 }
-.ob-right .sm-info3 ul li{
+.ob-right .sm-info3 ul li {
   position: relative;
   background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
   padding-left: 8px;
@@ -324,7 +324,6 @@
   right: 0;
   color: #555;
 }
-
 
 /* 구분선 */
 /* .ob-right .sm-info1 ul li > ul {
@@ -345,11 +344,6 @@
   right: 0;
   color: #555;
 } */
-
-
-
-
-
 
 .sm-list {
   padding: 37px 30px 0 0;
