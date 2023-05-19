@@ -1341,6 +1341,12 @@ body {
 .w80p {
   width: 80% !important;
 }
+.w90p {
+  width: 90% !important;
+}
+.w95p {
+  width: 95% !important;
+}
 .w100p {
   width: 100% !important;
 }
