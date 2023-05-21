@@ -79,23 +79,29 @@
 }
 .sm-list .asset {
   border-bottom: 1px solid #dfdfdf;
+  
   display: inline-block;
   background: #fafafa;
+  
 }
 .sm-list .asset .img {
   vertical-align: middle;
   width: 280px;
+  
 }
 .sm-list .graph {
-  width: 336px;
+  /* background-color: #03838e; */
+  width: 36px;
   box-sizing: border-box;
   border-right: 1px solid #dfdfdf;
 }
 .sm-list .graph_img {
+  /* background-color: #71a5aa; */
   width: 205px;
   margin: 0 auto;
 }
 .sm-list .graph_explain {
+  /* background-color: #b3e1e6; */
   width: 100%;
   overflow: hidden;
   font-size: 12px;
@@ -103,18 +109,21 @@
   padding: 13px 0 18px 30px;
 }
 .sm-list .graph_explain li {
+  /* background-color: #2a6c74; */
   float: left;
   width: 33.3%;
   box-sizing: border-box;
   letter-spacing: -0.3px;
 }
 .sm-list .graph_txt {
+  
   width: 334px;
   padding: 10px 30px;
   background: #fff;
   box-sizing: border-box;
 }
 .sm-list .graph_txt div.total {
+  /* background-color: #00b0c4; */
   border-bottom: 1px solid #eaeaea;
   font-size: 16px;
   font-weight: bold;
@@ -505,4 +514,78 @@
   font-size: 18px;
   letter-spacing: 0;
   font-weight: bold;
+}
+
+
+.sm-list .asset2 {
+  /* border-bottom: 1px solid #dfdfdf; */
+  
+  display: flex;
+  /* background: #fafafa; */
+  
+}
+.sm-list .asset2 .img {
+  vertical-align: middle;
+  width: 280px;
+}
+.sm-list .graph2 {
+  margin-top: 15px;
+  margin-left: 40px;
+  
+  /* background-color: #03838e; */
+  border:1px solid black;
+  width: 400px;
+  height: 448px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  /* border-right: 1px solid #dfdfdf; */
+}
+.sm-list .graph_img2 {
+  background-color: #71a5aa;
+  width: 210px;
+  height: 200px;
+  margin:50px 90px 50px auto;
+  
+  
+  /* margin: 0 auto; */
+}
+.sm-list .graph_explain2 {
+  /* background-color: #b3e1e6; */
+  width: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 0px 0 18px 35px;
+  /* text-align: */
+}
+.sm-list .graph_explain2 li {
+  /* background-color: #2a6c74; */
+  float: left;
+  /* margin-bottom: 0px; */
+  width: 33.3%;
+  margin-bottom: -10px;
+  box-sizing: border-box;
+  letter-spacing: -0.3px;
+  
+  /* text-align: center; */
+  /* margin-left: 5px; */
+  /* font-size: 12px; */
+}
+
+.sm-list .graph_explain2 span {
+  font-size: 12px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-bottom: -10px; */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sm_list .graph3{
+  height: 500px;
+  table-layout: fixed;
+}
+.sm_list .graph3 tb2 td{
+  padding: 5px;
+  background: #03838e;
 }

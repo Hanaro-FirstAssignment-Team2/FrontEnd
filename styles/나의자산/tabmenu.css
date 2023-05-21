@@ -60,15 +60,12 @@
 .tab_content.on {
   display: block;
 }
-.tab_content span{
-  /* line-height: 14px; */
-
-}
 
 .tab_content .tb1{
   /* 이중선 젝 */
   border-collapse: collapse;
   width: max-content;
+  
 }
 
 .tab_content .tb1 caption{
@@ -80,10 +77,11 @@
 
 .tab_content .tb1 th{
   background-color: #e7e5e5;
+  
 }
 .tab_content .tb1 th, td{
   width: 20%;
-      height: 50px;
+      height: 40px;
       text-align: center;
       border: 2px solid #979797;
       font-size: 16px;
@@ -94,7 +92,7 @@
 }
 .tab_content .tb1 td{
   text-align:right;
-  
+  font-size: 14px;
   padding-right: 15px;
   
 }
@@ -120,7 +118,7 @@
 .tab_content .tb2 th, td{
   width: 10%;
   /* table-layout: fixed; */
-      height: 50px;
+  height: 40px;
       text-align: center;
       border: 2px solid #979797;
       font-size: 16px;
@@ -131,18 +129,63 @@
 }
 .tab_content .tb2 td{
   text-align:right;
-  
   padding-right: 15px;
+  font-size: 14px;
+  /* margin-right: 15px; */
   
 }
 
-/* 다음 해야 할 것 */
-/* 버튼 위치 가운데로 정렬시키고 사이 간격 줘야함.
-계좌번호 부분 색 칠해주기
- */
-/* .tab_content .tb2 .q_btn{
-  background-color: aqua;
-  margin-bottom: 5px;
-  
-} */
 
+.tab_content .tb2 .q_btn{
+  /* padding:5px; */
+  /* width: 90px; */
+  padding-left:0px;
+  padding-right:0px;
+  
+}
+
+.tab_content .tb2 .q_btn button{
+  font-size: 12px;
+  width: 90px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+
+.tab_content span{
+  line-height: 30px;
+  font-size: 18px;
+
+}
+
+.tab_content .tb3{
+  /* 이중선 젝 */
+  border-collapse: collapse;
+  /* width: 600px; */
+}
+
+
+.tab_content .tb3 th{
+  background-color: #e7e5e5;
+}
+.tab_content .tb3 th, td{
+  /* width: 10%; */
+  /* table-layout: fixed; */
+      height: 26px;
+      text-align: center;
+      border: 2px solid #979797;
+      font-size: 16px;
+      
+      vertical-align: top;	/* 위 */
+      vertical-align: bottom;   /* 아래 */
+      vertical-align: middle;   /* 가운데 */
+}
+.tab_content .tb3 td{
+  text-align:right;
+  padding-right: 15px;
+  font-size: 14px;
+  height: 30px;
+  /* margin-right: 15px; */
+  
+}
