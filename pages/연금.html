@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"> <!--메타태그 수정--> <!-- 주석 수정 -->
-<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 "/>
-<meta name="keywords" content="하나증권, 증권, 주식, 주식거래, 트레이딩, 주식시세, 인터넷뱅킹, 자산관리, 코스피, 코스닥, 다우, 나스닥, 해외주식, 금융상품, 파생상품, 파생, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, DLS, ISA, CFD, fx마진, 재테크, 리서치, 주식전략, 투자전략, 퀀트, 퀀트투자, HTS" /><meta name="robots" content="noindex, nofollow" />
-<meta name="robots" content="noarchive" />
-<meta name="Location" content="South Korea"/>
-<meta name="Distribution" content="global" />
-<meta name="author" content="Hana Financial Investment Co.,Ltd." />
-<meta name="viewport" content="width=1024" />
-<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png"> <!--파비콘-->
-<link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-<link rel="manifest" href="./img/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>연금 : 하나증권</title>
-    <link rel="stylesheet" type="text/css" href="연금.css" /> <!--css 삽입-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--웹폰트 나눔고딕-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <!--메타태그-->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="application-name" content="하나증권">
+    <meta name="subject" content="하나증권">
+    <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 "/>
+    <meta name="keywords" content="하나증권, 증권, 주식, 주식거래, 트레이딩, 주식시세, 인터넷뱅킹, 자산관리, 코스피, 코스닥, 다우, 나스닥, 해외주식, 금융상품, 파생상품, 파생, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, DLS, ISA, CFD, fx마진, 재테크, 리서치, 주식전략, 투자전략, 퀀트, 퀀트투자, HTS" /><meta name="robots" content="noindex, nofollow" /> 
+    <meta name="Location" content="South Korea"/>
+    <meta name="Distribution" content="global" />
+    <meta name="author" content="Hana Financial Investment Co.,Ltd." />
+    <meta name="robots" content="index, flow">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
+    <meta name="viewport" content="width=1024" /> <!--뷰포트 수정-->
+
+    <!--오픈그래프-->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="하나증권">
+    <meta property="og:site_name" content="하나증권">
+    <meta property="og:image" content="siteimage.jpg"> <!--이미지 수정-->
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="하나증권">
+    <meta name="twitter:description" content="하나증권">
+    <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
+    
+    <!--파비콘-->
+
+    <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png"> <!--이하 파비콘 전부 수정-->
+    <meta name="apple-mobile-web-app-title" content="하나증권">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon/favicon-16x16.png">
+    <meta name="apple-mobile-web-app-capable" href="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
+    <link rel="icon" href="img/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
+
+    <!--우클릭 금지 코드 삽입-->
+
+   <link rel="stylesheet" type="text/css" href="연금.css" /> <!--css 삽입-->
+
+    <!--웹폰트 나눔고딕-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     
