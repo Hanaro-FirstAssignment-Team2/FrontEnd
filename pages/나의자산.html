@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko" class="windows chrome chrome113 mordern-browser">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta
+      name="description"
+      content="증권, 주식거래, 금융상품, 재테크 및 투자, 자산관리 정보, 주식시세 "
+    />
+    <meta
+      name="keywords"
+      content="증권, 주식, 증권, 인터넷뱅킹, 트레이딩, 주식시세, 주문, 자산관리, 코스피, 코스닥, 해외주식, 금융상품, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, 재테크, 리서치, HTS, 실전투자대회"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="noarchive" />
+    <meta name="Location" content="South Korea" />
+    <meta name="Distribution" content="global" />
+    <meta name="author" content="Hana Financial Investment Co.,Ltd." />
+    <meta name="viewport" content="width=1024" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/default.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/quicknavi.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/나의자산/ob.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/chart.skin1.css"
+    />
+    <!-- 어디에 쓰일지 아직 모름 header에 쓰이지 않을까 예상. -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/tabmenu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/나의자산/tabproduct.css"
+    />
+    <script src="../javascripts/jquery.js" charset="utf-8"></script>
+    <script src="../javascripts/나의자산/tab.js" charset="utf-8"></script>
+
+
+    <title>나의 자산 : 하나증권</title>
+  </head>
+  <div id="header">
+    <div class="inner">
+    </div>
+<div id="gnb-area">
+    <div id="gnb-wrap">
+</div>
+</div>
+</div>
+  <body data-new-gr-c-s-check-loaded="14.1108.0" class="vsc-initialized">
+    <div class="wrap templetWrap">
+    <div id="quick-navi-wrap">
+      <ul id="quick-navi">
+        <li class="fl">
+          <a
+            id="access-quickmemu"
+            href="https://www.hanaw.com/main/main/index.cmd"
+            title="홈"
+            ><img src="../images/나의자산/quicknavi_home.gif" alt="home"
+          /></a>
+        </li>
+
+        <li>
+          <div id="quick-navi-depth1" class="quick-menu-div">
+            <a
+              href="https://www.hanaw.com/main/bank/online/index.cmd"
+              class="selected-menu quick-menu-depth1"
+              >나의 자산</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    
+    
+    
+      <div class="wrap">
+        <!-- container -->
+        <div id="container">
+          <!-- left area -->
+          <!-- <div class="w700 fl"> -->
+            <div class="mb30 h255">
+            <!-- visual -->
+            <!-- <div class="sm-visual">
+              <h3><span>자산 조회</span></h3>
+            </div> -->
+            <div class="w960 fl ob-right">
+              <div class="sm-info1">
+                <ul>
+                  <li class="h10">
+                    <img src="../images/나의자산/icon_rank_none.png" alt="" />
+                  </li>
+                  <li class="h90">
+                    <p>
+                      <span class="txtpoint">민새미</span> 님 반갑습니다.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="sm-info2">
+                <ul>
+                  <li>고객등급<span>none</span></li>
+                      <li>고객투자성향<span>미파악</span></li>
+                      <li>투자성향 작성일<span> 미제공</span></li>
+                </ul>
+              </div>
+              <div class="sm-info3">
+                <ul>
+                  <li>최종접속일시<span>2023.05.10&nbsp;01:28:08</span></li>
+                      <li>최종이체일<span>none</span></li>
+                      <li>개인정보 변경일<span>none</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="fl mt20 infotime">
+              <ul>
+                <span> &#9655; 이체업무</span>
+              <li>영업일 07:00 ~ 17:00<br />(예수금·CMA : 24시간 365일)</li>
+              </ul>
+            </div>
+
+            <div class="fl ml10">
+                <div class="sm-list">
+                    <div class="mb30">
+                        <h4>나의 자산종합</h4>
+                        <div class="asset">
+                            <div class="graph fl">
+                                <div class="chart09-5-ctnr graph_img" id="PieChartArea"><canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"></canvas><div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);"></div></div>
+                            <ul class="graph_explain">
+                                <li><span class="b">A</span> : 펀드/RP</li> 
+								<li><span class="b">B</span> : 주식</li> 
+								<li><span class="b">C</span> : ELS/DLS</li> 
+								<li><span class="b">D</span> : 선물/옵션</li> 
+								<li><span class="b">E</span> : CMA</li> 
+								<li><span class="b">F</span> : 연금저축</li> 
+								<li><span class="b">G</span> : 국내채권</li> 
+								<li><span class="b">H</span> : 해외선물/옵션</li> 
+                                <li><span class="b">I</span> : FX마진</li> 
+								<li><span class="b">J</span> : 해외주식</li> 
+								<li><span class="b">K</span> : 랩어카운트</li> 
+								<li><span class="b">L</span> : 신탁</li>
+								<li><span class="b">M</span> : 현금예수금</li> 
+								<li><span class="b">N</span> : 금현물</li>
+                                </ul> 
+                            </div>
+                            <div class="fl graph_txt" id="AcntSummary2">
+                                <div class="total">합계 <span class="fr"><strong class="txtpoint txtbasic" id="AcntTotal">0</strong>원</span></div>
+                                <ul id="AcntSummary2">
+                                    <li>연금상품<span><strong class="num">0</strong>원</span></li>
+                                    <li>신용/대출 <span><strong class="num">0</strong>원</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="fl ml10">
+          <div class="sm-list">
+            <div class="txt_both">
+                <h4>자산 현황</h4>
+              </div>
+              <div class="tab_group mb100">
+                <nav class="tab">
+                  <ul>
+                    <li class="on"><button>순자산</button></li>
+                    <li><button>총자산</button></li>
+                  </ul>
+                </nav>
+                <div class="tab_content on">
+                  
+                  <table class="w95p center tb1" >
+                    <caption> </br> &#9655;이체업무</caption>
+                    <tr>
+                      <th>자산금액</th>
+                      <th>대출금액</th>
+                      <th>예수금</th>
+                      <th>출금가능금액</th>
+                      <th>총수익률</th>
+                    </tr>
+                    <tr>
+                      <td>123,456</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>56,789</td>
+                      <td class="red">1.23%</td>
+                    </tr>
+
+                  </table>
+
+                  <table class="w95p center tb2" >
+                    <caption> </br> &#9655;계좌별 현황</caption>
+                    <tr>
+                      <th>계좌번호</th>
+                      <th>계좌별명</th>
+                      <th>자산금액</th>
+                      <th>대출금액</th>
+                      <th>평가손익</th>
+                      <th>출금가능금액</th>
+                      <th>바로가기</th>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#e7e5e5" style="text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
+                      <td>NULL</td>
+                      <td>312,165</td>
+                      <td>0</td>
+                      <td>NULL</td>
+                      <td>NULL</td>
+                      <!-- <td>NULL</td> -->
+                      <td class="q_btn" style="text-align: center;">
+                        <button>상세잔고 > </button>
+                        <button>거래내역 > </button>
+                        <button style="background: #3e968e; color:white">이체 > </button></td>
+                      
+                    </tr>
+
+                  </table>
+                  
+
+                  <span> </br> &nbsp; &nbsp;&#9655;  상품별 현황</span>
+
+                  
+                    <div class="asset2">
+                      <div class="graph2 fl">
+                          <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
+                            <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;">
+                          </canvas>
+                          <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
+                          </div>
+                        </div>
+                      <ul class="graph_explain2">
+                        <li><span class="b">A</span> : 펀드/RP</li> 
+                        <li><span class="b">B</span> : 주식</li> 
+                        <li><span class="b">C</span> : ELS/DLS</li> 
+                        <li><span class="b">D</span> : 선물/옵션</li> 
+                        <li><span class="b">E</span> : CMA</li> 
+                        <li><span class="b">F</span> : 연금저축</li> 
+                        <li><span class="b">G</span> : 국내채권</li> 
+                        <li><span class="b">H</span> : 해외선물/옵션</li> 
+                        <li><span class="b">I</span> : FX마진</li> 
+                        <li><span class="b">J</span> : 해외주식</li> 
+                        <li><span class="b">K</span> : 랩어카운트</li> 
+                        <li><span class="b">L</span> : 신탁</li>
+                        <li><span class="b">M</span> : 현금예수금</li> 
+                        <li><span class="b">N</span> : 금현물</li>
+                      </ul> 
+                    </div>
+                    <div class="graph3 fl mt15 ml30 ">
+                      <table class="center tb3 w400" >
+                        <tr>
+                          <th>상품종류</th>
+                          <th>잔고</th>
+                          <th>비율(%)</th>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">펀드/RP</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">주식</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">ELS/DLS</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">선물/옵션</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">CMA</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">연금저축</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">국내채권</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">해외선물/옵션</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">FX마진</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">해외주식</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">랩어카운트</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">신탁</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">현금예수금</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center">금현물</td>
+                          <td>0</td>
+                          <td>0%</td>
+                        </tr>
+    
+                      </table>
+
+
+                    </div>
+                      
+                  </div>
+
+                  <div class="tab_group">
+                    <nav class="tab2">
+                      <ul>
+                        <li><button>전계좌목록</button></li>
+                        <li><button>주식</button></li>
+                        <li><button>해외주식/채권</button></li>
+                        <li><button>현금예수금</button></li>
+                        <li><button>선물/옵션</button></li>
+                        <li><button>FX마진</button></li>
+                        <li><button>해외선물/옵션</button></li>
+                        <li><button>ELS/DLS</button></li>
+                        <li><button>금현물</button></li>
+                        <li><button>펀드/RP</button></li>
+                        <li><button>연금저축</button></li>
+                        <li><button>국내채권</button></li>
+                        <li><button>CMA</button></li>
+                        <li><button>신탁/퇴직연금</button></li>
+                        <li><button>랩어카운트</button></li>
+                        <li><button>국내주식CFD</button></li>
+                      </ul>
+                    </nav>
+
+                    <div class="tab_content2 on">content1</div>
+                    <div class="tab_content2">content2</div>
+                    <div class="tab_content2">content3</div>
+                    <div class="tab_content2">content4</div>
+                    <div class="tab_content2">content5</div>
+                    <div class="tab_content2">content6</div>
+                    <div class="tab_content2">content7</div>
+                    <div class="tab_content2">content8</div>
+                    <div class="tab_content2">content9</div>
+                    <div class="tab_content2">content10</div>
+                    <div class="tab_content2">content11</div>
+                    <div class="tab_content2">content12</div>
+                    <div class="tab_content2">content13</div>
+                    <div class="tab_content2">content14</div>
+                    <div class="tab_content2">content15</div>
+                    <div class="tab_content2">content16</div>
+
+                  </div>
+                  
+
+                  <!-- contents1 -->
+                </div>
+                <div class="tab_content">contents2</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      
+      </div>
+      <!-- 
+        <script
+          type="text/javascript"
+          src="./온라인지점 _ 하나증권_files/chart.skin1.js.다운로드"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            var $toDay = $("#toDay");
+            var PieChart = null; //파이차트
+            var $AcntTotal = $("#AcntTotal");
+            var $AcntSummary2 = $("#AcntSummary2").find(".num");
+            var $PieChartArea = $("#PieChartArea");
+
+            //오늘날짜 셋팅
+            var txt = ci.util.formatDate(
+              ci.util.getTodayString("").substring(0, 8)
+            );
+            $toDay.html(txt);
+
+            //챠트및 종합자산
+            var input = new DataSet();
+            xSubmitAjax(null, {
+              url: "/main/bank/asset/OB_010101_PieChart.cmd",
+              data: input.getParam(),
+              dataType: "json",
+              success: function (data) {
+                var data = data.output;
+                if (data == null) {
+                  return;
+                }
+
+                $AcntSummary2.eq(0).prepend(data.b_pens_fund_evlt_amt); // 연금상품
+                // $AcntSummary2.eq(1).prepend(data.b_bd_evlt_amt);        // 채권/CP
+                // $AcntSummary2.eq(2).prepend(data.b_wrap_evlt_amt);      // 랩어카운트
+                $AcntSummary2.eq(1).prepend(data.b_crd_evlt_amt); // 신용/대출
+
+                //토탈값 서버에서 내려줌
+                $AcntTotal.prepend(data.b_total_evlt_amt);
+
+                try {
+                  //data.b_stk_evlt_amt //주식
+                  PieChart.inquery(null, null);
+                } catch (e) {
+                  var options = {
+                    data: [
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_fund_evlt_bi)
+                        ),
+                        legend: "A",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_stk_evlt_bi)
+                        ),
+                        legend: "B",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.DRV_BIND_PRDT_EVL_SFGV)
+                        ),
+                        legend: "C",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_future_evlt_bi)
+                        ),
+                        legend: "D",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_cma_evlt_bi)
+                        ),
+                        legend: "E",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_pens_evlt_bi)
+                        ),
+                        legend: "F",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_bd_evlt_bi)
+                        ),
+                        legend: "G",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_fx_futr_evlt_bi)
+                        ),
+                        legend: "H",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_fx_evlt_bi)
+                        ),
+                        legend: "I",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_fs_evlt_bi)
+                        ),
+                        legend: "J",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.WRAP_EVL_SFGV)
+                        ),
+                        legend: "K",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.b_shintak_evlt_bi)
+                        ),
+                        legend: "L",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.DACA_EVL_SFGV)
+                        ),
+                        legend: "M",
+                      },
+                      {
+                        pdata: parseFloat(
+                          ci.util.removeCommas(data.GSPT_EVL_SFGV)
+                        ),
+                        legend: "N",
+                      },
+                    ],
+                    use: "pdata",
+                    datatype: "json",
+                    legend: [
+                      "A",
+                      "B",
+                      "C",
+                      "D",
+                      "E",
+                      "F",
+                      "G",
+                      "H",
+                      "I",
+                      "J",
+                      "K",
+                      "L",
+                      "M",
+                      "N",
+                    ],
+                    legendfunc: function (legend, dataValue, rate) {
+                      var str = legend + "(" + dataValue + "%)";
+                      return str;
+                    },
+                    mousemove: function (dataValue, rate, _this, div) {
+                      div.css({
+                        border: "1px solid #989186",
+                        background: "#fff",
+                        padding: "3px",
+                        color: "#333333",
+                      });
+                      div.text(
+                        dataValue.legend + " : " + dataValue.pdata + "%"
+                      );
+                    },
+                  };
+
+                  var styles = {
+                    usepattern: true,
+                    patternurl: "/WEB-APP/webponent/chart/img/",
+                    patternstyle: [
+                      "pie01",
+                      "pie02",
+                      "pie03",
+                      "pie04",
+                      "pie05",
+                      "pie06",
+                      "pie07",
+                      "pie08",
+                      "pie09",
+                      "pie10",
+                      "pie11",
+                      "pie12",
+                      "pie13",
+                      "pie14",
+                    ],
+                    patternextension: ".png",
+                    strokecolor: [
+                      "rgba(255,255,255,0)",
+                      "rgba(255,255,255,0)",
+                      "rgba(255,255,255,0)",
+                      "rgba(255,255,255,0)",
+                    ],
+                    instrokecolor: "rgba(255,255,255,0)",
+                    fillstyle: [
+                      ["#FFD810", "#FFD810"],
+                      ["#A4CB48", "#A4CB48"],
+                      ["#35AF83", "#35AF83"],
+                      ["#F45D75", "#F45D75"],
+                      ["#F4A234", "#F4A234"],
+                      ["#EF4731", "#EF4731"],
+                      ["#575757", "#575757"],
+                      ["#6662CB", "#6662CB"],
+                      ["#5EB9E1", "#5EB9E1"],
+                      ["#F7C53E", "#F7C53E"],
+                      ["#049A7C", "#049A7C"],
+                      ["#808186", "#808186"],
+                      ["#F2624C", "#F2624C"],
+                      ["#e12828", "#e12828"],
+                    ],
+                    tiptargetbg: "#2f3242",
+                    tipfontcolor: "red",
+                    tipborder: "1px solid #333333",
+                    fontheight: 9,
+                    legendline: 10,
+                    sticktype: "lollipop",
+                    lollipopsize: 2.5,
+                    lollipopcolor: "#555555",
+                    lollipopfont: "bold 11px dotum",
+                    radius: 31,
+                    coverimage:
+                      "/WEB-APP/webponent/chart/img/pie_coverimage131.png",
+                  };
+
+                  PieChart = $.createChart().pie.init(
+                    $PieChartArea,
+                    null,
+                    options,
+                    styles
+                  );
+                }
+              },
+            });
+
+            //$("#L1").on("click", function(){ location.href="/main/bank/personalMng/OB_020101.cmd" }); //설정
+            $("#L2").on("click", function () {
+              location.href = "/main/bank/asset/OB_010101_M.cmd";
+            }); //나의자산종합
+            //$("#L3").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=1" }); //나의메모
+            //$("#L4").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=2" }); //계좌
+            //$("#L5").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=3" }); //금융상품
+
+            //$("#ICON1").on("click", function(){ location.href="/main/bank/asset/OB_010101_M.cmd" }); //종합잔고조회
+            //$("#ICON2").on("click", function(){ location.href="/main/bank/transfer/OB_030101_S1.cmd" }); //즉시이체
+            //$("#ICON3").on("click", function(){ location.href="/main/bank/transfer/OB_030401_S1.cmd" }); //예약이체
+            //$("#ICON4").on("click", function(){ location.href="/main/bank/online/giro/OB_041303.cmd" }); //일반지로납부
+            //$("#ICON5").on("click", function(){ location.href="/main/bank/credit/OB_050201.cmd" }); //신용/대출신청
+            //$("#ICON6").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=0" }); //자산관리 캘린더
+
+            //$("#ICON1").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=0" }); //자산관리캘린더
+            $("#ICON2").on("click", function () {
+              location.href = "/main/bank/asset/OB_010101_M.cmd";
+            }); //종합잔고조회
+            $("#ICON3").on("click", function () {
+              location.href = "/main/bank/transfer/OB_030101_S1.cmd";
+            }); //즉시이체
+            $("#ICON4").on("click", function () {
+              location.href = "/main/bank/personalMng/OB_020101.cmd";
+            }); //개인정보관리
+            $("#ICON5").on("click", function () {
+              location.href = "/main/bank/credit/OB_050201_T1.cmd";
+            }); //신용대출신청
+
+            $("#ICON6").on("click", function () {
+              location.href = "/main/bank/subscription/OB_060301.cmd";
+            }); //공모주청약
+
+            init = function () {
+              $.ajax({
+                url: "OB_000000_M_D1.cmd",
+                dataType: "json",
+              }).success(function (data) {
+                $("#alertList").empty();
+                $("#alertList").append(data.CONTENT_BODY);
+              });
+            };
+            init();
+          })();
+        </script>
+ -->
+    </div>
+  </body>
+</html>
