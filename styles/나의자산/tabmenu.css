@@ -42,7 +42,7 @@
   /* content2 만들고 주석 지우기 */
   display: none;
 
-  height: 880px;
+  height: 1580px;
   /* 흰색으로 지우느라 끊어질 선 이어주기 위해 -2하고 탭 메뉴에서 2px로 합쳐져서 -1px해줌 */
   margin: -2px 0 0 -1px;
 
