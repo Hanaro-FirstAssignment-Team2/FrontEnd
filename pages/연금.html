@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>연금 : 하나증권</title>
+
+    <!--메타태그-->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="application-name" content="하나증권">
+    <meta name="subject" content="하나증권">
+    <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 "/>
+    <meta name="keywords" content="하나증권, 증권, 주식, 주식거래, 트레이딩, 주식시세, 인터넷뱅킹, 자산관리, 코스피, 코스닥, 다우, 나스닥, 해외주식, 금융상품, 파생상품, 파생, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, DLS, ISA, CFD, fx마진, 재테크, 리서치, 주식전략, 투자전략, 퀀트, 퀀트투자, HTS" /><meta name="robots" content="noindex, nofollow" /> 
+    <meta name="Location" content="South Korea"/>
+    <meta name="Distribution" content="global" />
+    <meta name="author" content="Hana Financial Investment Co.,Ltd." />
+    <meta name="robots" content="index, flow">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
+    <meta name="viewport" content="width=1024" /> <!--뷰포트 수정-->
+
+    <!--오픈그래프-->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="하나증권">
+    <meta property="og:site_name" content="하나증권">
+    <meta property="og:image" content="siteimage.jpg"> <!--이미지 수정-->
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="하나증권">
+    <meta name="twitter:description" content="하나증권">
+    <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
+    
+    <!--파비콘-->
+
+    <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png"> <!--이하 파비콘 전부 수정-->
+    <meta name="apple-mobile-web-app-title" content="하나증권">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon/favicon-16x16.png">
+    <meta name="apple-mobile-web-app-capable" href="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
+    <link rel="icon" href="img/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
+
+    <!--우클릭 금지 코드 삽입-->
+
+   <link rel="stylesheet" type="text/css" href="연금.css" /> <!--css 삽입-->
+
+    <!--웹폰트 나눔고딕-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    
+<div id="gnb-area">
+    <!-- GNB -->
+    <div id="gnb-wrap">
+        <ul id="gnb">
+            <li class="gnb_01">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_02">
+            <a href="#"
+            
+                      class="depth1-link selected">                        
+            </a>
+                    </li>
+                <li class="gnb_03">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_04">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_04">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_05">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_06">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                </ul>
+    </div>
+</div>
+
+<!-- QUICK NAVI -->
+<div id="quick-navi-wrap">
+    <ul id="quick-navi">
+        
+    	<li class="fl"><a id="access-quickmemu" href="index.html" title="홈"><img src="img/quicknavi_home.gif" alt="home"></a></li>
+    	
+        <li>
+            <div id="quick-navi-depth1" class="quick-menu-div">
+                <a href="#" class="selected-menu quick-menu-depth1">연금</a>
+                </div>
+        </li>
+
+    	<li>
+            <div id="quick-navi-depth3" class="quick-menu-div">
+                <ul>
+                <li>
+                        <a href="#" >연금저축계좌개설</a>
+                    </li>
+                <li>
+                        <a href="#" >연금저축ETF</a>
+                    </li>
+                <li>
+                        <a href="#" >연금저축펀드</a>
+                    </li>
+                <li>
+                        <a href="#" >개인형IRP/퇴직연금</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</div>
+<div class="clear"></div>
+
+<section class="page"> <!--헤더와 본문 사이 공간 만들기-->
+        <div class="con_wrap">
+            <div class="section"> <!--하나증권 소개글--> <!-- 폰트 조절 -->
+                <p class="p"><strong>국내 최초의 펀드판매회사 하나증권</strong><img src="./img/yeonguem/money.jpg" width="250px" alt="money">
+                    <br><br>대한민국 최초의 펀드판매회사로 48년간의 펀드 및 자산관리 핵심 노하우 집약</p>
+                    
+                <a class="a"> <!--하나증권 IRP Youtube 영상--> <!--border 만들기-->
+                    <iframe width="700px" height="393px" src="https://www.youtube.com/embed/NDPDJ7kkV4s?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+            </div>
+            </div>
+</section>
+
+    <div id="container">
+
+        <div class="wt-submenu mb30"> <!--연금 서브메뉴--> <!--클래스명 변경, css에서도 클래스명 변경-->
+            <ul>
+                <li>
+                    <ul class="wt-submenuT"> 
+                        <li><a href="#"><img src="./img/yeonguem/yeongeum1.png" alt="연금저축계좌개설"><br>연금저축계좌개설</a></li>
+                        <li><a href="#"><img src="./img/yeonguem/yeongeum2.png" alt="연금저축ETF"><br>연금저축ETF</a></li>
+                        <li><a href="#"><img src="./img/yeonguem/yeongeum3.png" alt="연금저축펀드"><br>연금저축펀드</a></li>
+                        <li><a href="#"><img src="./img/yeonguem/yeongeum4.png" alt="개인형IRP/퇴직연금"><br>개인형IRP/퇴직연금</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="yeongeum-list"> <!--연금 보고서-->
+            <li>
+                <a href="https://www.hanaw.com/download/bbs/pdf/lifetimeReport_200508.pdf" target="_blank"><h2>연금으로 노후 준비 든든하게</h2><img src="./img/yeonguem/yeongum_1.jpg" alt="연금으로 노후 준비 든든하게"></a>
+                <div class="caption">
+                    <h2>연금으로 노후 준비<br>든든하게</h2>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.hanaw.com/download/bbs/pdf/lifetimeReport2_200908.pdf" target="_blank"><h2>금퇴족으로 사는 법</h2><img src="./img/yeonguem/yeongum_2.jpg"></a>
+                <div class="caption">
+                    <h2>금퇴족으로 사는 법</h2>
+                </div>
+            </li>
+            <li>
+                <a href="https://youtu.be/NDPDJ7kkV4s" target="_blank"><h2>IRP란?</h2><img src="./img/yeonguem/yeongum_3.jpg"></a>
+                <div class="caption">
+                    <h2>IRP란?</h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body> <!--footer 사이에 공간 만들기-->
+<footer>
+    
+</footer>
+</html>

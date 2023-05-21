@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>해외주식파생 : 하나증권</title>
+
+    <!--메타태그-->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="application-name" content="하나증권">
+    <meta name="subject" content="하나증권">
+    <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 "/>
+    <meta name="keywords" content="하나증권, 증권, 주식, 주식거래, 트레이딩, 주식시세, 인터넷뱅킹, 자산관리, 코스피, 코스닥, 다우, 나스닥, 해외주식, 금융상품, 파생상품, 파생, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, DLS, ISA, CFD, fx마진, 재테크, 리서치, 주식전략, 투자전략, 퀀트, 퀀트투자, HTS" /><meta name="robots" content="noindex, nofollow" /> 
+    <meta name="Location" content="South Korea"/>
+    <meta name="Distribution" content="global" />
+    <meta name="author" content="Hana Financial Investment Co.,Ltd." />
+    <meta name="robots" content="index, flow">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
+    <meta name="viewport" content="width=1024" /> <!--뷰포트 수정-->
+
+    <!--오픈그래프-->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="하나증권">
+    <meta property="og:site_name" content="하나증권">
+    <meta property="og:image" content="siteimage.jpg"> <!--이미지 수정-->
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="하나증권">
+    <meta name="twitter:description" content="하나증권">
+    <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
+    
+    <!--파비콘-->
+
+    <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png"> <!--이하 파비콘 전부 수정-->
+    <meta name="apple-mobile-web-app-title" content="하나증권">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon/favicon-16x16.png">
+    <meta name="apple-mobile-web-app-capable" href="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
+    <link rel="icon" href="img/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
+
+    <!--우클릭 금지 코드 삽입-->
+
+   <link rel="stylesheet" type="text/css" href="해외주식파생.css" /> <!--css 삽입-->
+
+    <!--웹폰트 나눔고딕-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<div id="gnb-area">
+    <!-- GNB -->
+    <div id="gnb-wrap">
+        <ul id="gnb">
+            <li class="gnb_01">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_02">
+            <a href="#"
+            
+                      class="depth1-link selected">                        
+            </a>
+                    </li>
+                <li class="gnb_03">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_04">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_04">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_05">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                <li class="gnb_06">
+            <a href="#"
+            
+                      class="depth1-link ">                        
+            </a>
+                    </li>
+                </ul>
+    </div>
+</div>
+
+<!--QUICK NAVI -->
+<div id="quick-navi-wrap">
+    <ul id="quick-navi">
+        
+    	<li class="fl"><a id="access-quickmemu" href="index.html" title="홈"><img src="img/quicknavi_home.gif" alt="home"></a></li>
+    	
+        <li>
+            <div id="quick-navi-depth1" class="quick-menu-div">
+                <a href="#" class="selected-menu quick-menu-depth1">해외주식파생</a>
+                </div>
+        </li>
+
+    	<li>
+            <div id="quick-navi-depth3" class="quick-menu-div">
+                <ul>
+                <li>
+                        <a href="#" >해외ETF</a>
+                    </li>
+                <li>
+                        <a href="#" >해외주식담보대출</a>
+                    </li>
+                <li>
+                        <a href="#" >해외선물</a>
+                    </li>
+                <li>
+                        <a href="#" >해외옵션</a>
+                    </li>
+                    <li>
+                        <a href="#" >FX마진</a>
+                    </li>
+                <li>
+                        <a href="#" >CFD</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="clear"></div>
+
+    <div id="container">
+
+        <div class="wt-submenu mb30"> <!--해외주식파생 서브메뉴-->
+            <ul>
+                <li>
+                    <ul class="wt-submenuT"> 
+                        <li><a href="#"><img src="./img/stock/stock1.jpg"><br>해외ETF</a></li>
+                        <li><a href="#"><img src="./img/stock/stock2.jpg"><br>해외주식담보대출</a></li>
+                        <li><a href="#"><img src="./img/stock/stock3.jpg"><br>해외선물</a></li>
+                        <li><a href="#"><img src="./img/stock/stock4.jpg"><br>해외옵션</a></li>
+                        <li><a href="#"><img src="./img/stock/stock5.jpg"><br>FX마진</a></li>
+                        <li><a href="#"><img src="./img/stock/stock6.jpg"><br>CFD</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="jisuInfo" data-realbldinfo="{r:&#39;U00&#39;,r:&#39;V00&#39;}">
+            <div class="wt-box2 w260 fl mb45"> <!--지수 정보-->
+                <h4>지수정보</h4> 
+                <div class="wt_kospi">
+                    <div class="tac pt20 h172" style="padding-right: 13px; padding-left: 13px;">
+                        <div class="chart06-ctnr" style="height:144px;">
+                            <div class="chart06-2" style="height:144px;"><div class="webponent-chart-chart06-2-container" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 142.4px; overflow: hidden;"><canvas class="webponent-chart-chart06-2_graph" width="230.4" height="142.4" style="width: 100%; height: 142.4px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2_vline" style="position: absolute; top: 0px; left: 51px; width: 1px; height: 142.4px; border-left: 1px solid rgb(0, 0, 0); display: none;"></div><div class="webponent-chart-chart06-2_hline" style="position: absolute; top: 101px; left: 0px; width: 230.4px; height: 1px; border-top: 1px solid rgb(0, 0, 0); display: none;"></div><canvas class="webponent-chart-chart06-2_select" width="230.4" height="142.4" style="width: 100%; height: 142.4px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2-tooltip" style="position: absolute; border: 1px solid rgb(153, 153, 153); background-color: rgb(249, 249, 249); color: rgb(51, 51, 51); padding: 4px; font-size: 11px; white-space: nowrap; top: 44.2px; left: 58px; display: none;"><span>일자</span> : 12/29<br><span>지수</span> : 223,640.00<br></div></div></div>
+                        </div>
+                    </div>
+                    <div class="wt_kospi_list">
+                        <ul class="indexgrp type02" data-bind="_this.withItem(jisuObject,false)^_this.replaceItem(r,r.code)" data-rowgroup="1">
+                            <li class="" onclick="changeJisu(0,this)" data-bindkeyvalue="001">
+                                <a href="#" title="KOSPI지수" class="goUp"><span class="index-tit">KOSPI</span><span class="index-sum" data-bind="K001[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">2,480.24</span><span class="index-arr" data-bind="checkUpDownJisu(K001[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K001[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.89</span></a>
+                            </li>
+                            <li onclick="changeJisu(1,this)" data-bindkeyvalue="201" class="">
+                                <a href="#" title="KOSDAQ지수" class="goUp"><span class="index-tit">KOSDAQ</span><span class="index-sum" data-bind="K201[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">816.75</span><span class="index-arr" data-bind="checkUpDownJisu(K201[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K201[&#39;PrdayCmp&#39;]" data-bind-bypass="true">2.22</span></a>
+                            </li>
+                            <li onclick="changeJisu(2,this)" data-bindkeyvalue="101" class="">
+                                <a href="#" title="KOSPI200지수" class="goUp"><span class="index-tit">KOSPI 200</span><span class="index-sum" data-bind="K101[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">325.31</span><span class="index-arr" data-bind="checkUpDownJisu(K101[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K101[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.85</span></a>
+                            </li>
+                            <li onclick="changeJisu(3,this)" data-bindkeyvalue="DJI@DJI" class="">
+                                <a href="#" title="DOW지수" class="goUp"><span class="index-tit">DOW<span class="sub-txt11">(<span data-bind="DJI_DJI[&#39;ViewPoint&#39;]" data-bind-bypass="true">종가</span>)</span></span><span class="index-sum" data-bind="DJI_DJI[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">33,348.60</span><span class="index-arr" data-bind="checkUpDownJisu(DJI_DJI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="DJI_DJI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">47.98</span></a>
+                            </li>
+                            <li onclick="changeJisu(4,this)" data-bindkeyvalue="NAS@IXIC" class="on">
+                                <a href="#" title="NASDAQ지수" class="goUp"><span class="index-tit">NASDAQ<span class="sub-txt11">(<span data-bind="NAS_IXIC[&#39;ViewPoint&#39;]" data-bind-bypass="true">15분지연</span>)</span></span><span class="index-sum" data-bind="NAS_IXIC[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">12,365.21</span><span class="index-arr" data-bind="checkUpDownJisu(NAS_IXIC[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="NAS_IXIC[&#39;PrdayCmp&#39;]" data-bind-bypass="true">80.47</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wt-box2 w260 fr mb45"> <!--금리/환율-->
+                <h4>금리/환율</h4>
+                <div class="wt_rate">
+                    <ul class="indexgrp ls-1 type02" data-bind="_this.withItem(jisuObject,false)" data-rowgroup="1">
+                        <li class="goUp">
+                            <span class="index-tit">원/달러</span><span class="index-sum" data-bind="USDKRWSMBS[&#39;NowPrc&#39;]" data-bind-bypass="true">1,338.60</span><span class="index-arr" data-bind="checkUpDownJisu(USDKRWSMBS[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="USDKRWSMBS[&#39;PrdayCmp&#39;]" data-bind-bypass="true">1.60</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">원/엔</span><span class="index-sum" data-bind="JPYKRWCOMP[&#39;NowPrc&#39;]" data-bind-bypass="true">9.8458</span><span class="index-arr" data-bind="checkUpDownJisu(JPYKRWCOMP[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="JPYKRWCOMP[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0124</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">원/유로</span><span class="index-sum" data-bind="EURKRWCOMP[&#39;NowPrc&#39;]" data-bind-bypass="true">1,456.13</span><span class="index-arr" data-bind="checkUpDownJisu(EURKRWCOMP[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="EURKRWCOMP[&#39;PrdayCmp&#39;]" data-bind-bypass="true">1.53</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">국고채 3년</span><span class="index-sum" data-bind="Y0101[&#39;NowPrc&#39;]" data-bind-bypass="true">3.2790</span><span class="index-arr" data-bind="checkUpDownJisu(Y0101[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0101[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0540</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">CD(91일)</span><span class="index-sum" data-bind="Y0112[&#39;NowPrc&#39;]" data-bind-bypass="true">3.6200</span><span class="index-arr" data-bind="checkUpDownJisu(Y0112[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0112[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0100</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">통안증권 2년</span><span class="index-sum" data-bind="Y0110[&#39;NowPrc&#39;]" data-bind-bypass="true">3.3600</span><span class="index-arr" data-bind="checkUpDownJisu(Y0110[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0110[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0360</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">WTI(현물)</span><span class="index-sum" data-bind="SPT_CL[&#39;NowPrc&#39;]" data-bind-bypass="true">45.95</span><span class="index-arr" data-bind="checkUpDownJisu(SPT_CL[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="SPT_CL[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.27</span>
+                        </li>
+                        <li class="goDown">
+                            <span class="index-tit">두바이(현물)</span><span class="index-sum" data-bind="SPT_DU[&#39;NowPrc&#39;]" data-bind-bypass="true">73.33</span><span class="index-arr" data-bind="checkUpDownJisu(SPT_DU[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="SPT_DU[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.21</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">금(현물)</span><span class="index-sum" data-bind="COM_GC[&#39;NowPrc&#39;]" data-bind-bypass="true">2,022.7</span><span class="index-arr" data-bind="checkUpDownJisu(COM_GC[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="COM_GC[&#39;PrdayCmp&#39;]" data-bind-bypass="true">2.9</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">은(현물)</span><span class="index-sum" data-bind="COM_SI[&#39;NowPrc&#39;]" data-bind-bypass="true">24.291</span><span class="index-arr" data-bind="checkUpDownJisu(COM_SI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="COM_SI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.137</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+<!-- 
+            <div class="wt-box2 w260 fr mb45">
+	                <h4>뉴스/시황<a href="#" class="more" title="뉴스/시황 더보기"><img src="./img/btn_more_board.png"></a></h4>
+	                <ul class="submainBoardList mw245">
+	                    <li class="isNew">
+	                        <a href="#" title="中인민은행 " 디플레이션="" 없다"="" 강조하지만…시장은="" '글쎄'"="" onclick="openNewsLayer(this,&#39;2023051616072105900011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">中인민은행 "디플레이션 없다" 강조하지만…시장은 '글쎄'</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="김승호 인사처장, 美 방문…NASA 등 &#39;인사 노하우&#39; 살펴본다" onclick="openNewsLayer(this,&#39;2023051616070804700011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">김승호 인사처장, 美 방문…NASA 등 '인사 노하우' 살펴본다</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="尹 &#39;간호법 거부권&#39; 행사에 與 " 불가피한="" 선택…野와="" 협상할="" 것""="" onclick="openNewsLayer(this,&#39;2023051616070715565320&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">尹 '간호법 거부권' 행사에 與 "불가피한 선택…野와 협상할 것"</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="한화리조트 경주, 고급 숙박 수요 맞춤 &#39;프리미어 스위트&#39; 객실 오픈" onclick="openNewsLayer(this,&#39;2023051616065601001139&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">한화리조트 경주, 고급 숙박 수요 맞춤 '프리미어 스위트' 객실 오픈</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="에스지씨이테크건설(주) (정정)타인에대한채무보증결정" onclick="openNewsLayer(this,&#39;2023051616065504193915&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">에스지씨이테크건설(주) (정정)타인에대한채무보증결정</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li></ul>
+	            </div> -->
+
+            </div>
+        </div>
+
+        <div class="cb sm-list" id="maincon-board">
+            <div class="cb pt50"> <!-- 뉴스, 시황 -->
+	            <div class="fl w330">
+	                <h4>뉴스/시황<a href="#" class="more" title="뉴스/시황 더보기"><img src="./img/btn_more_board.png"></a></h4>
+	                <ul class="submainBoardList mw245">
+	                    <li class="isNew">
+	                        <a href="#" title="中인민은행 " 디플레이션="" 없다"="" 강조하지만…시장은="" '글쎄'"="" onclick="openNewsLayer(this,&#39;2023051616072105900011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">中인민은행 "디플레이션 없다" 강조하지만…시장은 '글쎄'</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="김승호 인사처장, 美 방문…NASA 등 &#39;인사 노하우&#39; 살펴본다" onclick="openNewsLayer(this,&#39;2023051616070804700011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">김승호 인사처장, 美 방문…NASA 등 '인사 노하우' 살펴본다</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="尹 &#39;간호법 거부권&#39; 행사에 與 " 불가피한="" 선택…野와="" 협상할="" 것""="" onclick="openNewsLayer(this,&#39;2023051616070715565320&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">尹 '간호법 거부권' 행사에 與 "불가피한 선택…野와 협상할 것"</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="한화리조트 경주, 고급 숙박 수요 맞춤 &#39;프리미어 스위트&#39; 객실 오픈" onclick="openNewsLayer(this,&#39;2023051616065601001139&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">한화리조트 경주, 고급 숙박 수요 맞춤 '프리미어 스위트' 객실 오픈</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li><li class="isNew">
+	                        <a href="#" title="에스지씨이테크건설(주) (정정)타인에대한채무보증결정" onclick="openNewsLayer(this,&#39;2023051616065504193915&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">에스지씨이테크건설(주) (정정)타인에대한채무보증결정</a>
+	                        <span class="date">2023-05-16</span>
+	                    </li></ul>
+	            </div>
+            </div>
+
+    </div>
+</body> <!--footer 사이에 공간 만들기-->
+<footer>
+    
+</footer>
+</html>
