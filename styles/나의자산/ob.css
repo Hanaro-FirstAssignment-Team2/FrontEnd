@@ -55,7 +55,7 @@
   padding: 37px 30px 0 0;
 }
 .sm-list h4 {
-  color: #333;
+  /* color: #333; */
   font-weight: bold;
   font-size: 18px;
   border-bottom: 2px solid #313131;
@@ -115,7 +115,9 @@
 }
 .sm-list .graph_txt div.total {
   /* background-color: #00b0c4; */
-  border-bottom: 1px solid #eaeaea;
+
+  /* border-top: 1px solid #eaeaea; */
+  /* border-bottom: 1px solid #eaeaea; */
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 20px;
@@ -210,6 +212,7 @@
 /* .ob-right {position:relative; background:url(../img/OB/bg_sm_right.gif) no-repeat; height:871px; width:260px; padding:25px;} */
 .ob-right {
   background-color: white;
+  
   border: #d2d2d2 solid 1px;
   border-radius: 20px;
   position: relative;
@@ -303,19 +306,29 @@
   border-left: 1px solid #e0e0e0;
   padding-left: 15px;
   margin-left: 20px;
+  margin-top:-25px;
+  width: 298px;
+  background-color: #555;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  /* border-radius: 20px; */
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right:30px;
 }
 .ob-right .sm-info3 ul li {
   position: relative;
   background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
   padding-left: 8px;
-  color: #333;
+  /* background-color: #2daca1; */
+  color: white;
   height: 25px;
 }
 
 .ob-right .sm-info3 ul li span {
   position: absolute;
   right: 0;
-  color: #555;
+  color: white;
 }
 
 .infotime {
