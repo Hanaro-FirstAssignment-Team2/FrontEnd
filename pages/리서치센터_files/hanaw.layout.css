@@ -13,3 +13,29 @@
 #container .fp_area_aside {position: absolute; width:220px; bottom:0; top:57px;left:740px; background:url(../img/FP/bg_aside.gif) repeat-y;  padding:22px;}
 
 
+
+.search_button {
+    position: absolute;
+    width: 500px;
+    margin-top: 60px;
+    margin-right: 600px;
+    float: left;
+    
+  }
+  
+
+.search_input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    }
+    
+.search_img {
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+    }
