@@ -152,28 +152,39 @@
                         <h4>나의 자산종합</h4>
                         <div class="asset">
                             <div class="graph fl">
-                                <div class="chart09-5-ctnr graph_img" id="PieChartArea"><canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"></canvas><div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);"></div></div>
-                                <!-- <img class="center"  src="../images/나의자산/graph_img.png" alt="home" -->
-                                />
-                                <ul class="graph_explain">
-                                <li><span class="b">A</span> : 펀드/RP</li> 
-								<li><span class="b">B</span> : 주식</li> 
-								<li><span class="b">C</span> : ELS/DLS</li> 
-								<li><span class="b">D</span> : 선물/옵션</li> 
-								<li><span class="b">E</span> : CMA</li> 
-								<li><span class="b">F</span> : 연금저축</li> 
-								<li><span class="b">G</span> : 국내채권</li> 
-								<li><span class="b">H</span> : 해외선물/옵션</li> 
-                                <li><span class="b">I</span> : FX마진</li> 
-								<li><span class="b">J</span> : 해외주식</li> 
-								<li><span class="b">K</span> : 랩어카운트</li> 
-								<li><span class="b">L</span> : 신탁</li>
-								<li><span class="b">M</span> : 현금예수금</li> 
-								<li><span class="b">N</span> : 금현물</li>
+                                <div class="chart09-5-ctnr graph_img" id="PieChartArea">
+                                  <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
+                                  <!-- </canvas> -->
+
+                                  <img class="center" style="margin-left: -25px;" width=250px height=250px src="../images/나의자산/graph_img.png" alt="home">
+
+                                  <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
+                                  </div>
+                                </div>
+                                
+                                <ul class="graph_explain" style="margin-top: 30px;">
+                                  <li><span class="b">A</span> : 펀드/RP</li> 
+                                  <li><span class="b">B</span> : 주식</li> 
+                                  <li><span class="b">C</span> : ELS/DLS</li> 
+                                  <li><span class="b">D</span> : 선물/옵션</li> 
+                                  <li><span class="b">E</span> : CMA</li> 
+                                  <li><span class="b">F</span> : 연금저축</li> 
+                                  <li><span class="b">G</span> : 국내채권</li> 
+                                  <li><span class="b">H</span> : 해외선물/옵션</li> 
+                                  <li><span class="b">I</span> : FX마진</li> 
+                                  <li><span class="b">J</span> : 해외주식</li> 
+                                  <li><span class="b">K</span> : 랩어카운트</li> 
+                                  <li><span class="b">L</span> : 신탁</li>
+                                  <li><span class="b">M</span> : 현금예수금</li> 
+                                  <li><span class="b">N</span> : 금현물</li>
                                 </ul> 
                             </div>
                             <div class="fl graph_txt" id="AcntSummary2">
-                                <div class="total">합계 <span class="fr"><strong class="txtpoint txtbasic" id="AcntTotal">0</strong>원</span></div>
+                                <div class="total">합계 
+                                  <span class="fr">
+                                    <strong class="txtpoint txtbasic" id="AcntTotal">0</strong>원
+                                  </span>
+                                </div>
                                 <ul id="AcntSummary2">
                                     <li>연금상품<span><strong class="num">0</strong>원</span></li>
                                     <li>신용/대출 <span><strong class="num">0</strong>원</span></li>
@@ -253,7 +264,7 @@
                     <div class="asset2">
                       <div class="graph2 fl">
                           <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
-                          <img class="center" width="250px" height="230px" src="../images/나의자산/graph_img.png" alt="home">
+                          <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img.png" alt="home">
                             <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
                           </canvas>
                           <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
@@ -500,7 +511,7 @@
       
       </div>
       
-        <script
+        <!-- <script
           type="text/javascript"
           src="../javascripts/나의자산/chart.skin1.js"
         ></script>
@@ -775,7 +786,7 @@
             };
             init();
           })();
-        </script>
+        </script> -->
 
     </div>
   </body>

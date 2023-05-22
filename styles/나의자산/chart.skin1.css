@@ -1,7 +1,8 @@
 div.chart09-5-ctnr {
   position: relative;
-  width: 195px;
+  width: 350px;
   height: 178px;
   /* border: 1px solid red; */
-  overflow: hidden;
+  margin-top:0px;
+  /* overflow: hidden; */
 }
