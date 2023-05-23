@@ -329,3 +329,12 @@ padding-left: 200px;
 }
 
 .wt-submenuT { border: 2px solid #04b4b4; border-radius: 0.5em; }
+
+::-moz-selection {
+  background: #04b4b4;
+  color: #fff;
+}
+::selection {
+  background: #04b4b4;
+  color: #fff;
+}
