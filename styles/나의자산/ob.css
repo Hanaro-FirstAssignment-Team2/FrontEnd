@@ -55,7 +55,7 @@
   padding: 37px 30px 0 0;
 }
 .sm-list h4 {
-  color: #333;
+  /* color: #333; */
   font-weight: bold;
   font-size: 18px;
   border-bottom: 2px solid #313131;
@@ -63,48 +63,40 @@
   padding-bottom: 10px;
   position: relative;
 }
-.sm-list .more {
-  position: absolute;
-  right: 0;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  background: url(../img/common/icon_more.png) no-repeat 0 0;
-}
-.sm-list li .date {
-  position: absolute;
-  top: 3px;
-  right: 0;
-  letter-spacing: 0;
-}
+
 .sm-list .asset {
   border-bottom: 1px solid #dfdfdf;
-  
   display: inline-block;
   background: #fafafa;
-  
 }
-.sm-list .asset .img {
-  vertical-align: middle;
-  width: 280px;
-  
-}
+
+
 .sm-list .graph {
   /* background-color: #03838e; */
-  width: 36px;
-  box-sizing: border-box;
+  /* width: 36px; */
+  /* box-sizing: border-box; */
   border-right: 1px solid #dfdfdf;
 }
 .sm-list .graph_img {
   /* background-color: #71a5aa; */
-  width: 205px;
-  margin: 0 auto;
+  /* width: 50px; */
+  height: 300px;
+  padding-top:50px;
+  /* padding-right:50px; */
+  /* margin-left:30px;
+  margin-right:30px; */
 }
+
+.sm-list .asset .img {
+  vertical-align: middle;
+  width: 350px;
+  height: 350px;
+}
+
 .sm-list .graph_explain {
   /* background-color: #b3e1e6; */
   width: 100%;
   overflow: hidden;
-  font-size: 12px;
   line-height: 17px;
   padding: 13px 0 18px 30px;
 }
@@ -116,7 +108,6 @@
   letter-spacing: -0.3px;
 }
 .sm-list .graph_txt {
-  
   width: 334px;
   padding: 10px 30px;
   background: #fff;
@@ -124,7 +115,9 @@
 }
 .sm-list .graph_txt div.total {
   /* background-color: #00b0c4; */
-  border-bottom: 1px solid #eaeaea;
+
+  /* border-top: 1px solid #eaeaea; */
+  /* border-bottom: 1px solid #eaeaea; */
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 20px;
@@ -219,6 +212,7 @@
 /* .ob-right {position:relative; background:url(../img/OB/bg_sm_right.gif) no-repeat; height:871px; width:260px; padding:25px;} */
 .ob-right {
   background-color: white;
+  
   border: #d2d2d2 solid 1px;
   border-radius: 20px;
   position: relative;
@@ -262,6 +256,7 @@
 .ob-right .sm-info1 ul li p span {
   /* background: #03838e; */
   color: #03838e;
+
   font-size: 35px;
   height: 100%;
   font-weight: bold;
@@ -311,19 +306,29 @@
   border-left: 1px solid #e0e0e0;
   padding-left: 15px;
   margin-left: 20px;
+  margin-top:-25px;
+  width: 298px;
+  background-color: #555;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  /* border-radius: 20px; */
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right:30px;
 }
 .ob-right .sm-info3 ul li {
   position: relative;
   background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
   padding-left: 8px;
-  color: #333;
+  /* background-color: #2daca1; */
+  color: white;
   height: 25px;
 }
 
 .ob-right .sm-info3 ul li span {
   position: absolute;
   right: 0;
-  color: #555;
+  color: white;
 }
 
 .infotime {
@@ -516,13 +521,11 @@
   font-weight: bold;
 }
 
-
 .sm-list .asset2 {
   /* border-bottom: 1px solid #dfdfdf; */
-  
+
   display: flex;
   /* background: #fafafa; */
-  
 }
 .sm-list .asset2 .img {
   vertical-align: middle;
@@ -531,9 +534,9 @@
 .sm-list .graph2 {
   margin-top: 15px;
   margin-left: 40px;
-  
-  background-color: #ececec;
-  border:1px solid black;
+
+  background-color: #fafafa;
+  border: 1px solid black;
   width: 400px;
   height: 448px;
   box-sizing: border-box;
@@ -541,21 +544,21 @@
   /* border-right: 1px solid #dfdfdf; */
 }
 .sm-list .graph_img2 {
-  background-color: #71a5aa;
-  width: 210px;
-  height: 200px;
-  margin:50px 90px 50px auto;
-  
-  
+  /* background-color: #71a5aa; */
+  width: 250px;
+  height: 230px;
+  margin: 50px 75px 50px auto;
+
   /* margin: 0 auto; */
 }
 .sm-list .graph_explain2 {
   /* background-color: #b3e1e6; */
   width: 100%;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 17px;
   padding: 0px 0 18px 35px;
+  /* letter-spacing: -0.3px; */
   /* text-align: */
 }
 .sm-list .graph_explain2 li {
@@ -566,7 +569,7 @@
   margin-bottom: -10px;
   box-sizing: border-box;
   letter-spacing: -0.3px;
-  
+
   /* text-align: center; */
   /* margin-left: 5px; */
   /* font-size: 12px; */
@@ -581,12 +584,11 @@
   display: inline-block;
 }
 
-.sm_list .graph3{
+.sm_list .graph3 {
   height: 500px;
   table-layout: fixed;
 }
-.sm_list .graph3 tb2 td{
+.sm_list .graph3 tb2 td {
   padding: 5px;
   background: #03838e;
 }
-

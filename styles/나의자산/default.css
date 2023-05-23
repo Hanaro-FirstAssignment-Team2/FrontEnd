@@ -201,7 +201,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
@@ -1153,6 +1152,10 @@ body {
 }
 .pt370 {
   padding-top: 370px !important;
+}
+
+.pb-79 {
+  padding-bottom: -79px !important;
 }
 
 .pb0 {
