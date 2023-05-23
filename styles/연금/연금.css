@@ -219,11 +219,10 @@ background: url(/templets/main/img/MAIN/bg_shadow_sm.png);
 #quick-navi .quick-menu-div > ul > li.selected {background-color: #f0f0f0; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf}
 #quick-navi .quick-menu-div > ul > li.selected > a {font-weight: bold;}
 
-
-.wt-submenu {width: 100%; height:267px; border-top: 1px solid transparent; padding-left: 130px; background:url(/templets/main/img/WT/wt_submain_icon.jpg?v=210127) no-repeat 0 0;}
+.wt-submenu {width: 900px; height:267px; border-top: 1px solid transparent; padding-left: 130px; background:url(/templets/main/img/WT/wt_submain_icon.jpg?v=210127) no-repeat 0 0;}
 .wt-submenu li {font-weight: bold; font-size: 15px; color: #333;}
-.wt-submenuT { width: 100%; height: 300px; overflow: hidden;}
-.wt-submenuT li {float:left; text-align: center; width: 160px}
+.wt-submenuT { width: 900px; height: 300px; overflow: hidden;}
+.wt-submenuT li {float:left; text-align: center; width: 160px; margin-left: 40px;}
 .wt-submenuT li > a, .wt-submenuB li > a, .wt-submenuT li > span, .wt-submenuB li > span{display:block;padding-top:98px;  }
 .wt-submenuB {width: 100%; height: 130px; overflow: hidden;}
 .wt-submenuB li {float:left; text-align:center; width: 160px}
@@ -275,6 +274,7 @@ text-align: center;
 .yeongeum-list {
 list-style: none;
 padding: 0;
+padding-top: 80px;
 }
 .yeongeum-list li {
 float: left;
@@ -312,11 +312,11 @@ text-align: center;
 
 .con_wrap { width: 100%; }
 
-.a {padding-top: 390PX; padding-left: 60px; font-size: 12px; border: 10px solid #b2dada; border-radius: 2em; }
+.a {padding-top: 390PX; padding-left: 60px; border: 2px solid #b2dada; border-radius: 2em; }
 .p {padding-top: 140px; float: left; padding-left: 180px;}
 
 h2 { text-align: center; font-size: 15px; font-weight: bold; padding-bottom: 15px; }
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none; color:#04b4b4; }
 
 #mainContainer {margin-top: 34px;}
 
@@ -324,9 +324,8 @@ a:hover { text-decoration: none; }
 
 .wt-submenuT > li > a > img { width: 90px; margin-bottom: 15px; }
 
-.wt-submenuT { border: 1px solid #eee; border-radius: 0.5em; }
+.wt-submenuT { border: 2px solid #e4e4e4; border-radius: 0.5em; }
 
 .p { padding-top: 45px; }
 
-
-
+#mint { color: #04b4b4; font-size: 21px; font-weight: 700;}
