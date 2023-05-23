@@ -326,3 +326,12 @@ a:hover { text-decoration: none; color:#04b4b4; }
 .p { padding-top: 45px; }
 
 #mint { color: #04b4b4; font-size: 21px; font-weight: 700;}
+
+::-moz-selection {
+  background: #04b4b4;
+  color: #fff;
+}
+::selection {
+  background: #04b4b4;
+  color: #fff;
+}
