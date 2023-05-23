@@ -75,10 +75,21 @@
                                         공동인증서 로그인시 <span class="txtpoint">이체, 금융상품/주식/선물옵션매매 등의<br> 다양한 업무처리가 가능</span>합니다.
                                     </div>
                                     
-                                    <div class="tac mb35">
-                                          <button type="button" class="btn btn-green lg w260">공동인증서 로그인</button>
-                                    </div>
+                                    
+    
 
+                                    <div class="tac mb35">
+
+                                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+                                            function login(){                             
+                                                swal("Good job!", "You clicked the button!", "success");
+                                            }
+                                        </script>
+                                          <button type="button" class="btn btn-green lg w260" onclick="login()">공동인증서 로그인</button>
+                                    </div>
+                                
+                                
+                                    
                                 <div class="logininput-log_1">
                                     자동로그아웃:
                                     <select id="maxtime_full" class="select w160 ml15" title="자동로그아웃 시간 설정">
