@@ -1,0 +1,3 @@
+.wrap {margin-left:-50px}
+.iPad .wrap {margin-left:0}
+.iPad .wrap, .wrap .wrap {margin-left:auto}
