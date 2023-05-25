@@ -41,6 +41,22 @@
         <link rel="stylesheet" type="text/css" href="./금융투자상품 _ 하나증권_files\common_2021.css">
 
 <title>금융투자상품 : 하나증권</title>
+<style>
+    select {
+        height: auto;
+        width: auto;
+        padding: 0px;
+        border: 0px solid #999;
+        font-size: 42px;
+        font-family: "Pretendard", Sans-serif, ; 
+        font-weight: bold;
+        border-radius: 0px; 
+        margin : 10px;
+        line-height: 1;
+        text-align: left;
+        
+    }
+</style>
 
 </head>
     <div class="wrap templetWrap">
@@ -64,7 +80,7 @@
     </div>
     <div class="msearch" style="display:block; margin-top: 34px; padding:10px">
         <div class="inner">
-            <h3>펀드검색</h3>
+            <h3 style="font-family: sans-serif; font-size: 19px;">펀드검색</h3>
             <div class="msearch-input" style="margin-top: 0% ">
                 <input type="text" id="msearch" name="msearch" title="검색어 입력">
                 <div>
@@ -96,33 +112,34 @@
             <div class="main-layout-a">
                 <div class="main-layout-item">
                     <section class="main-ranking" >
-                        <div class="main-content-head" style="display: flex; padding-left: 170px; margin: 50px">
-                            <div>
+                        <div class="main-content-head">
+                            <div style = "padding-left:70px">
                                 <h2 class="cont-tit-s">
-                                    <a class="main-arrow-btn"><span>펀드랭킹</span></a>
+                                    <a class="main-arrow-btn" href="file:///C:/Users/%ED%95%98%EB%82%98%EB%A1%9CH012/Desktop/homework/%ED%8E%80%EB%93%9C.html"><span>펀드랭킹</span></a>
                                 </h2>
                                 <strong class="display-text">
-                                    <span>최근 3개월 동안</span>
+                                    <span style="padding-left: 30px; font-size: 38px;">최근 3개월 동안</span>
                                     <span>
-                                        <select title="가장 수익률이 높은"  onchange="link()" id="select">
-                                            <option value="금융투자상품_1.html">가장 수익률이 높은</option>
-                                            <option value="금융투자상품_2.html">가장 운용금액이 큰</option>
+                                        <strong class="display-text" style="padding-left: 15px; "> 
+                                        <select title="가장 수익률이 높은" onchange="link()" id="select" style="display:block; color:#03838E">
+                                            <option value="금융투자상품_1.html" id="second" style="font-size: 27px">가장 수익률이 높은</option>
+                                            <option value="금융투자상품_2.html" id="first" style="font-size: 27px;">가장 운용금액이 큰</option>
+                                            <option value="펀드.html" id="second" style="font-size: 27px">가장 인기있는</option>
 
-                                            <script type="text/javascript">
+                                               <script type="text/javascript">
                                                 function link() {
                                                     var url = document.getElementById("select").value;
                                                     location.href = url;
                                                 }
                                                 </script>
-                                            
                                         </select>
-                                        <a href="" title="가장 수익률이 높은">가장 수익률이 높은</a>
+                                    </strong>
                                     </span>
-                                    <span>펀드입니다.</span>
+                                    <span style="display:block; margin-bottom:80px; margin-top: 10px; padding-left: 30px; font-size: 38px;">펀드입니다.</span>
                                 </strong>
                             </div>
-                            <div class="display-img" style="display:flex; ">
-                                <img src="./금융상품 _ 한국투자증권_files/display_img.png" alt="">
+                            <div class="display-img">
+                                <img src="./금융상품 _ 한국투자증권_files/display_img.png" style="padding-left: 100px; padding-top:30px">
                             </div>
                         </div>
     
@@ -188,9 +205,9 @@
     <div class="wrap">
     <div id="container" class="w100p pt0">
     <div class="m-icongroup">
-        <ul style="list-style: none; display: flex; justify-content: space-around; align-items: flex-end; padding: 0 480px 0 480px;">
+        <ul style="list-style: none; display: flex; justify-content: space-around; align-items: flex-end; padding: 0 427px 0 480px;">
             <li>    
-              <a href="file:///C:/Users/%ED%95%98%EB%82%98%EB%A1%9CH012/Desktop/homework/%EC%9D%B8%EA%B8%B0%20BEST%20_%20TOP%20%ED%8E%80%EB%93%9C%20_%20%ED%95%98%EB%82%98%EC%A6%9D%EA%B6%8C3.html">
+              <a href="펀드.html">
                 <span class="m-icon1"><img src="./금융투자상품 _ 하나증권_files/icon_main_01.png"></span>
                 펀드
               </a>
