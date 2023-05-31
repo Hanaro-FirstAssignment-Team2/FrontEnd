@@ -1,0 +1,45 @@
+/* boxes */.ci-box.round {
+  position: relative;
+}
+.ci-box.round .round-default {
+  position: absolute;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+}
+.ci-box.round .ci-tl {
+  position: absolute;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  top: 0px;
+  left: 0px;
+  background: url(./img/pc/round_tl.gif) no-repeat 0 0;
+}
+.ci-box.round .ci-tr {
+  position: absolute;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  top: 0px;
+  right: 0px;
+  background: url(./img/pc/round_tr.gif) no-repeat 0 0;
+}
+.ci-box.round .ci-br {
+  position: absolute;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  bottom: 0px;
+  right: 0px;
+  background: url(./img/pc/round_br.gif) no-repeat 0 0;
+}
+.ci-box.round .ci-bl {
+  position: absolute;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  bottom: 0px;
+  left: 0px;
+  background: url(./img/pc/round_bl.gif) no-repeat 0 0;
+}

@@ -1,0 +1,10 @@
+@font-face{
+  font-family: 'NanumGothicWeb';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/templets/main/img/common/font/NanumGothic.eot'); 
+  src: local('☺'), 
+       url('/templets/main/img/common/font/NanumGothic.eot?iefix') format('embedded-opentype'),
+       url('/templets/main/img/common/font/NanumGothic.woff') format('woff'), 
+       url('/templets/main/img/common/font/NanumGothic.ttf') format('truetype'); 
+}
