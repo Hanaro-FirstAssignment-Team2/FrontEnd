@@ -396,8 +396,40 @@ function drawBackgroundColor() {
 
     </script>
 
+<<<<<<< HEAD
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBackgroundColor);
+function drawBackgroundColor() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'X');
+      data.addColumn('number', 'Nasdaq');
+      data.addRows([
+        [new Date(2023, 5, 17), 0], [new Date(2023, 5, 18), 230000], [new Date(2023, 5, 19), 270000],   [new Date(2023, 5, 20), 400000],  [new Date(2023, 5, 21), 410000],  [new Date(2023, 5, 22), 750000],  [new Date(2023, 5, 23), 980000],  [new Date(2023, 5, 24), 1100000],  [new Date(2023, 5, 25), 1260000]
+      ]);
+      var options = {
+        hAxis: {
+          title: 'date'
+        },
+        vAxis: {
+          title: 'rate'
+        },
+        series: {
+            0: { color: '#DF0101' },
+          },
+        backgroundColor: '#fff'
+      };
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+
+</body> 
+=======
 
 </body> <!--footer 사이에 공간 만들기-->
+>>>>>>> 59fc5ba70c9a4ce0acbb923595a182c01c1e7847
 <footer>
     
 </footer>
