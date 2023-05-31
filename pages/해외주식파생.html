@@ -74,7 +74,46 @@
    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="script.js"></script>
+   <script src="../javascripts/jquery.js"></script>
+   <script src="../javascripts/API/kosdaq.js"></script>
+   <script src="../javascripts/API/kospi.js"></script>
+   <script src="../javascripts/API/kospi200.js"></script>
+   <script src="../javascripts/API/dollar.js"></script>
+   <script src="../javascripts/API/yen.js"></script>
+   <script src="../javascripts/API/euro.js"></script>
+   <script src="../javascripts/API/yuan.js"></script>
+   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+ 
+   <style>
+    table {
+    border-collapse: collapse;
+    width: 250px;
+    }
 
+    th, td {
+    padding: 8px;
+    text-align: left;
+    }
+
+    th {
+    background-color: #f2f2f2;
+    }
+
+    td.rate {
+    font-weight: bold;
+    }
+
+    .arrow-up {
+    color: #DF0101;
+    }
+
+    .arrow-down {
+    color: blue;
+    }
+    </style>
 </head>
 <body oncontextmenu="return false"> <!--우클릭 금지-->
     
@@ -198,52 +237,18 @@
             <div class="wt-box2 w260 fl mb45">
                 <h4>지수정보</h4>
                 <div class="wt_kospi">
-                    
-                    <div class="tac pt20 h172" style="padding-right: 13px; padding-left: 13px;">
 
-                        <div class="chart06-ctnr" style="height:200px;">
-
-
-
-                            <div id="chart_div" style="width: 200px;"></div>
-
-
-
-                            
-                            <div class="chart06-2" style="height:144px;"><div class="webponent-chart-chart06-2-container" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 142.4px; overflow: hidden;">
-                                
-
-                            <!-- <canvas class="webponent-chart-chart06-2_graph" width="230.4" height="142.4" style="width: 100%; height: 142.4px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2_vline" style="position: absolute; top: 0px; left: 51px; width: 1px; height: 142.4px; border-left: 1px solid rgb(0, 0, 0); display: none;"></div><div class="webponent-chart-chart06-2_hline" style="position: absolute; top: 101px; left: 0px; width: 230.4px; height: 1px; border-top: 1px solid rgb(0, 0, 0); display: none;"></div> -->
-                           
-                            <!-- <canvas class="webponent-chart-chart06-2_select" width="230.4" height="142.4" style="width: 100%; height: 142.4px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2-tooltip" style="position: absolute; border: 1px solid rgb(153, 153, 153); background-color: rgb(249, 249, 249); color: rgb(51, 51, 51); padding: 4px; font-size: 11px; white-space: nowrap; top: 44.2px; left: 58px; display: none;"><span>일자</span> : 12/29<br><span>지수</span> : 223,640.00<br></div> -->
-
-                        </div></div>
-                            
-                       
-
-
-                        
-                        </div>
-                    </div>
                     <div class="wt_kospi_list">
                         
-                        <ul class="indexgrp type02" data-bind="_this.withItem(jisuObject,false)^_this.replaceItem(r,r.code)" data-rowgroup="1">
-                            <li class="" onclick="changeJisu(0,this)" data-bindkeyvalue="001">
-                                <a href="#" title="KOSPI지수" class="goUp"><span class="index-tit">KOSPI</span><span class="index-sum" data-bind="K001[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">2,480.24</span><span class="index-arr" data-bind="checkUpDownJisu(K001[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K001[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.89</span></a>
-                            </li>
-                            <li onclick="changeJisu(1,this)" data-bindkeyvalue="201" class="">
-                                <a href="#" title="KOSDAQ지수" class="goUp"><span class="index-tit">KOSDAQ</span><span class="index-sum" data-bind="K201[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">816.75</span><span class="index-arr" data-bind="checkUpDownJisu(K201[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K201[&#39;PrdayCmp&#39;]" data-bind-bypass="true">2.22</span></a>
-                            </li>
-                            <li onclick="changeJisu(2,this)" data-bindkeyvalue="101" class="">
-                                <a href="#" title="KOSPI200지수" class="goUp"><span class="index-tit">KOSPI 200</span><span class="index-sum" data-bind="K101[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">325.31</span><span class="index-arr" data-bind="checkUpDownJisu(K101[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="K101[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.85</span></a>
-                            </li>
-                            <li onclick="changeJisu(3,this)" data-bindkeyvalue="DJI@DJI" class="">
-                                <a href="#" title="DOW지수" class="goUp"><span class="index-tit">DOW<span class="sub-txt11">(<span data-bind="DJI_DJI[&#39;ViewPoint&#39;]" data-bind-bypass="true">종가</span>)</span></span><span class="index-sum" data-bind="DJI_DJI[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">33,348.60</span><span class="index-arr" data-bind="checkUpDownJisu(DJI_DJI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="DJI_DJI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">47.98</span></a>
-                            </li>
-                            <li onclick="changeJisu(4,this)" data-bindkeyvalue="NAS@IXIC" class="on">
-                                <a href="#" title="NASDAQ지수" class="goUp"><span class="index-tit">NASDAQ<span class="sub-txt11">(<span data-bind="NAS_IXIC[&#39;ViewPoint&#39;]" data-bind-bypass="true">15분지연</span>)</span></span><span class="index-sum" data-bind="NAS_IXIC[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">12,365.21</span><span class="index-arr" data-bind="checkUpDownJisu(NAS_IXIC[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="NAS_IXIC[&#39;PrdayCmp&#39;]" data-bind-bypass="true">80.47</span></a>
-                            </li>
-                        </ul>
+                        <div id="container2" style="width: 240px; height: 240px;"></div>
+                        <table id="kospi-table">
+                        <tbody id="kospi-table-body"></tbody>
+                        <table id="kosdaq-table">
+                          <tbody id="kosdaq-table-body"></tbody>
+                          <table id="kospi200-table">
+                            <tbody id="kospi200-table-body"></tbody>
+                      </table>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -395,6 +400,186 @@ function drawBackgroundColor() {
 
     </script>
 
+
+<script>
+    $(document).ready(function() {
+  let name = "금융";
+
+  $.ajax({
+    type: "GET",
+    url:     "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
+    name,
+    data: {},
+    success: function (response) {
+      let kosdaq = response["response"]["body"]["items"]["item"];
+      let kosdaqTableBody = $("#kosdaq-table-body");
+
+      for (let i = 0; i < kosdaq.length; i++) {
+        let mise = kosdaq[i];
+        let kosdaq_title = mise["idxCsf"];
+        let kosdaq_jongga = mise["clpr"]; 
+        let kosdaq_rate = mise["vs"];
+
+   
+        let row = $("<tr></tr>");
+
+        let titleCell = $("<td></td>").text("KOSDAQ");
+        let jonggaCell = $("<td></td>").text(kosdaq_jongga);
+        let rateCell = $("<td></td>").text(kosdaq_rate).addClass("rate");
+
+   
+        if (kosdaq_rate > 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+        } else if (kosdaq_rate < 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+        }
+
+
+        row.append(titleCell, jonggaCell, rateCell);
+
+
+        kosdaqTableBody.append(row);
+      }
+    },
+  });
+});
+
+
+
+
+
+
+
+$(document).ready(function() {
+  let name2 = "금융업";
+
+  $.ajax({
+    type: "GET",
+    url:     "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
+    name2,
+    data: {},
+    success: function (response) {
+      let kospi = response["response"]["body"]["items"]["item"];
+      let kospiTableBody = $("#kospi-table-body");
+
+      for (let i = 0; i < kospi.length; i++) {
+        let mise = kospi[i];
+        let kospi_title = mise["idxCsf"];
+        let kospi_jongga = mise["clpr"]; 
+        let kospi_rate = mise["vs"];
+
+   
+        let row = $("<tr></tr>");
+
+        let titleCell = $("<td></td>").text("KOSPI");
+        let jonggaCell = $("<td></td>").text(kospi_jongga);
+        let rateCell = $("<td></td>").text(kospi_rate).addClass("rate");
+
+   
+        if (kospi_rate > 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+        } else if (kospi_rate < 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+        }
+
+
+        row.append(titleCell, jonggaCell, rateCell);
+
+
+        kospiTableBody.append(row);
+      }
+    },
+  });
+});
+
+
+
+
+
+$(document).ready(function() {
+  let name3 = "코스피 200 금융 레버리지지수";
+
+  $.ajax({
+    type: "GET",
+    url:     "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
+    name3,
+    data: {},
+    success: function (response) {
+      let kospi200 = response["response"]["body"]["items"]["item"];
+      let kospi200TableBody = $("#kospi200-table-body");
+
+      for (let i = 0; i < kospi200.length; i++) {
+        let kospi200mise = kospi200[i];
+        let kospi200title = kospi200mise["idxCsf"];
+        let kospi200jongga = kospi200mise["clpr"]; 
+        let kospi200rate = kospi200mise["vs"];
+
+   
+        let row = $("<tr></tr>");
+
+        let titleCell = $("<td></td>").text("KOSPI 200");
+        let jonggaCell = $("<td></td>").text(kospi200jongga);
+        let rateCell = $("<td></td>").text(kospi200rate).addClass("rate");
+
+   
+        if (kospi200rate > 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+        } else if (kospi200rate < 0) {
+          rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+        }
+
+
+        row.append(titleCell, jonggaCell, rateCell);
+
+
+        kospi200TableBody.append(row);
+      }
+    },
+  });
+});
+
+
+
+
+
+</script>
+
+<script type="text/javascript">
+  var dom = document.getElementById('container2');
+  var myChart = echarts.init(dom, null, {
+    renderer: 'canvas',
+    useDirtyRect: false
+  });
+  var app = {};
+  
+  var option;
+
+  option = {
+xAxis: {
+  type: 'category',
+  data: ['5/30','5/29','5/28','5/27','5/26','5/25','5/24','5/23','5/22','5/21','5/20','5/19','5/18','5/17','5/16']
+},
+yAxis: {
+  type: 'value',
+  min: 1230000,
+  max: 1310000
+},
+series: [
+{
+      data: [1234305, 1250057, 1268884, 1265790, 1265790, 1265790, 1272078, 1256025, 1248416, 1269809, 1297569, 1297569, 1297569, 1297569, 1301743 ],
+      type: 'line',
+      lineStyle: {color: '#DF0101'},
+      color:'#DF0101'
+    }
+]
+};
+
+  if (option && typeof option === 'object') {
+    myChart.setOption(option);
+  }
+
+  window.addEventListener('resize', myChart.resize);
+</script>
 
 </body> <!--footer 사이에 공간 만들기-->
 <footer>
