@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)https://www.hanaw.com/main/wts/main/index.cmd -->
 <html lang="ko" class="windows chrome chrome113 mordern-browser">
-  <head>
+  <head>    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="증권, 주식거래, 금융상품, 재테크 및 투자, 자산관리 정보, 주식시세 ">
     <meta name="keywords" content="증권, 주식, 증권, 인터넷뱅킹, 트레이딩, 주식시세, 주문, 자산관리, 코스피, 코스닥, 해외주식, 금융상품, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, 재테크, 리서치, HTS, 실전투자대회">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="robots" content="noarchive">
     <meta name="Location" content="South Korea">
     <meta name="Distribution" content="global">
-    <meta name="author" content="Hana Financial Investment Co.,Ltd.">
     <meta name="viewport" content="width=1024">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.hanaw.com/common/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/jquery-ui-1.10.2.custom.css">
-    <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/transkey.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/common.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/common.pc.css">
-    <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/grid.base.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/grid.pc.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/number-input.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/number-input.pc.css">
@@ -36,7 +29,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/hanaw.wt.css">
     <link rel="stylesheet" type="text/css" href="./주식파생상품 _ 하나증권_files/chart.skin1.css">
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  
+</head>
 
 <body>
 <div class="wrap templetWrap">
@@ -75,6 +70,9 @@
             <dt>지수정보<span></span></dt>
             <dd class="tac pt20 h172">
             <div class="chart06-ctnr" style="height:144px;">
+
+                <div id="chart_div" style="width: 200px;"></div>
+
                 <div class="chart06-2" style="height:144px;"><div class="webponent-chart-chart06-2-container" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 141.6px; overflow: hidden;"><canvas class="webponent-chart-chart06-2_graph" width="223.6" height="141.6" style="width: 100%; height: 141.6px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2_vline" style="position: absolute; top: 0px; left: 1px; width: 1px; height: 141.6px; border-left: 1px solid rgb(0, 0, 0); display: none;"></div><div class="webponent-chart-chart06-2_hline" style="position: absolute; top: 0px; left: 0px; width: 223.6px; height: 1px; border-top: 1px solid rgb(0, 0, 0); display: none;"></div><canvas class="webponent-chart-chart06-2_select" width="223.6" height="141.6" style="width: 100%; height: 141.6px; position: absolute; left: 0px; top: 0px; display: inherit;"></canvas><div class="webponent-chart-chart06-2-tooltip" style="position: absolute; border: 1px solid rgb(153, 153, 153); background-color: rgb(249, 249, 249); color: rgb(51, 51, 51); padding: 4px; font-size: 11px; white-space: nowrap; display: none;"></div></div></div>
             </div>
             </dd>
@@ -84,13 +82,13 @@
                     <li class="on" onclick="changeJisu(0,this)" data-bindkeyvalue="001">
                         <a title="KOSPI지수" class="goDown"><span class="index-tit">KOSPI</span><span class="index-sum" data-bind="K001[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">2,491.00</span><span class="index-arr" data-bind="checkUpDownJisu(K001[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="K001[&#39;PrdayCmp&#39;]" data-bind-bypass="true">5.51</span></a>
                     </li>
-                    <li onclick="changeJisu(1,this)" data-bindkeyvalue="201" class="">
+                    <li data-bindkeyvalue="201" class="">
                         <a title="KOSDAQ지수" class="goDown"><span class="index-tit">KOSDAQ</span><span class="index-sum" data-bind="K201[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">824.54</span><span class="index-arr" data-bind="checkUpDownJisu(K201[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="K201[&#39;PrdayCmp&#39;]" data-bind-bypass="true">5.20</span></a>
                     </li>
-                    <li onclick="changeJisu(2,this)" data-bindkeyvalue="101" class="">
+                    <li data-bindkeyvalue="101" class="">
                         <a title="KOSPI200지수" class="goDown"><span class="index-tit">KOSPI 200</span><span class="index-sum" data-bind="K101[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">325.28</span><span class="index-arr" data-bind="checkUpDownJisu(K101[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="K101[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.76</span></a>
                     </li>
-                    <li onclick="changeJisu(3,this)" data-bindkeyvalue="DJI@DJI" class="">
+                    <li data-bindkeyvalue="DJI@DJI" class="">
                         <a title="DOW지수" class="goDown"><span class="index-tit">DOW<span class="sub-txt11">(<span data-bind="DJI_DJI[&#39;ViewPoint&#39;]" data-bind-bypass="true">종가</span>)</span></span><span class="index-sum" data-bind="DJI_DJI[&#39;NowPrc&#39;]^NowPrc" data-bindrcvxprss="NowPrc" data-bind-bypass="true">33,531.33</span><span class="index-arr" data-bind="checkUpDownJisu(DJI_DJI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="DJI_DJI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">30.48</span></a>
                     </li>
                     <li onclick="changeJisu(4,this)" data-bindkeyvalue="NAS@IXIC" class="">
@@ -149,7 +147,7 @@
                         <dd>전세계 해외선물거래소에 상장된<br>
                             상품을 24시간 거래</dd>
                         <dd class="mt10">
-                            <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/wts/foreign/WT_060102_P.htm" title="해외선물">바로가기<span></span></a>
+                            <a class="btn btn-default min arr1" title="해외선물">바로가기<span></span></a>
                         </dd>
                     </dl>
                 </li>
@@ -160,7 +158,7 @@
                         <dd>해외주식 해외ETF로 세계 주가지수, <br>
                             원자재, 레버리지/인버스 투자 가능 </dd>
                         <dd class="mt10">
-                            <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/wts/foreign/WT_210100_P.cmd?tabIndex=0" title="해외주식 상품 안내">바로가기<span></span></a>
+                            <a class="btn btn-default min arr1" title="해외주식 상품 안내">바로가기<span></span></a>
                         </dd>
                     </dl>
                 </li>
@@ -169,7 +167,7 @@
                     <dl>
                         <dt>해외상품 투자 정보</dt>
                         <dd class="mt10">
-                            <a class="btn btn-default min arr1" href="https://www.hanaw.com/corebbs5/tradingInvstInfo/list/list.cmd" title="해외상품 투자 정보">바로가기<span></span></a>
+                            <a class="btn btn-default min arr1"  title="해외상품 투자 정보">바로가기<span></span></a>
                         </dd>
                     </dl>
                 </li>
@@ -185,7 +183,7 @@
                         <dd>10%의 증거금만으로 개인들도 <br>
                             외환거래 가능한 상품 </dd>
                         <dd class="mt10 ">
-                            <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/wts/foreign/WT_060302_P.htm" title="FX마진">바로가기<span></span></a>
+                            <a class="btn btn-default min arr1" title="FX마진">바로가기<span></span></a>
                         </dd>
                     </dl>
                 </li>
@@ -202,7 +200,7 @@
                     <dl>
                         <dt>국내선물안내</dt>
                         <dd class="mt10">
-                            <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/wts/foreign/WT_060204_P.htm" title="국내선물안내">바로가기<span></span></a>
+                            <a class="btn btn-default min arr1" title="국내선물안내">바로가기<span></span></a>
                         </dd>
                     </dl>
                 </li>
@@ -214,19 +212,19 @@
                 <h4>뉴스/시황<a href="" class="more" title="뉴스/시황 더보기"></a></h4>
                 <ul class="submainBoardList mw500">
                     <li class="isNew">
-                        <a title="삼성증권 1분기 영업이익 3천416억원…작년 동기 대비 61%↑(종합)" onclick="openNewsLayer(this,&#39;2023051116411201751011&#39;,&#39;2023-05-11&#39;,&#39;16:41&#39;);">삼성증권 1분기 영업이익 3천416억원…작년 동기 대비 61%↑(종합)</a><div class="icon-new"><span>new</span></div>
+                        <a title="삼성증권 1분기 영업이익 3천416억원…작년 동기 대비 61%↑(종합)" >삼성증권 1분기 영업이익 3천416억원…작년 동기 대비 61%↑(종합)</a><div class="icon-new"><span>new</span></div>
                         <span class="date">2023-05-11</span>
                     </li><li class="isNew">
-                        <a title="오픈엣지테크놀로지, 임원ㆍ주요주주 특정증권등 소유주식수 변동" onclick="openNewsLayer(this,&#39;2023051116410016125121&#39;,&#39;2023-05-11&#39;,&#39;16:41&#39;);">오픈엣지테크놀로지, 임원ㆍ주요주주 특정증권등 소유주식수 변동</a><div class="icon-new"><span>new</span></div>
+                        <a title="오픈엣지테크놀로지, 임원ㆍ주요주주 특정증권등 소유주식수 변동" >오픈엣지테크놀로지, 임원ㆍ주요주주 특정증권등 소유주식수 변동</a><div class="icon-new"><span>new</span></div>
                         <span class="date">2023-05-11</span>
                     </li><li class="isNew">
-                        <a title="염재호 태재대 총장 " 복합적="" 문제="" 해결할="" 인재="" 육성···대학교육="" 바꿀="" 척후병="" 되겠다""="" onclick="openNewsLayer(this,&#39;2023051116405641433034&#39;,&#39;2023-05-11&#39;,&#39;16:40&#39;);">염재호 태재대 총장 "복합적 문제 해결할 인재 육성···대학교육 바꿀 척후병 되겠다"</a><div class="icon-new"><span>new</span></div>
+                        <a title="염재호 태재대 총장 " 복합적="" 문제="" 해결할="" 인재="" 육성···대학교육="" 바꿀="" 척후병="" 되겠다""="" ">염재호 태재대 총장 "복합적 문제 해결할 인재 육성···대학교육 바꿀 척후병 되겠다"</a><div class="icon-new"><span>new</span></div>
                         <span class="date">2023-05-11</span>
                     </li><li class="isNew">
-                        <a title="김승호 인사처장 " 교정직="" 공무원,="" 교대근무자="" 애로="" 이해"…="" 현장="" 공무원="" 의견청취="" 나서"="" onclick="openNewsLayer(this,&#39;2023051116405516410513&#39;,&#39;2023-05-11&#39;,&#39;16:40&#39;);">김승호 인사처장 "교정직 공무원, 교대근무자 애로 이해"… 현장 공무원 의견청취 나서</a><div class="icon-new"><span>new</span></div>
+                        <a title="김승호 인사처장 " 교정직="" 공무원,="" 교대근무자="" 애로="" 이해"…="" 현장="" 공무원="" 의견청취="" 나서"="" >김승호 인사처장 "교정직 공무원, 교대근무자 애로 이해"… 현장 공무원 의견청취 나서</a><div class="icon-new"><span>new</span></div>
                         <span class="date">2023-05-11</span>
                     </li><li class="isNew">
-                        <a title="한일, 내일 서울서 &#39;오염수 시찰단 논의&#39; 국장급 회의(종합)" onclick="openNewsLayer(this,&#39;2023051116405208751011&#39;,&#39;2023-05-11&#39;,&#39;16:40&#39;);">한일, 내일 서울서 '오염수 시찰단 논의' 국장급 회의(종합)</a><div class="icon-new"><span>new</span></div>
+                        <a title="한일, 내일 서울서 &#39;오염수 시찰단 논의&#39; 국장급 회의(종합)">한일, 내일 서울서 '오염수 시찰단 논의' 국장급 회의(종합)</a><div class="icon-new"><span>new</span></div>
                         <span class="date">2023-05-11</span>
                     </li></ul>     
             </div>
@@ -238,7 +236,7 @@
                             <li><img src="./주식파생상품 _ 하나증권_files/img_sm07.gif" alt=""></li>
                             <li>1Q HTS<br>다운로드</li>
                             <li>
-                                <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/customer/customer/CS_050100_M.cmd" title="1Q HTS 다운로드">바로가기<span></span></a>
+                                <a class="btn btn-default min arr1" title="1Q HTS 다운로드">바로가기<span></span></a>
                             </li>
                         </ul>
                     </li>
@@ -247,7 +245,7 @@
                             <li><img src="./주식파생상품 _ 하나증권_files/img_sm08.gif" alt="하나원큐 프로"></li>
                             <li>하나원큐 프로<br>안내</li>
                             <li>
-                                <a class="btn btn-default min arr1" href="https://www.hanaw.com/main/customer/customer/CS_050200_M.cmd" title="하나원큐프로 안내">바로가기<span></span></a>
+                                <a class="btn btn-default min arr1" title="하나원큐프로 안내">바로가기<span></span></a>
                             </li>
                         </ul>
                     </li>
