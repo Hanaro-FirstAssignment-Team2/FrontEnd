@@ -59,6 +59,8 @@
     />
     <script src="../javascripts/jquery.js" charset="utf-8"></script>
     <script src="../javascripts/나의자산/tab.js" charset="utf-8"></script>
+    
+    
 
 
     <title>나의 자산 : 하나증권</title>
@@ -146,6 +148,7 @@
               </ul>
             </div>
 
+
             <div class="fl ml10">
                 <div class="sm-list">
                     <div class="mb30">
@@ -156,39 +159,254 @@
                                   <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
                                   <!-- </canvas> -->
 
-                                  <img class="center" style="margin-left: -25px;" width=250px height=250px src="../images/나의자산/graph_img.png" alt="home">
+                                  <!-- <img class="center" style="margin-left: -25px;" width=250px height=250px src="../images/나의자산/graph_img.png" alt="home"> -->
+                                  <canvas width="400" height="400" id="canvas" style="margin-left:-115px;margin-top:-85px;"></canvas>
+                                  
+                                  <script>    
+                                    const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+       
+        var width = canvas.clientWidth;
+        var height = canvas.clientHeight;
+    
+        var value = [
+            {number : 80, text : '주식(%)'},
+            {number : 10, text : '펀드/RP(%)'},
+            {number : 10, text : '연금저축(%)'},
+            
+        ];
+        var degree = 360;
+        var radius = width * 0.7 / 2;  //반지름 동적 부여
+    
+        if(radius > height * 0.7 / 2){  //캔버스의 넓이와 높이를 고려하여 최소크기 적용
+            radius = height * 0.7 / 2;
+        }
+    
+        const colorArray = ['#eb7b72', '#70aaef', '#fcb362', '#c4c24a','#949fb0'];  //색깔배열(지금은 6개..)
+    
+        var sum = 0;
+        value.forEach( arg=> sum+= arg.number);
+    
+        var conv_array = value.slice().map((data)=>{  //각도가 들어있는 배열
+            var rate = data.number / sum;
+            var myDegree = degree * rate;
+            return myDegree;
+        });
+    
+        degree = 0;
+        var event_array = value.slice().map( arg=> []);  //이벤트(각도 범위가 있는)용 배열
+    
+    
+        var current = -1;  //현재 동작중 인덱스
+        var zero = 0;   //각(degree)에 대해서 증가하는 값
+    
+        //최초 로딩 이벤트(값 1개씩 점차 증가하며 그리는함수)   -> 계속해서 덮어씌우기를 하므로 가운데가 깔끔하지 않다.(나중에 수정하여보자.)
+        var clr = setInterval(() => {
+            for(var i=0;i < conv_array.length;i++){
+                var item = conv_array[i];
+                if(current == -1|| current == i){
+                    current = i;
+                    if(zero < item){ //비교
+                        if(i == 0){
+                            arcMaker(radius, 0, zero, colorArray[i]);
+                        } else {
+                            arcMaker(radius, degree, degree+zero, colorArray[i]);
+                        }
+                        zero+=3;             
+                    } else {
+                        current = i+1;
+                        zero = 0;
+                        if(i != 0){
+                            arcMaker(radius, degree, degree + item, colorArray[i]);
+                            event_array[i] = [degree, degree+item];
+                            degree =  degree + item;     
+                        } else {
+                            arcMaker(radius, 0, item, colorArray[i]);
+                            degree = item;
+                            event_array[i] = [0, degree];
+                        }
+                    }                               
+                } else if (current == conv_array.length){
+                    clearInterval(clr);
+                    makeText(-1);
+                } 
+            }
+        }, 1);
+    
+        //그리는 기능 분리(같은 내용이 계속 나오므로 분리)
+        function arcMaker(radius, begin, end, color){
+            ctx.save();
+            ctx.lineJoin = 'round'; //선이만나 꺾이는 부분때문에 부여(삐져나오는 현상 방지)
+            ctx.lineWidth = 4; 
+            ctx.beginPath();
+            ctx.moveTo(width/2, height/2);                           
+            ctx.arc(width/2, height/2, radius, (Math.PI/180)*begin, (Math.PI/180)* end , false);
+            ctx.closePath();
+            ctx.fillStyle = color;
+            ctx.strokeStyle = 'white';
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore();        
+            middelMaker();  //가운데 원형그리기 함수 추가
+        }
+    
+        // //마우스 움직임 이벤트 리스너
+        // var drawed = false;
+        // canvas.addEventListener('mousemove', function (event) {
+        //     var x1 = event.clientX - canvas.offsetLeft;
+        //     var y1 = event.clientY - canvas.offsetTop;
+        //     var inn = isInsideArc(x1, y1);
+        //     if(inn.index > -1){  //대상이 맞으면
+        //         drawed = true;
+        //         hoverCanvas(inn.index);
+        //         makeText(inn.index);
+        //     } else {  //대상이 아니면
+        //         if(drawed){  //대상이였다가 대상이 이제 아니면
+        //             hoverCanvas(-1);
+        //             makeText(-1);
+        //         }
+        //         drawed = false;
+        //     }
+        // }); 
+    
+        //내부 + 범위에 들어온지 확인하는 함수
+        function isInsideArc(x1, y1){
+            var result1 = false;
+            var result2 = false;
+            var index = -1;
+            var circle_len = radius;
+            var x = width/2 - x1;
+            var y = height/2 - y1;
+            var my_len = Math.sqrt(Math.abs(x * x) + Math.abs(y * y));  //삼각함수
+            if(circle_len >= my_len){
+                result1 = true;
+            }            
+            var rad = Math.atan2(y, x);
+            rad = (rad*180)/Math.PI;  //음수가 나온다
+            rad += 180;  //캔버스의 각도로 변경
+            if(result1){
+                event_array.forEach( (arr,idx) => {   //각도 범위에 해당하는지 확인
+                    if( rad >= arr[0] && rad <= arr[1]){
+                        result2 = true;
+                        index = idx;
+                    }
+                });
+            }
+            return {result1:result1, result2:result2 ,index:index, degree : rad};
+        }
+    
+        
+        //마우스 오버효과
+        function hoverCanvas(index){
+            ctx.clearRect(0,0,width, height);
+            for (var i = 0; i < conv_array.length; i++) {
+                var item = conv_array[i];
+                var innRadius = radius;
+                if(index == i){  
+                    innRadius = radius * 1.1;  //대상이 맞으면 1.1배 크게 키운다.
+                }
+                if (i == 0) {
+                    arcMaker(innRadius, 0, item, colorArray[i])
+                    degree = item;
+                } else {
+                    arcMaker(innRadius, degree, degree + item, colorArray[i])
+                    degree = degree + item;
+                }
+            }
+        }
+    
+    
+        //도(degree)를 라디안(radian)으로 바꾸는 함수
+        function degreesToRadians(degrees) {
+            const pi = Math.PI;
+            return degrees * (pi / 180);
+        }
+    
+        //텍스트함수
+        function makeText(index){
+            event_array.forEach((itm, idx) => {
+                var half = (itm[1] - itm[0]) / 2;
+                var degg = itm[0] + half;
+                var xx = Math.cos(degreesToRadians(degg)) * radius * 0.7 + width / 2;
+                var yy = Math.sin(degreesToRadians(degg)) * radius * 0.7 + height / 2;
+    
+                var txt = value[idx].text + '';
+                var minus = ctx.measureText(txt).width / 2;  //텍스트 절반길이
+                ctx.save();
+                if(index == idx){
+                    ctx.font = "normal bold 18px sans-serif";
+                    ctx.fillStyle = 'blue';
+                } else {
+                    ctx.font = "normal 14px sans-serif";
+                    ctx.fillStyle = 'white';
+                }
+                ctx.fillText(txt, xx - minus, yy);
+                var txt2 = value[idx].number;
+                ctx.fillText(txt2, xx - ctx.measureText(txt2).width / 3, yy + 16);
+                ctx.restore();
+            });
+        }
+    
+        //중앙 구멍(원)을 만드는 함수
+        function middelMaker(){
+            ctx.save();
+            ctx.fillStyle='white';
+            ctx.strokeStyle='white';
+            ctx.lineJoin = 'round'; //선이만나 꺾이는 부분때문에 부여(삐져나오는 현상 방지)
+            ctx.lineWidth = 1; 
+            ctx.beginPath();
+            ctx.moveTo(width/2, height/2);
+            ctx.arc(width/2, height/2, radius/3, (Math.PI/180)*0, (Math.PI/180)* 360 , false);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            ctx.restore();
+    
+            var total = 0;
+            value.forEach( (arg)=> total+=arg.number);
+            var minus = ctx.measureText(total).width; 
+            ctx.save();
+            ctx.font = "normal 20px sans-serif";
+            ctx.fillStyle = '#656565';
+            ctx.fillText("Total", width/2 - ctx.measureText("Total").width/2, height/2);
+            ctx.fillText(total, width/2 - minus, height/2 * 1.1);
+            ctx.restore();
+        }
+                              </script>
+
 
                                   <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                                   </div>
                                 </div>
                                 
                                 <ul class="graph_explain" style="margin-top: 30px;">
-                                  <li><span class="b">A</span> : 펀드/RP</li> 
-                                  <li><span class="b">B</span> : 주식</li> 
-                                  <li><span class="b">C</span> : ELS/DLS</li> 
-                                  <li><span class="b">D</span> : 선물/옵션</li> 
-                                  <li><span class="b">E</span> : CMA</li> 
-                                  <li><span class="b">F</span> : 연금저축</li> 
-                                  <li><span class="b">G</span> : 국내채권</li> 
-                                  <li><span class="b">H</span> : 해외선물/옵션</li> 
-                                  <li><span class="b">I</span> : FX마진</li> 
-                                  <li><span class="b">J</span> : 해외주식</li> 
-                                  <li><span class="b">K</span> : 랩어카운트</li> 
-                                  <li><span class="b">L</span> : 신탁</li>
-                                  <li><span class="b">M</span> : 현금예수금</li> 
-                                  <li><span class="b">N</span> : 금현물</li>
+
+                                  <li><span class="b" style="color:#70aaef">A</span> : 펀드/RP</li> 
+                                  <li><span class="b" style="color:#eb7b72">B</span> : 주식</li> 
+                                  <li><span class="b" style="color:#164388">C</span> : ELS/DLS</li> 
+                                  <li><span class="b" style="color:#c4c24a">D</span> : 선물/옵션</li> 
+                                  <li><span class="b" style="color: #8196ff">E</span> : CMA</li> 
+                                  <li><span class="b" style="color:#fcb362">F</span> : 연금저축</li> 
+                                  <li><span class="b" style="color:#F2624C" >G</span> : 국내채권</li> 
+                                  <li><span class="b" style="color: #97ce17">H</span> : 해외선물/옵션</li> 
+                                  <li><span class="b" style="color: #52798a">I</span> : FX마진</li> 
+                                  <li><span class="b" style="color: #52bc6b">J</span> : 해외주식</li> 
+                                  <li><span class="b" style="color: #4badd7">K</span> : 랩어카운트</li> 
+                                  <li><span class="b" style="color: #dc53cf">L</span> : 신탁</li>
+                                  <li><span class="b" style="color: #9762eb">M</span> : 현금예수금</li> 
+                                  <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
                                 </ul> 
                             </div>
                             <div class="fl graph_txt" id="AcntSummary2">
                                 <div class="total">합계 
                                   <span class="fr">
                                     <strong class="txtpoint txtbasic" id="AcntTotal" style="color: #2daca1;
-                                    ">0</strong> 원
+                                    ">125,800</strong> 원
                                   </span>
                                 </div>
                                 <ul id="AcntSummary2">
-                                    <li>연금상품<span><strong class="num">0</strong>원</span></li>
-                                    <li>신용/대출 <span><strong class="num">0</strong>원</span></li>
+                                    <li>연금상품<span><strong class="num">10,800</strong>원</span></li>
+                                    <li>신용/대출 <span><strong class="num">25,000</strong>원</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -265,27 +483,37 @@
                     <div class="asset2">
                       <div class="graph2 fl">
                           <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
-                          <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img.png" alt="home">
+                            <!-- <canvas width="230" height="230" id="canvas2" style="margin-left:-115px;margin-top:-85px;"></canvas> -->
+
+                            <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img2.png" alt="home">
                             <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
-                          </canvas>
+                          <!-- </canvas> -->
+                          
+
+
+
                           <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                           </div>
                         </div>
                       <ul class="graph_explain2">
-                        <li><span class="b">A</span> : 펀드/RP</li> 
-                        <li><span class="b">B</span> : 주식</li> 
-                        <li><span class="b">C</span> : ELS/DLS</li> 
-                        <li><span class="b">D</span> : 선물/옵션</li> 
-                        <li><span class="b">E</span> : CMA</li> 
-                        <li><span class="b">F</span> : 연금저축</li> 
-                        <li><span class="b">G</span> : 국내채권</li> 
-                        <li><span class="b">H</span> : 해외선물/옵션</li> 
-                        <li><span class="b">I</span> : FX마진</li> 
-                        <li><span class="b">J</span> : 해외주식</li> 
-                        <li><span class="b">K</span> : 랩어카운트</li> 
-                        <li><span class="b">L</span> : 신탁</li>
-                        <li><span class="b">M</span> : 현금예수금</li> 
-                        <li><span class="b">N</span> : 금현물</li>
+                        <li><span class="b" style="color:#eb7b72">A</span> : 펀드/RP</li> 
+                        <li><span class="b" style="color:#70aaef">B</span> : 주식</li> 
+                        <li><span class="b" style="color:#fcb362">C</span> : ELS/DLS</li> 
+                        <li><span class="b" style="color:#c4c24a">D</span> : 선물/옵션</li> 
+                        <li><span class="b" style="color:#164388">E</span> : CMA</li> 
+                        <li><span class="b" style="color: #6662CB">F</span> : 연금저축</li> 
+                        <li><span class="b" style="color: #52798a">G</span> : 국내채권</li> 
+                        <li><span class="b" style="color: #F7C53E">H</span> : 해외선물/옵션</li> 
+                        <li><span class="b" style="color: #8196ff">I</span> : FX마진</li> 
+                        <li><span class="b" style="color: #e12828">J</span> : 해외주식</li> 
+                        <li><span class="b" style="color: #3ae5a7">K</span> : 랩어카운트</li> 
+                        <li><span class="b" style="color:#dd64b4">L</span> : 신탁</li>
+                        <li><span class="b" style="color:#845858">M</span> : 현금예수금</li> 
+                        <li><span class="b" style="color:#F2624C">N</span> : 금현물</li>
+
+
+
+
                       </ul> 
                     </div>
                     <div class="graph3 fl mt15 ml30 ">
@@ -804,283 +1032,6 @@
       </div>
       
       </div>
-      
-        <!-- <script
-          type="text/javascript"
-          src="../javascripts/나의자산/chart.skin1.js"
-        ></script>
-        <script type="text/javascript">
-          (function () {
-            var $toDay = $("#toDay");
-            var PieChart = null; //파이차트
-            var $AcntTotal = $("#AcntTotal");
-            var $AcntSummary2 = $("#AcntSummary2").find(".num");
-            var $PieChartArea = $("#PieChartArea");
-
-            //오늘날짜 셋팅
-            var txt = ci.util.formatDate(
-              ci.util.getTodayString("").substring(0, 8)
-            );
-            $toDay.html(txt);
-
-            //챠트및 종합자산
-            var input = new DataSet();
-            xSubmitAjax(null, {
-              url: "/main/bank/asset/OB_010101_PieChart.cmd",
-              data: input.getParam(),
-              dataType: "json",
-              success: function (data) {
-                var data = data.output;
-                if (data == null) {
-                  return;
-                }
-
-                $AcntSummary2.eq(0).prepend(data.b_pens_fund_evlt_amt); // 연금상품
-                // $AcntSummary2.eq(1).prepend(data.b_bd_evlt_amt);        // 채권/CP
-                // $AcntSummary2.eq(2).prepend(data.b_wrap_evlt_amt);      // 랩어카운트
-                $AcntSummary2.eq(1).prepend(data.b_crd_evlt_amt); // 신용/대출
-
-                //토탈값 서버에서 내려줌
-                $AcntTotal.prepend(data.b_total_evlt_amt);
-
-                try {
-                  //data.b_stk_evlt_amt //주식
-                  PieChart.inquery(null, null);
-                } catch (e) {
-                  var options = {
-                    data: [
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_fund_evlt_bi)
-                        ),
-                        legend: "A",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_stk_evlt_bi)
-                        ),
-                        legend: "B",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.DRV_BIND_PRDT_EVL_SFGV)
-                        ),
-                        legend: "C",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_future_evlt_bi)
-                        ),
-                        legend: "D",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_cma_evlt_bi)
-                        ),
-                        legend: "E",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_pens_evlt_bi)
-                        ),
-                        legend: "F",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_bd_evlt_bi)
-                        ),
-                        legend: "G",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_fx_futr_evlt_bi)
-                        ),
-                        legend: "H",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_fx_evlt_bi)
-                        ),
-                        legend: "I",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_fs_evlt_bi)
-                        ),
-                        legend: "J",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.WRAP_EVL_SFGV)
-                        ),
-                        legend: "K",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.b_shintak_evlt_bi)
-                        ),
-                        legend: "L",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.DACA_EVL_SFGV)
-                        ),
-                        legend: "M",
-                      },
-                      {
-                        pdata: parseFloat(
-                          ci.util.removeCommas(data.GSPT_EVL_SFGV)
-                        ),
-                        legend: "N",
-                      },
-                    ],
-                    use: "pdata",
-                    datatype: "json",
-                    legend: [
-                      "A",
-                      "B",
-                      "C",
-                      "D",
-                      "E",
-                      "F",
-                      "G",
-                      "H",
-                      "I",
-                      "J",
-                      "K",
-                      "L",
-                      "M",
-                      "N",
-                    ],
-                    legendfunc: function (legend, dataValue, rate) {
-                      var str = legend + "(" + dataValue + "%)";
-                      return str;
-                    },
-                    mousemove: function (dataValue, rate, _this, div) {
-                      div.css({
-                        border: "1px solid #989186",
-                        background: "#fff",
-                        padding: "3px",
-                        color: "#333333",
-                      });
-                      div.text(
-                        dataValue.legend + " : " + dataValue.pdata + "%"
-                      );
-                    },
-                  };
-
-                  var styles = {
-                    usepattern: true,
-                    patternurl: "/WEB-APP/webponent/chart/img/",
-                    patternstyle: [
-                      "pie01",
-                      "pie02",
-                      "pie03",
-                      "pie04",
-                      "pie05",
-                      "pie06",
-                      "pie07",
-                      "pie08",
-                      "pie09",
-                      "pie10",
-                      "pie11",
-                      "pie12",
-                      "pie13",
-                      "pie14",
-                    ],
-                    patternextension: ".png",
-                    strokecolor: [
-                      "rgba(255,255,255,0)",
-                      "rgba(255,255,255,0)",
-                      "rgba(255,255,255,0)",
-                      "rgba(255,255,255,0)",
-                    ],
-                    instrokecolor: "rgba(255,255,255,0)",
-                    fillstyle: [
-                      ["#FFD810", "#FFD810"],
-                      ["#A4CB48", "#A4CB48"],
-                      ["#35AF83", "#35AF83"],
-                      ["#F45D75", "#F45D75"],
-                      ["#F4A234", "#F4A234"],
-                      ["#EF4731", "#EF4731"],
-                      ["#575757", "#575757"],
-                      ["#6662CB", "#6662CB"],
-                      ["#5EB9E1", "#5EB9E1"],
-                      ["#F7C53E", "#F7C53E"],
-                      ["#049A7C", "#049A7C"],
-                      ["#808186", "#808186"],
-                      ["#F2624C", "#F2624C"],
-                      ["#e12828", "#e12828"],
-                    ],
-                    tiptargetbg: "#2f3242",
-                    tipfontcolor: "red",
-                    tipborder: "1px solid #333333",
-                    fontheight: 9,
-                    legendline: 10,
-                    sticktype: "lollipop",
-                    lollipopsize: 2.5,
-                    lollipopcolor: "#555555",
-                    lollipopfont: "bold 11px dotum",
-                    radius: 31,
-                    coverimage:
-                      "/WEB-APP/webponent/chart/img/pie_coverimage131.png",
-                  };
-
-                  PieChart = $.createChart().pie.init(
-                    $PieChartArea,
-                    null,
-                    options,
-                    styles
-                  );
-                }
-              },
-            });
-
-            //$("#L1").on("click", function(){ location.href="/main/bank/personalMng/OB_020101.cmd" }); //설정
-            $("#L2").on("click", function () {
-              location.href = "/main/bank/asset/OB_010101_M.cmd";
-            }); //나의자산종합
-            //$("#L3").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=1" }); //나의메모
-            //$("#L4").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=2" }); //계좌
-            //$("#L5").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=3" }); //금융상품
-
-            //$("#ICON1").on("click", function(){ location.href="/main/bank/asset/OB_010101_M.cmd" }); //종합잔고조회
-            //$("#ICON2").on("click", function(){ location.href="/main/bank/transfer/OB_030101_S1.cmd" }); //즉시이체
-            //$("#ICON3").on("click", function(){ location.href="/main/bank/transfer/OB_030401_S1.cmd" }); //예약이체
-            //$("#ICON4").on("click", function(){ location.href="/main/bank/online/giro/OB_041303.cmd" }); //일반지로납부
-            //$("#ICON5").on("click", function(){ location.href="/main/bank/credit/OB_050201.cmd" }); //신용/대출신청
-            //$("#ICON6").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=0" }); //자산관리 캘린더
-
-            //$("#ICON1").on("click", function(){ location.href="/main/bank/asset/OB_010202.cmd?gubun=0" }); //자산관리캘린더
-            $("#ICON2").on("click", function () {
-              location.href = "/main/bank/asset/OB_010101_M.cmd";
-            }); //종합잔고조회
-            $("#ICON3").on("click", function () {
-              location.href = "/main/bank/transfer/OB_030101_S1.cmd";
-            }); //즉시이체
-            $("#ICON4").on("click", function () {
-              location.href = "/main/bank/personalMng/OB_020101.cmd";
-            }); //개인정보관리
-            $("#ICON5").on("click", function () {
-              location.href = "/main/bank/credit/OB_050201_T1.cmd";
-            }); //신용대출신청
-
-            $("#ICON6").on("click", function () {
-              location.href = "/main/bank/subscription/OB_060301.cmd";
-            }); //공모주청약
-
-            init = function () {
-              $.ajax({
-                url: "OB_000000_M_D1.cmd",
-                dataType: "json",
-              }).success(function (data) {
-                $("#alertList").empty();
-                $("#alertList").append(data.CONTENT_BODY);
-              });
-            };
-            init();
-          })();
-        </script> -->
 
     </div>
   </body>
