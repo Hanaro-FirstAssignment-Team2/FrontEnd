@@ -56,6 +56,7 @@
       type="text/css"
       href="../styles/나의자산/tabproduct.css"
     />
+
     <script src="../javascripts/jquery.js" charset="utf-8"></script>
     <script src="../javascripts/나의자산/tab.js" charset="utf-8"></script>
     
@@ -186,9 +187,11 @@
                                     var height = canvas.clientHeight;
                                 
                                     var value = [
-                                        {number : 80, text : '주식(%)'},
-                                        {number : 10, text : '펀드/RP(%)'},
-                                        {number : 10, text : '연금저축(%)'},
+                                        {number : 17, text : '펀드/RP'},
+                                        {number : 15, text : '주식'},
+                                        {number : 38, text : '연금저축'},
+                                        {number : 25, text : 'CMA'},
+                                        {number : 5, text : '해외주식'},
                                         
                                     ];
                                     var degree = 360;
@@ -198,7 +201,7 @@
                                         radius = height * 0.7 / 2;
                                     }
                                 
-                                    const colorArray = ['#eb7b72', '#70aaef', '#fcb362', '#c4c24a','#949fb0'];  //색깔배열(지금은 6개..)
+                                    const colorArray = ['#70aaef','#eb7b72', '#fcb362', '#8196ff','#52bc6b'];  //색깔배열(지금은 6개..)
                                 
                                     var sum = 0;
                                     value.forEach( arg=> sum+= arg.number);
@@ -253,7 +256,7 @@
                                     function arcMaker(radius, begin, end, color){
                                         ctx.save();
                                         ctx.lineJoin = 'round'; //선이만나 꺾이는 부분때문에 부여(삐져나오는 현상 방지)
-                                        ctx.lineWidth = 4; 
+                                        ctx.lineWidth = 1; 
                                         ctx.beginPath();
                                         ctx.moveTo(width/2, height/2);                           
                                         ctx.arc(width/2, height/2, radius, (Math.PI/180)*begin, (Math.PI/180)* end , false);
@@ -312,24 +315,24 @@
                                     }
                                 
                                     
-                                    //마우스 오버효과
-                                    function hoverCanvas(index){
-                                        ctx.clearRect(0,0,width, height);
-                                        for (var i = 0; i < conv_array.length; i++) {
-                                            var item = conv_array[i];
-                                            var innRadius = radius;
-                                            if(index == i){  
-                                                innRadius = radius * 1.1;  //대상이 맞으면 1.1배 크게 키운다.
-                                            }
-                                            if (i == 0) {
-                                                arcMaker(innRadius, 0, item, colorArray[i])
-                                                degree = item;
-                                            } else {
-                                                arcMaker(innRadius, degree, degree + item, colorArray[i])
-                                                degree = degree + item;
-                                            }
-                                        }
-                                    }
+                                    // //마우스 오버효과
+                                    // function hoverCanvas(index){
+                                    //     ctx.clearRect(0,0,width, height);
+                                    //     for (var i = 0; i < conv_array.length; i++) {
+                                    //         var item = conv_array[i];
+                                    //         var innRadius = radius;
+                                    //         if(index == i){  
+                                    //             innRadius = radius * 1.1;  //대상이 맞으면 1.1배 크게 키운다.
+                                    //         }
+                                    //         if (i == 0) {
+                                    //             arcMaker(innRadius, 0, item, colorArray[i])
+                                    //             degree = item;
+                                    //         } else {
+                                    //             arcMaker(innRadius, degree, degree + item, colorArray[i])
+                                    //             degree = degree + item;
+                                    //         }
+                                    //     }
+                                    // }
                                 
                                 
                                     //도(degree)를 라디안(radian)으로 바꾸는 함수
@@ -346,19 +349,19 @@
                                             var xx = Math.cos(degreesToRadians(degg)) * radius * 0.7 + width / 2;
                                             var yy = Math.sin(degreesToRadians(degg)) * radius * 0.7 + height / 2;
                                 
-                                            var txt = value[idx].text + '';
+                                            var txt = value[idx].text;
                                             var minus = ctx.measureText(txt).width / 2;  //텍스트 절반길이
                                             ctx.save();
                                             if(index == idx){
-                                                ctx.font = "normal bold 18px sans-serif";
+                                                ctx.font = "normal bold 10px sans-serif";
                                                 ctx.fillStyle = 'blue';
                                             } else {
-                                                ctx.font = "normal 14px sans-serif";
+                                                ctx.font = "normal 12px sans-serif";
                                                 ctx.fillStyle = 'white';
                                             }
                                             ctx.fillText(txt, xx - minus, yy);
-                                            var txt2 = value[idx].number;
-                                            ctx.fillText(txt2, xx - ctx.measureText(txt2).width / 3, yy + 16);
+                                            var txt2 = value[idx].number+'%';
+                                            ctx.fillText(txt2, xx - ctx.measureText(txt2).width / 3, yy + 12);
                                             ctx.restore();
                                         });
                                     }
@@ -388,7 +391,7 @@
                                         ctx.fillText(total, width/2 - minus, height/2 * 1.1);
                                         ctx.restore();
                                     }
-                                                          </script>
+                                  </script>
 
 
                                   <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
@@ -417,12 +420,12 @@
                                 <div class="total">합계 
                                   <span class="fr">
                                     <strong class="txtpoint txtbasic" id="AcntTotal" style="color: #2daca1;
-                                    ">2,375,000</strong> 원
+                                    ">35,000,000</strong> 원
                                   </span>
                                 </div>
                                 <ul id="AcntSummary2">
-                                    <li>연금상품<span><strong class="num">550,000</strong>원</span></li>
-                                    <li>신용/대출 <span><strong class="num">1,825,000</strong>원</span></li>
+                                    <li>연금상품<span><strong class="num">5,000,000 </strong>원</span></li>
+                                    <li>신용/대출 <span><strong class="num">30,000,000</strong>원</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -497,10 +500,11 @@
                           <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
                             <!-- <canvas width="230" height="230" id="canvas2" style="margin-left:-115px;margin-top:-85px;"></canvas> -->
 
-                            <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img2.png" alt="home">
+                            <!-- <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img2.png" alt="home"> -->
                             <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
                           <!-- </canvas> -->
-                          
+                          <script src="../javascripts/나의자산/graph2.js" charset="utf-8"></script>
+                          <canvas width="230px" height="230px" id="canvas2" style="background-color: #164388;"></canvas>
 
 
 
