@@ -1,0 +1,64 @@
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td
+ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+ol, ul { list-style: none;}
+
+
+html {
+    font-family: "MalgunGothic","맑은 고딕","돋움","dotom",Tahoma,Geneva,sans-serif;
+    line-height:22px;
+    color:#555;
+    letter-spacing: -1px;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+body { margin: 0;}
+
+
+img { border: 0;}
+
+
+a { text-decoration: none; color: #555;}
+
+a img { border: none; vertical-align:top;}
+
+a:link, a:visited { text-decoration: none; color: #555;}
+
+a:hover { text-decoration:underline;}
+
+
+body {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+.fl {float: left !important;}
+.fr {float: right !important;}
+.fn {float: none !important;}
+.cb {clear: both !important;}
+.cbn {clear: inherit !important;}
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, 
+dl, dt, dd, ol, ul, li,
+ tr, th, td,article, aside,menu, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html { min-height: 100%; overflow-y : scroll;}
+body { height: 100%;}
+ol, ul { list-style: none;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none;}
+
+strong { font-weight: bold;}
+
+sup { vertical-align: super; margin-left:2px;  font-size:10px;}
+
+
+
+
+html {
+    font-family: "MalgunGothic","맑은 고딕","돋움","dotom",Tahoma,Geneva,sans-serif;
+    line-height:22px;
+    color:#555;
+    letter-spacing: -1px;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+
+body { margin: 0;}
+
+
+
+img { border: 0;}
+
+
+legend {
+    border: 0; 
+    padding: 0; 
+    text-indent:-9999px;
+}
+textarea {
+    overflow: auto; 
+    vertical-align: top; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-size: 14px;
+}
+
+
+
+.center { display:table; margin:0 auto; text-align:center;}
+.middle {display:table-cell; vertical-align:middle;}
+
+
+.none {display: none;}
+.hidden{visibility:hidden;}
+.dpb {display:block;}
+.dpib {display:inline-block;}
+
+.fl {float: left !important;}
+.fr {float: right !important;}
+.fn {float: none !important;}
+.cb {clear: both !important;}
+.cbn {clear: inherit !important;}
+.b {font-weight:bold !important;}
+.bb {font-weight: bolder; }
+
+.pr {position:relative !important;}
+.pa {position:absolute !important;}
+
+
+
+.mt5 {margin-top: 5px !important;}
+.mt50 {margin-top: 50px !important;}
+
+.mb5 {margin-bottom: 5px !important; }
+.mb50 {margin-bottom: 50px !important; }
+
+
+
+
+.pr10 {padding-right:10px !important;}
+.mw0 {min-width: 0 !important;}
+.mw100 {min-width: 100px !important;}
+
+.bgg{background:#f8f8f8 !important;}
+.bgn{background:none !important;}
+
+

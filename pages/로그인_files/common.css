@@ -1,0 +1,64 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a,b, u, i, center,
+dl, dt, dd, ol, ul, li
+ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html { min-height: 100%; overflow-y : scroll;}
+body { height: 100%;}
+ol, ul { list-style: none;}
+
+
+strong { font-weight: bold;}
+
+
+
+body {
+    font-size: 14px;
+}
+
+.none {display: none;}
+.hidden{visibility:hidden;}
+
+
+.fl {float: left !important;}
+
+
+
+.mb10 {margin-bottom: 10px !important; }
+.mb15 {margin-bottom: 15px !important; }
+.mb25 {margin-bottom: 25px !important; }
+.mb30 {margin-bottom: 30px !important; }
+.mb35 {margin-bottom: 35px !important; }
+
+.mb45 {margin-bottom: 45px !important; }
+
+.mb60 {margin-bottom: 60px !important; }
+
+
+
+.ml15 {margin-left: 15px !important;}
+.ml64 {margin-left: 64px !important;}
+
+
+
+.w160 { width:160px !important; }
+
+.w260 { width:260px !important; }
+
