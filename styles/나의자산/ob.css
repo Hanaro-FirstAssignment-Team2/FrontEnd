@@ -456,7 +456,7 @@
   margin-top: 15px;
   margin-left: 40px;
 
-  background-color: #fafafa;
+  background-color: white;
   border: 1px solid black;
   width: 400px;
   height: 448px;
@@ -467,13 +467,15 @@
 .sm-list2 .graph_img2 {
   /* background-color: #71a5aa; */
   width: 250px;
-  height: 230px;
+  height: 220px;
   margin: 50px 75px 50px auto;
 
   /* margin: 0 auto; */
 }
 .sm-list2 .graph_explain2 {
   /* background-color: #b3e1e6; */
+  /* border-top:1px solid #dfdfdf; */
+  
   width: 100%;
   overflow: hidden;
   font-size: 14px;

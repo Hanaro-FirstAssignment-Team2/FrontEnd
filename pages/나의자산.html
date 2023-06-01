@@ -446,6 +446,7 @@
                     <li><button>총자산</button></li>
                   </ul>
                 </nav>
+                <!-- ///////////////////////////////////////////순자산/////////////////////////////////////////// -->
                 <div class="tab_content on">
                   
                   <table class="w95p center tb1" >
@@ -458,11 +459,11 @@
                       <th>총수익률</th>
                     </tr>
                     <tr>
-                      <td>123,456</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>56,789</td>
-                      <td class="red">1.23%</td>
+                      <td>10,000,000</td>
+                      <td>30,000,000</td>
+                      <td>5,000,000</td>
+                      <td>6,000,000</td>
+                      <td class="red" style="font-weight: bold">10.23%</td>
                     </tr>
 
                   </table>
@@ -480,11 +481,11 @@
                     </tr>
                     <tr>
                       <td style="background-color: #e7e5e583; text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
-                      <td>NULL</td>
+                      <td>하나로</td>
                       <td>312,165</td>
-                      <td>0</td>
-                      <td>NULL</td>
-                      <td>NULL</td>
+                      <td>30,000,000</td>
+                      <td style="font-weight: bold; color:#164388">-458,300</td>
+                      <td>1,580,000</td>
                       <td class="q_btn" style="text-align: center;">
                         <button>상세잔고 > </button>
                         <button>거래내역 > </button>
@@ -498,34 +499,27 @@
                     <div class="asset2">
                       <div class="graph2 fl">
                           <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
-                            <!-- <canvas width="230" height="230" id="canvas2" style="margin-left:-115px;margin-top:-85px;"></canvas> -->
 
-                            <!-- <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img2.png" alt="home"> -->
-                            <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
-                          <!-- </canvas> -->
-                          <script src="../javascripts/나의자산/graph2.js" charset="utf-8"></script>
-                          <canvas width="230px" height="230px" id="canvas2" style="background-color: #164388;"></canvas>
-
-
+                            <img class="center" width="250px" height="250px" src="../images/나의자산/graph_img2.png" alt="home">
 
                           <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                           </div>
                         </div>
                       <ul class="graph_explain2">
-                        <li><span class="b" style="color:#eb7b72">A</span> : 펀드/RP</li> 
-                        <li><span class="b" style="color:#70aaef">B</span> : 주식</li> 
-                        <li><span class="b" style="color:#fcb362">C</span> : ELS/DLS</li> 
+                        <li><span class="b" style="color:#70aaef">A</span> : 펀드/RP</li> 
+                        <li><span class="b" style="color:#eb7b72">B</span> : 주식</li> 
+                        <li><span class="b" style="color:#164388">C</span> : ELS/DLS</li> 
                         <li><span class="b" style="color:#c4c24a">D</span> : 선물/옵션</li> 
-                        <li><span class="b" style="color:#164388">E</span> : CMA</li> 
-                        <li><span class="b" style="color: #6662CB">F</span> : 연금저축</li> 
-                        <li><span class="b" style="color: #52798a">G</span> : 국내채권</li> 
-                        <li><span class="b" style="color: #F7C53E">H</span> : 해외선물/옵션</li> 
-                        <li><span class="b" style="color: #8196ff">I</span> : FX마진</li> 
-                        <li><span class="b" style="color: #e12828">J</span> : 해외주식</li> 
-                        <li><span class="b" style="color: #3ae5a7">K</span> : 랩어카운트</li> 
-                        <li><span class="b" style="color:#dd64b4">L</span> : 신탁</li>
-                        <li><span class="b" style="color:#845858">M</span> : 현금예수금</li> 
-                        <li><span class="b" style="color:#F2624C">N</span> : 금현물</li>
+                        <li><span class="b" style="color: #8196ff">E</span> : CMA</li> 
+                        <li><span class="b" style="color:#fcb362">F</span> : 연금저축</li> 
+                        <li><span class="b" style="color:#F2624C" >G</span> : 국내채권</li> 
+                        <li><span class="b" style="color: #97ce17">H</span> : 해외선물/옵션</li> 
+                        <li><span class="b" style="color: #52798a">I</span> : FX마진</li> 
+                        <li><span class="b" style="color: #52bc6b">J</span> : 해외주식</li> 
+                        <li><span class="b" style="color: #4badd7">K</span> : 랩어카운트</li> 
+                        <li><span class="b" style="color: #dc53cf">L</span> : 신탁</li>
+                        <li><span class="b" style="color: #9762eb">M</span> : 현금예수금</li> 
+                        <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
 
 
 
@@ -541,13 +535,13 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">펀드/RP</td>
-                          <td>0</td>
-                          <td >0%</td>
+                          <td>5,950,000</td>
+                          <td >17%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">주식</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>5,250,000</td>
+                          <td>15%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">ELS/DLS</td>
@@ -561,13 +555,13 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">CMA</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>8,750,000</td>
+                          <td>25%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">연금저축</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>13,300,000</td>
+                          <td>38%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">국내채권</td>
@@ -586,8 +580,8 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">해외주식</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>1,750,000</td>
+                          <td>5%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">랩어카운트</td>
@@ -651,21 +645,22 @@
                             </tr>
                             <tr>
                                 <td style="text-align:center; padding-right: 0px;" rowspan="2">123-45-678910</td>
-                                <td style="text-align: center; padding-right: 0px;" rowspan="2">주식</td>
-                                <td rowspan="2">123,000</td>
-                                <td>120,000</td>
-                                <td rowspan="2">456,000</td>
+                                <td style="text-align: center; padding-right: 0px;" rowspan="2">펀드/RP</td>
+                                <td rowspan="2">5,950,000</td>
+                                <td>1,200,000</td>
+                                <td rowspan="2">4,056,000</td>
                                 <td style="text-align: center; padding-right: 0px;" rowspan="2">2023.05.22</td>
                                 
                             </tr>
                             <tr>
-                                <td>3,000</th>
+                                <td>30,000</th>
                             </tr>
                         </table>
                       </div>
 
 
                     </div>
+                    
                     <div class="tab_content2">
                       <div class="w95p center tb4">
                         <table border="1">
@@ -680,12 +675,12 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; padding-right: 0px;">123-45-678910</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0.00</td>
+                                <td>5,250,000</td>
+                                <td>250,000</td>
+                                <td>100,000</td>
+                                <td>50,000</td>
+                                <td>350,000</td>
+                                <td>12.04</td>
                             </tr>
 
                         </table>
@@ -722,25 +717,28 @@
   
                       </div>
                     </div>
-                    <div class="tab_content2">content4 - 준비중 입니다..</div>
-                    <div class="tab_content2">content5 - 준비중 입니다..</div>
-                    <div class="tab_content2">content6 - 준비중 입니다..</div>
-                    <div class="tab_content2">content7 - 준비중 입니다..</div>
-                    <div class="tab_content2">content8 - 준비중 입니다..</div>
-                    <div class="tab_content2">content9 - 준비중 입니다..</div>
-                    <div class="tab_content2">content10 - 준비중 입니다..</div>
-                    <div class="tab_content2">content11 - 준비중 입니다..</div>
-                    <div class="tab_content2">content12 - 준비중 입니다..</div>
-                    <div class="tab_content2">content13 - 준비중 입니다..</div>
-                    <div class="tab_content2">content14 - 준비중 입니다..</div>
-                    <div class="tab_content2">content15 - 준비중 입니다..</div>
-                    <div class="tab_content2">content16 - 준비중 입니다..</div>
+                    <div class="tab_content2">해외주식/채권 - 준비중 입니다..</div>
+                    <div class="tab_content2">선물/옵션 - 준비중 입니다..</div>
+                    <div class="tab_content2">FX마진 - 준비중 입니다..</div>
+                    <div class="tab_content2">해외선물/옵션 - 준비중 입니다..</div>
+                    <div class="tab_content2">ELS/DLS - 준비중 입니다..</div>
+                    <div class="tab_content2">금현물 - 준비중 입니다..</div>
+                    <div class="tab_content2">펀드/RP - 준비중 입니다..</div>
+                    <div class="tab_content2">연금저축 - 준비중 입니다..</div>
+                    <div class="tab_content2">국내채권 - 준비중 입니다..</div>
+                    <div class="tab_content2">CMA - 준비중 입니다..</div>
+                    <div class="tab_content2">신탁/퇴직연금 - 준비중 입니다..</div>
+                    <div class="tab_content2">랩어칸운트 - 준비중 입니다..</div>
+                    <div class="tab_content2">국내주식CFD - 준비중 입니다..</div>
 
                   </div>
                   
 
-                  <!-- contents1 -->
+                  
                 </div>
+
+
+                <!--////////////////////////////////////// 총자산 //////////////////////////////////////////////-->
                 <div class="tab_content">
                   <table class="w95p center tb1" >
                     <caption> </br> &#9655;이체업무</caption>
@@ -752,11 +750,11 @@
                       <th>총수익률</th>
                     </tr>
                     <tr>
-                      <td>123,456</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>56,789</td>
-                      <td class="red">1.23%</td>
+                      <td>10,000,000</td>
+                      <td>35,000,000</td>
+                      <td>2,000,000</td>
+                      <td>5,000,000</td>
+                      <td class="red" style="font-weight: bold;">15.23%</td>
                     </tr>
 
                   </table>
@@ -773,53 +771,53 @@
                       <th>바로가기</th>
                     </tr>
                     <tr>
-                      <td bgcolor="#e7e5e5" style="text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
-                      <td>NULL</td>
+                      <td style="background-color: #e7e5e583; text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
+                      <td>하나로</td>
                       <td>312,165</td>
-                      <td>0</td>
-                      <td>NULL</td>
-                      <td>NULL</td>
-                      <!-- <td>NULL</td> -->
+                      <td>30,000,000</td>
+                      <td style="font-weight: bold; color:#164388">-458,300</td>
+                      <td>1,580,000</td>
                       <td class="q_btn" style="text-align: center;">
                         <button>상세잔고 > </button>
                         <button>거래내역 > </button>
                         <button style="background: #3e968e; color:white">이체 > </button></td>
-                      
                     </tr>
-
                   </table>
                   
 
                   <span> </br> &nbsp; &nbsp;&#9655;  상품별 현황</span>
-
                   
                     <div class="asset2">
                       <div class="graph2 fl">
                           <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
-                          <img class="center" width="230px" height="230px" src="../images/나의자산/graph_img.png" alt="home">
-                            <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
-                          </canvas>
+
+                            <img class="center" width="250px" height="250px" src="../images/나의자산/graph_img2.png" alt="home">
+
                           <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                           </div>
                         </div>
                       <ul class="graph_explain2">
-                        <li><span class="b">A</span> : 펀드/RP</li> 
-                        <li><span class="b">B</span> : 주식</li> 
-                        <li><span class="b">C</span> : ELS/DLS</li> 
-                        <li><span class="b">D</span> : 선물/옵션</li> 
-                        <li><span class="b">E</span> : CMA</li> 
-                        <li><span class="b">F</span> : 연금저축</li> 
-                        <li><span class="b">G</span> : 국내채권</li> 
-                        <li><span class="b">H</span> : 해외선물/옵션</li> 
-                        <li><span class="b">I</span> : FX마진</li> 
-                        <li><span class="b">J</span> : 해외주식</li> 
-                        <li><span class="b">K</span> : 랩어카운트</li> 
-                        <li><span class="b">L</span> : 신탁</li>
-                        <li><span class="b">M</span> : 현금예수금</li> 
-                        <li><span class="b">N</span> : 금현물</li>
+                        <li><span class="b" style="color:#70aaef">A</span> : 펀드/RP</li> 
+                        <li><span class="b" style="color:#eb7b72">B</span> : 주식</li> 
+                        <li><span class="b" style="color:#164388">C</span> : ELS/DLS</li> 
+                        <li><span class="b" style="color:#c4c24a">D</span> : 선물/옵션</li> 
+                        <li><span class="b" style="color: #8196ff">E</span> : CMA</li> 
+                        <li><span class="b" style="color:#fcb362">F</span> : 연금저축</li> 
+                        <li><span class="b" style="color:#F2624C" >G</span> : 국내채권</li> 
+                        <li><span class="b" style="color: #97ce17">H</span> : 해외선물/옵션</li> 
+                        <li><span class="b" style="color: #52798a">I</span> : FX마진</li> 
+                        <li><span class="b" style="color: #52bc6b">J</span> : 해외주식</li> 
+                        <li><span class="b" style="color: #4badd7">K</span> : 랩어카운트</li> 
+                        <li><span class="b" style="color: #dc53cf">L</span> : 신탁</li>
+                        <li><span class="b" style="color: #9762eb">M</span> : 현금예수금</li> 
+                        <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
+
+
+
+
                       </ul> 
                     </div>
-                    <div class="graph3 fl mt15 ml30 ">
+                    <div class="graph_txt2 fl mt15 ml30 ">
                       <table class="center tb3 w400" >
                         <tr>
                           <th>상품종류</th>
@@ -828,13 +826,13 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">펀드/RP</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>5,950,000</td>
+                          <td >17%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">주식</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>5,250,000</td>
+                          <td>15%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">ELS/DLS</td>
@@ -848,13 +846,13 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">CMA</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>8,750,000</td>
+                          <td>25%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">연금저축</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>13,300,000</td>
+                          <td>38%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">국내채권</td>
@@ -873,8 +871,8 @@
                         </tr>
                         <tr>
                           <td style="text-align: center">해외주식</td>
-                          <td>0</td>
-                          <td>0%</td>
+                          <td>1,750,000</td>
+                          <td>5%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">랩어카운트</td>
@@ -896,12 +894,8 @@
                           <td>0</td>
                           <td>0%</td>
                         </tr>
-    
                       </table>
-
-
                     </div>
-                      
                   </div>
 
                   <div class="tab_group">
@@ -928,7 +922,7 @@
 
                     <div class="tab_content2 on">
                       <div class="w95p center tb4">
-                        <table border="1" >
+                        <table>
                             <tr>
                                 <th rowspan="2">계좌번호</th>
                                 <th rowspan="2">상품명</th>
@@ -941,16 +935,16 @@
                                 <th>결제예수금</th>
                             </tr>
                             <tr>
-                                <td style="text-align: center; padding-right: 0px;" rowspan="2">123-45-678910</td>
-                                <td style="text-align: center; padding-right: 0px;" rowspan="2">주식</td>
-                                <td rowspan="2">123,000</td>
-                                <td>120,000</td>
-                                <td rowspan="2">456,000</td>
+                                <td style="text-align:center; padding-right: 0px;" rowspan="2">123-45-678910</td>
+                                <td style="text-align: center; padding-right: 0px;" rowspan="2">펀드/RP</td>
+                                <td rowspan="2">5,950,000</td>
+                                <td>1,200,000</td>
+                                <td rowspan="2">4,056,000</td>
                                 <td style="text-align: center; padding-right: 0px;" rowspan="2">2023.05.22</td>
                                 
                             </tr>
                             <tr>
-                                <td>3,000</th>
+                                <td>30,000</th>
                             </tr>
                         </table>
                       </div>
@@ -958,7 +952,7 @@
 
                     </div>
                     <div class="tab_content2">
-                      <div class="w95p center tb5">
+                      <div class="w95p center tb4">
                         <table border="1">
                             <tr>
                                 <th>계좌번호</th>
@@ -971,12 +965,12 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center; padding-right: 0px;">123-45-678910</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0.00</td>
+                                <td>5,250,000</td>
+                                <td>250,000</td>
+                                <td>100,000</td>
+                                <td>50,000</td>
+                                <td>350,000</td>
+                                <td>12.04</td>
                             </tr>
 
                         </table>
@@ -988,7 +982,7 @@
                     </div>
                     <div class="tab_content2">
                       <div class="w95p center tb4">
-                        <table border="1" >
+                        <table>
                             <tr>
                                 <th rowspan="2">계좌번호</th>
                                 <th rowspan="2">상품계좌명</th>
@@ -1013,22 +1007,27 @@
   
                       </div>
                     </div>
-                    <div class="tab_content2">content4 - 준비중 입니다..</div>
-                    <div class="tab_content2">content5 - 준비중 입니다..</div>
-                    <div class="tab_content2">content6 - 준비중 입니다..</div>
-                    <div class="tab_content2">content7 - 준비중 입니다..</div>
-                    <div class="tab_content2">content8 - 준비중 입니다..</div>
-                    <div class="tab_content2">content9 - 준비중 입니다..</div>
-                    <div class="tab_content2">content10 - 준비중 입니다..</div>
-                    <div class="tab_content2">content11 - 준비중 입니다..</div>
-                    <div class="tab_content2">content12 - 준비중 입니다..</div>
-                    <div class="tab_content2">content13 - 준비중 입니다..</div>
-                    <div class="tab_content2">content14 - 준비중 입니다..</div>
-                    <div class="tab_content2">content15 - 준비중 입니다..</div>
-                    <div class="tab_content2">content16 - 준비중 입니다..</div>
+                    <div class="tab_content2">해외주식/채권 - 준비중 입니다..</div>
+                    <div class="tab_content2">선물/옵션 - 준비중 입니다..</div>
+                    <div class="tab_content2">FX마진 - 준비중 입니다..</div>
+                    <div class="tab_content2">해외선물/옵션 - 준비중 입니다..</div>
+                    <div class="tab_content2">ELS/DLS - 준비중 입니다..</div>
+                    <div class="tab_content2">금현물 - 준비중 입니다..</div>
+                    <div class="tab_content2">펀드/RP - 준비중 입니다..</div>
+                    <div class="tab_content2">연금저축 - 준비중 입니다..</div>
+                    <div class="tab_content2">국내채권 - 준비중 입니다..</div>
+                    <div class="tab_content2">CMA - 준비중 입니다..</div>
+                    <div class="tab_content2">신탁/퇴직연금 - 준비중 입니다..</div>
+                    <div class="tab_content2">랩어칸운트 - 준비중 입니다..</div>
+                    <div class="tab_content2">국내주식CFD - 준비중 입니다..</div>
 
                   </div>
                   
+
+                  
+                </div>
+
+                      
 
                   <!-- contents1 -->
                 </div>
