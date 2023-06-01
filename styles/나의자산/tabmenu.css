@@ -82,7 +82,6 @@
 .tab_content .tb2 {
   /* 이중선 젝 */
   border-collapse: collapse;
-  /* width: max-content; */
 }
 
 .tab_content .tb2 caption {
@@ -134,7 +133,6 @@
 .tab_content .tb3 {
   /* 이중선 젝 */
   border-collapse: collapse;
-  /* width: 600px; */
 }
 
 .tab_content .tb3 th {
@@ -144,8 +142,6 @@
 /* 다른 td도 이렇게 됨. */
 .tab_content .tb3 th,
 .tab_content .tb3 td {
-  /* width: 10%; */
-  /* table-layout: fixed; */
   height: 26px;
   text-align: center;
   border: 2px solid #b0b0b0;
@@ -170,5 +166,4 @@
   padding-right: 15px;
   font-size: 14px;
   height: 30px;
-  /* margin-right: 15px; */
 }

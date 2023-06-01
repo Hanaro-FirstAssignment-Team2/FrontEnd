@@ -1,12 +1,10 @@
 /* 서브메인 */
 .sm-visual {
-  /* background-color: #03838e; */
   background-image: url(../../images/고객지원/bg_sm_visual.gif);
   background-size: cover;
   width: 960px;
   height: 255px;
-  /* background-size: 960px 255px; */
-  /* background: url(../../images/고객지원/bg_sm_visual.gif) no-repeat; */
+
 }
 
 .sm-visual h3 {
@@ -36,11 +34,9 @@
   left: 10px;
 }
 .sm-visual .search .word {
-  /* background-color: gainsboro; */
   background-color: #f7f7f7;
   border: #d2d2d2 solid 1px;
   border-radius: 30px;
-  /* background: url(../../images/고객지원/bg_sm_search.gif) no-repeat left; */
   width: 272px;
   height: 40px;
 }
@@ -50,7 +46,6 @@
   margin: 6px 15px;
 }
 .sm-visual .search .btn {
-  /* 그림 못찾음 */
   background: url(../../images/고객지원/img_sm_searchbar.png) no-repeat;
   width: 18px;
   height: 18px;
@@ -68,15 +63,7 @@
   text-align: center;
   margin-left: 20px;
 }
-/* 구분선 지움 */
-/* .sm-visual .search ul li {
-  float: left;
-  font-size: 13px;
-  margin-right: 7px;
-  padding-right: 10px;
-  background: url(../../images/고객지원/img_sideline.gif) no-repeat right 6px;
-  border-top: 2px #fff solid !important;
-} */
+
 
 .sm-quick {
   background-color: white;
@@ -85,8 +72,6 @@
   width: 960px;
   height: 150px;
   padding: 35px 30px 10px;
-
-  /* background: url(../../images/고객지원/bg_sm_quick.gif) no-repeat; */
 }
 
 .sm-quick ul li span {

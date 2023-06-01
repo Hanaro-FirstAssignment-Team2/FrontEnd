@@ -60,7 +60,13 @@
     <script src="../javascripts/jquery.js" charset="utf-8"></script>
     <script src="../javascripts/나의자산/tab.js" charset="utf-8"></script>
     
-    
+    <style>
+      body{
+        font-family: 나눔고딕, NanumGothic, ng, "NanumGothicWeb", 굴림, Gulim,
+    sans-serif;
+      }
+      
+    </style>
 
 
     <title>나의 자산 : 하나증권</title>
@@ -106,12 +112,8 @@
     
     
       <div class="wrap">
-        <!-- container -->
         <div id="container">
-          <!-- left area -->
-          <!-- <div class="w700 fl"> -->
             <div class="mb30 h255">
-            <!-- visual -->
             <!-- <div class="sm-visual">
               <h3><span>자산 조회</span></h3>
             </div> -->
@@ -146,7 +148,6 @@
                   const minutes = ('0' + date.getMinutes()).slice(-2);
                   const seconds = ('0' + date.getSeconds()).slice(-2);
                   const dateStr = year + '.' + month + '.' + day+ "  "+hours + ':' + minutes + ':' + seconds;
-                  // document.getElementById("date_d").value = dateStr;
                   var span=document.getElementById("time");
                   span.innerHTML=dateStr;
                   }
@@ -173,10 +174,6 @@
                         <div class="asset">
                             <div class="graph fl">
                                 <div class="chart09-5-ctnr graph_img" id="PieChartArea">
-                                  <!-- <canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"> -->
-                                  <!-- </canvas> -->
-
-                                  <!-- <img class="center" style="margin-left: -25px;" width=250px height=250px src="../images/나의자산/graph_img.png" alt="home"> -->
                                   <canvas width="400" height="400" id="canvas" style="margin-left:-115px;margin-top:-85px;"></canvas>
                                   
                                   <script>    
@@ -269,24 +266,7 @@
                                         middelMaker();  //가운데 원형그리기 함수 추가
                                     }
                                 
-                                    // //마우스 움직임 이벤트 리스너
-                                    // var drawed = false;
-                                    // canvas.addEventListener('mousemove', function (event) {
-                                    //     var x1 = event.clientX - canvas.offsetLeft;
-                                    //     var y1 = event.clientY - canvas.offsetTop;
-                                    //     var inn = isInsideArc(x1, y1);
-                                    //     if(inn.index > -1){  //대상이 맞으면
-                                    //         drawed = true;
-                                    //         hoverCanvas(inn.index);
-                                    //         makeText(inn.index);
-                                    //     } else {  //대상이 아니면
-                                    //         if(drawed){  //대상이였다가 대상이 이제 아니면
-                                    //             hoverCanvas(-1);
-                                    //             makeText(-1);
-                                    //         }
-                                    //         drawed = false;
-                                    //     }
-                                    // }); 
+
                                 
                                     //내부 + 범위에 들어온지 확인하는 함수
                                     function isInsideArc(x1, y1){
@@ -314,25 +294,6 @@
                                         return {result1:result1, result2:result2 ,index:index, degree : rad};
                                     }
                                 
-                                    
-                                    // //마우스 오버효과
-                                    // function hoverCanvas(index){
-                                    //     ctx.clearRect(0,0,width, height);
-                                    //     for (var i = 0; i < conv_array.length; i++) {
-                                    //         var item = conv_array[i];
-                                    //         var innRadius = radius;
-                                    //         if(index == i){  
-                                    //             innRadius = radius * 1.1;  //대상이 맞으면 1.1배 크게 키운다.
-                                    //         }
-                                    //         if (i == 0) {
-                                    //             arcMaker(innRadius, 0, item, colorArray[i])
-                                    //             degree = item;
-                                    //         } else {
-                                    //             arcMaker(innRadius, degree, degree + item, colorArray[i])
-                                    //             degree = degree + item;
-                                    //         }
-                                    //     }
-                                    // }
                                 
                                 
                                     //도(degree)를 라디안(radian)으로 바꾸는 함수
@@ -416,14 +377,14 @@
                                   <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
                                 </ul> 
                             </div>
-                            <div class="fl graph_txt" id="AcntSummary2">
+                            <div class="fl graph_txt">
                                 <div class="total">합계 
                                   <span class="fr">
                                     <strong class="txtpoint txtbasic" id="AcntTotal" style="color: #2daca1;
                                     ">35,000,000</strong> 원
                                   </span>
                                 </div>
-                                <ul id="AcntSummary2">
+                                <ul >
                                     <li>연금상품<span><strong class="num">5,000,000 </strong>원</span></li>
                                     <li>신용/대출 <span><strong class="num">30,000,000</strong>원</span></li>
                                 </ul>
@@ -498,11 +459,11 @@
                   
                     <div class="asset2">
                       <div class="graph2 fl">
-                          <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
+                          <div class="chart09-5-ctnr graph_img2">
 
                             <img class="center" width="250px" height="250px" src="../images/나의자산/graph_img2.png" alt="home">
 
-                          <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
+                          <div style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                           </div>
                         </div>
                       <ul class="graph_explain2">
@@ -520,10 +481,6 @@
                         <li><span class="b" style="color: #dc53cf">L</span> : 신탁</li>
                         <li><span class="b" style="color: #9762eb">M</span> : 현금예수금</li> 
                         <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
-
-
-
-
                       </ul> 
                     </div>
                     <div class="graph_txt2 fl mt15 ml30 ">
@@ -663,7 +620,7 @@
                     
                     <div class="tab_content2">
                       <div class="w95p center tb4">
-                        <table border="1">
+                        <table>
                             <tr>
                                 <th>계좌번호</th>
                                 <th>총평가금액</th>
@@ -682,13 +639,8 @@
                                 <td>350,000</td>
                                 <td>12.04</td>
                             </tr>
-
                         </table>
-  
-  
                       </div>
-
-
                     </div>
                     <div class="tab_content2">
                       <div class="w95p center tb4">
@@ -706,15 +658,10 @@
                                 <th>체결기준외화</th>
                                 <th>환율</th>
                             </tr>
-                            
                             <tr>
                               <td style="text-align: center; color:gray; font-size: small;" colspan="7">조회내역이 없습니다.</td>
                             </tr>
-                            
-                    
                         </table>
-  
-  
                       </div>
                     </div>
                     <div class="tab_content2">해외주식/채권 - 준비중 입니다..</div>
@@ -730,11 +677,7 @@
                     <div class="tab_content2">신탁/퇴직연금 - 준비중 입니다..</div>
                     <div class="tab_content2">랩어칸운트 - 준비중 입니다..</div>
                     <div class="tab_content2">국내주식CFD - 준비중 입니다..</div>
-
                   </div>
-                  
-
-                  
                 </div>
 
 
@@ -784,16 +727,12 @@
                     </tr>
                   </table>
                   
-
                   <span> </br> &nbsp; &nbsp;&#9655;  상품별 현황</span>
-                  
                     <div class="asset2">
                       <div class="graph2 fl">
-                          <div class="chart09-5-ctnr graph_img2" id="PieChartArea">
-
+                          <div class="chart09-5-ctnr graph_img2">
                             <img class="center" width="250px" height="250px" src="../images/나의자산/graph_img2.png" alt="home">
-
-                          <div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
+                          <div style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);">
                           </div>
                         </div>
                       <ul class="graph_explain2">
@@ -811,10 +750,6 @@
                         <li><span class="b" style="color: #dc53cf">L</span> : 신탁</li>
                         <li><span class="b" style="color: #9762eb">M</span> : 현금예수금</li> 
                         <li><span class="b" style="color: #7c2dd6">N</span> : 금현물</li>
-
-
-
-
                       </ul> 
                     </div>
                     <div class="graph_txt2 fl mt15 ml30 ">
@@ -948,12 +883,10 @@
                             </tr>
                         </table>
                       </div>
-
-
                     </div>
                     <div class="tab_content2">
                       <div class="w95p center tb4">
-                        <table border="1">
+                        <table>
                             <tr>
                                 <th>계좌번호</th>
                                 <th>총평가금액</th>
@@ -972,13 +905,8 @@
                                 <td>350,000</td>
                                 <td>12.04</td>
                             </tr>
-
                         </table>
-  
-  
                       </div>
-
-
                     </div>
                     <div class="tab_content2">
                       <div class="w95p center tb4">
@@ -996,15 +924,10 @@
                                 <th>체결기준외화</th>
                                 <th>환율</th>
                             </tr>
-                            
                             <tr>
                               <td style="text-align: center; color:gray; font-size: small;" colspan="7">조회내역이 없습니다.</td>
                             </tr>
-                            
-                    
                         </table>
-  
-  
                       </div>
                     </div>
                     <div class="tab_content2">해외주식/채권 - 준비중 입니다..</div>
@@ -1020,30 +943,14 @@
                     <div class="tab_content2">신탁/퇴직연금 - 준비중 입니다..</div>
                     <div class="tab_content2">랩어칸운트 - 준비중 입니다..</div>
                     <div class="tab_content2">국내주식CFD - 준비중 입니다..</div>
-
                   </div>
-                  
-
-                  
                 </div>
-
-                      
-
-                  <!-- contents1 -->
                 </div>
-
-
                 </div>
-
             </div>
           </div>
         </div>
       </div>
         </div>
-      </div>
-      
-      </div>
-
-    </div>
   </body>
 </html>
