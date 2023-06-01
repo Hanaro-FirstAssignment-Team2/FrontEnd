@@ -12,6 +12,8 @@ $.ajax({
       let kosdaq_title = mise["idxCsf"];
       let kosdaq_jongga = mise["clpr"]; //종가(정규시장의 매매시간 종료시까지 형성되는 최종가격 )
       let kosdaq_rate = mise["vs"];
+
+      document.getElementById("kosdaqdata").innerHTML = kosdaq_rate;
       console.log(kosdaq_title, kosdaq_jongga, kosdaq_rate);
     }
   },
