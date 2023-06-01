@@ -136,7 +136,7 @@
   display: inline-block;
 }
 .sm-list .graph_txt ul li {
-  background: url(../img/common/bu_dot_2dep.gif) no-repeat 0 10px;
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 10px;
   padding-left: 12px;
 }
 .sm-list .graph_txt ul li span {
@@ -446,7 +446,7 @@
   display: inline-block;
 }
 .sm-list .graph_txt ul li {
-  background: url(../img/common/bu_dot_2dep.gif) no-repeat 0 10px;
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 10px;
   padding-left: 12px;
   margin-top: 10px;
   margin-bottom: 10px;

@@ -44,11 +44,9 @@
 #quick-navi .quick-menu-div {
   float: left;
   letter-spacing: -1px;
-  /* 이미지 없음. */
   background: url(../../images/나의자산/quicknavi_bg.gif) no-repeat 100% 0;
 }
 #quick-navi #quick-navi-depth1 {
-  /* 이미지 없음. */
   background: url(../../images/나의자산/quicknavi_bg2.gif) no-repeat 100% 0;
 }
 #quick-navi #quick-navi-depth1 > a {
