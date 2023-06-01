@@ -19,7 +19,8 @@
   background-color: #f8f8f8;
   border-bottom: 1px solid #e5e5e5;
 }
-#quick-navi li.mymenu {
+/* 즐겨찾기 적용을 위한 코드 */
+/* #quick-navi li.mymenu {
   position: absolute;
   top: 3px;
   right: 37px;
@@ -28,11 +29,11 @@
   display: block;
   width: 28px;
   height: 28px;
-  /* 이미지 없음. */
-  background: url(/common/img/quicknavi_mymenu.png) no-repeat;
+ 
+  background: url(../../images/나의자산/quicknavi_mymenu.png) no-repeat;
   text-indent: -9999px;
   font-size: 0;
-}
+} 
 #quick-navi li.mymenu a.on {
   background-position: 0 -28px;
 }
@@ -41,6 +42,7 @@
   top: 3px;
   right: 0;
 }
+*/
 #quick-navi .quick-menu-div {
   float: left;
   letter-spacing: -1px;
@@ -76,7 +78,8 @@
   border: 1px solid #dfdfdf;
   z-index: 10001;
 }
-#quick-navi .quick-menu-div > ul > li {
+/* 메뉴 선택하면 들어갈 수 있게 하는 부분 */
+/* #quick-navi .quick-menu-div > ul > li {
   font-size: 13px;
   padding: 3px 20px 4px 20px;
 }
@@ -87,4 +90,4 @@
 }
 #quick-navi .quick-menu-div > ul > li.selected > a {
   font-weight: bold;
-}
+} */

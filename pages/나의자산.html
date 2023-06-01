@@ -36,7 +36,6 @@
       type="text/css"
       href="../styles/나의자산/chart.skin1.css"
     />
-    <!-- 어디에 쓰일지 아직 모름 header에 쓰이지 않을까 예상. -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -68,11 +67,13 @@
   <div id="header">
     <div class="inner">
     </div>
-<div id="gnb-area">
-    <div id="gnb-wrap">
-</div>
-</div>
-</div>
+    <div id="gnb-area">
+      <div id="gnb-wrap">
+      </div>
+    </div>
+  </div>
+
+  
   <body data-new-gr-c-s-check-loaded="14.1108.0" class="vsc-initialized" onload="showNowTime()">
     <div class="wrap templetWrap">
     <div id="quick-navi-wrap">
@@ -113,7 +114,7 @@
             <!-- <div class="sm-visual">
               <h3><span>자산 조회</span></h3>
             </div> -->
-            <div class="w960 fl ob-right">
+            <div class="w960 fl ob-top">
               <div class="sm-info1">
                 <ul>
                   <li class="h10">
@@ -431,7 +432,7 @@
 
 
         <div class="fl ml10">
-          <div class="sm-list">
+          <div class="sm-list2">
             <div class="txt_both">
                 <h4 style="border-bottom:3px solid #2daca1; font-size: 22px;">자산 현황</h4>
               </div>
@@ -475,25 +476,21 @@
                       <th>바로가기</th>
                     </tr>
                     <tr>
-                      <td bgcolor="#e7e5e5" style="text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
+                      <td style="background-color: #e7e5e583; text-align: center;padding-right: 0px;">123-45-678910<br>(QV CMA)</td>
                       <td>NULL</td>
                       <td>312,165</td>
                       <td>0</td>
                       <td>NULL</td>
                       <td>NULL</td>
-                      <!-- <td>NULL</td> -->
                       <td class="q_btn" style="text-align: center;">
                         <button>상세잔고 > </button>
                         <button>거래내역 > </button>
                         <button style="background: #3e968e; color:white">이체 > </button></td>
-                      
                     </tr>
-
                   </table>
                   
 
                   <span> </br> &nbsp; &nbsp;&#9655;  상품별 현황</span>
-
                   
                     <div class="asset2">
                       <div class="graph2 fl">
@@ -531,7 +528,7 @@
 
                       </ul> 
                     </div>
-                    <div class="graph3 fl mt15 ml30 ">
+                    <div class="graph_txt2 fl mt15 ml30 ">
                       <table class="center tb3 w400" >
                         <tr>
                           <th>상품종류</th>
@@ -541,7 +538,7 @@
                         <tr>
                           <td style="text-align: center">펀드/RP</td>
                           <td>0</td>
-                          <td>0%</td>
+                          <td >0%</td>
                         </tr>
                         <tr>
                           <td style="text-align: center">주식</td>
@@ -608,12 +605,8 @@
                           <td>0</td>
                           <td>0%</td>
                         </tr>
-    
                       </table>
-
-
                     </div>
-                      
                   </div>
 
                   <div class="tab_group">
@@ -640,7 +633,7 @@
 
                     <div class="tab_content2 on">
                       <div class="w95p center tb4">
-                        <table border="1" >
+                        <table>
                             <tr>
                                 <th rowspan="2">계좌번호</th>
                                 <th rowspan="2">상품명</th>
@@ -653,7 +646,7 @@
                                 <th>결제예수금</th>
                             </tr>
                             <tr>
-                                <td style="text-align: center; padding-right: 0px;" rowspan="2">123-45-678910</td>
+                                <td style="text-align:center; padding-right: 0px;" rowspan="2">123-45-678910</td>
                                 <td style="text-align: center; padding-right: 0px;" rowspan="2">주식</td>
                                 <td rowspan="2">123,000</td>
                                 <td>120,000</td>
@@ -670,7 +663,7 @@
 
                     </div>
                     <div class="tab_content2">
-                      <div class="w95p center tb5">
+                      <div class="w95p center tb4">
                         <table border="1">
                             <tr>
                                 <th>계좌번호</th>
@@ -700,7 +693,7 @@
                     </div>
                     <div class="tab_content2">
                       <div class="w95p center tb4">
-                        <table border="1" >
+                        <table>
                             <tr>
                                 <th rowspan="2">계좌번호</th>
                                 <th rowspan="2">상품계좌명</th>
