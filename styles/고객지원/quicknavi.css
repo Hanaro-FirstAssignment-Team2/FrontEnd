@@ -41,8 +41,7 @@
 #quick-navi .quick-menu-div a:hover {
   color: #008268;
 }
-#quick-navi .quick-menu-div .selected-menu {
-}
+
 #quick-navi .quick-menu-div > ul {
   position: absolute;
   visibility: hidden;
