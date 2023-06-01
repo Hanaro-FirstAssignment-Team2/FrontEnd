@@ -32,7 +32,9 @@
 
 /*width*/
 .w260 { width:260px !important; }
-.w330 { width:330px !important; padding-left: 40px; font-size: 14px; text-overflow: ellipsis;}
+.w330 { width:500px !important; padding-left: 40px; font-size: 14px; text-overflow: ellipsis;}
+
+.submainBoardList { overflow: hidden; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 
 /*height*/
