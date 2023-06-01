@@ -124,15 +124,15 @@
 <div id="quick-navi-wrap">
     <ul id="quick-navi">
         
-    	<li class="fl"><a id="access-quickmemu" href="index.html" title="홈"><img src="../images/해외주식파생/quicknavi_home.gif" alt="home"></a></li>
-    	
+       <li class="fl"><a id="access-quickmemu" href="index.html" title="홈"><img src="../images/해외주식파생/quicknavi_home.gif" alt="home"></a></li>
+       
         <li>
             <div id="quick-navi-depth1" class="quick-menu-div">
                 <a href="#" class="selected-menu quick-menu-depth1">해외주식파생</a>
                 </div>
         </li>
 
-    	<li>
+       <li>
             <div id="quick-navi-depth3" class="quick-menu-div">
                 <ul>
                 <li>
@@ -199,33 +199,22 @@
                                 <p>#포트폴리오</p>
                             </div>
                             <div class="cardicon2">
-                                <img src="../images/해외주식파생/graph1.png" width="135px" alt="etf">
+                                <img src="../images/해외주식파생/graph1.png" width="150px" alt="etf">
                             </div>
                         </a>
                     </li>
-                    <li class="video-product-guide-item guide06">
-                      <a href="#"> 
-                          <strong class="tit">해외주식은<br>
-                            무엇이 다를까요?
-                          </strong>
-                          <p class="tit-sub">해외주식에 대한<br>
-                              궁금증 해결하기
-                          </p>
-                          <div class="tag-wrap">
-                              <p>#해외주식</p>
-                              <p>#국내주식</p>
-                          </div>
-                          <div class="cardicon2">
-                          <img src="../images/해외주식파생/questionmark2.png" width="170px" alt="etf">
-                          </div>
-                      </a>
-                  </li>
                 </ul>
             </div>
         </section>
     </section>
 
     </div>
+
+
+
+
+
+
 
 
 
@@ -249,6 +238,7 @@
                           <table id="kospi200-table">
                             <tbody id="kospi200-table-body"></tbody>
                       </table>
+                      
                             </div>
                     </div>
                 </div>
@@ -261,14 +251,43 @@
                 <!-- table -->
                 <div class="wt_rate">
                     <!-- li 방식 -->
-                    <table id="exchange-rate-table">
-                      <tbody id="exchange-rate-table-body"></tbody>
-                    </table>                  
+                    <ul class="indexgrp ls-1 type02" data-bind="_this.withItem(jisuObject,false)" data-rowgroup="1">
+                        <br>
+                        <li class="goUp">
+                            <span class="index-tit">원/달러</span><span class="index-sum" data-bind="USDKRWSMBS[&#39;NowPrc&#39;]" data-bind-bypass="true">1,338.60</span><span class="index-arr" data-bind="checkUpDownJisu(USDKRWSMBS[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="USDKRWSMBS[&#39;PrdayCmp&#39;]" data-bind-bypass="true">1.60</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">원/엔</span><span class="index-sum" data-bind="JPYKRWCOMP[&#39;NowPrc&#39;]" data-bind-bypass="true">9.8458</span><span class="index-arr" data-bind="checkUpDownJisu(JPYKRWCOMP[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="JPYKRWCOMP[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0124</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">원/유로</span><span class="index-sum" data-bind="EURKRWCOMP[&#39;NowPrc&#39;]" data-bind-bypass="true">1,456.13</span><span class="index-arr" data-bind="checkUpDownJisu(EURKRWCOMP[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="EURKRWCOMP[&#39;PrdayCmp&#39;]" data-bind-bypass="true">1.53</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">국고채 3년</span><span class="index-sum" data-bind="Y0101[&#39;NowPrc&#39;]" data-bind-bypass="true">3.2790</span><span class="index-arr" data-bind="checkUpDownJisu(Y0101[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0101[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0540</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">CD(91일)</span><span class="index-sum" data-bind="Y0112[&#39;NowPrc&#39;]" data-bind-bypass="true">3.6200</span><span class="index-arr" data-bind="checkUpDownJisu(Y0112[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0112[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0100</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">통안증권 2년</span><span class="index-sum" data-bind="Y0110[&#39;NowPrc&#39;]" data-bind-bypass="true">3.3600</span><span class="index-arr" data-bind="checkUpDownJisu(Y0110[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="Y0110[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.0360</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">WTI(현물)</span><span class="index-sum" data-bind="SPT_CL[&#39;NowPrc&#39;]" data-bind-bypass="true">45.95</span><span class="index-arr" data-bind="checkUpDownJisu(SPT_CL[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="SPT_CL[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.27</span>
+                        </li>
+                        <li class="goDown">
+                            <span class="index-tit">두바이(현물)</span><span class="index-sum" data-bind="SPT_DU[&#39;NowPrc&#39;]" data-bind-bypass="true">73.33</span><span class="index-arr" data-bind="checkUpDownJisu(SPT_DU[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▼<span class="hidden">하락</span></span><span class="index-pro" data-bind="SPT_DU[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.21</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">금(현물)</span><span class="index-sum" data-bind="COM_GC[&#39;NowPrc&#39;]" data-bind-bypass="true">2,022.7</span><span class="index-arr" data-bind="checkUpDownJisu(COM_GC[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="COM_GC[&#39;PrdayCmp&#39;]" data-bind-bypass="true">2.9</span>
+                        </li>
+                        <li class="goUp">
+                            <span class="index-tit">은(현물)</span><span class="index-sum" data-bind="COM_SI[&#39;NowPrc&#39;]" data-bind-bypass="true">24.291</span><span class="index-arr" data-bind="checkUpDownJisu(COM_SI[&#39;PrdayCmpTp&#39;])" data-bind-bypass="true">▲<span class="hidden">상승</span></span><span class="index-pro" data-bind="COM_SI[&#39;PrdayCmp&#39;]" data-bind-bypass="true">0.137</span>
+                        </li>
+                    </ul>
                     <!-- //li 방식 -->
                 </div>
                 <!-- //table -->
             </div>
-
 
 
             <div class="wt-box2 w260 fl mb45">
@@ -300,12 +319,37 @@
                 </div>
     
         </div>
-        </div>
+
+            </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         </div>
         <!-- //info area -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -347,37 +391,6 @@ function drawBackgroundColor() {
 
     </script>
 
-<<<<<<< HEAD
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script>
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBackgroundColor);
-function drawBackgroundColor() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('date', 'X');
-      data.addColumn('number', 'Nasdaq');
-      data.addRows([
-        [new Date(2023, 5, 17), 0], [new Date(2023, 5, 18), 230000], [new Date(2023, 5, 19), 270000],   [new Date(2023, 5, 20), 400000],  [new Date(2023, 5, 21), 410000],  [new Date(2023, 5, 22), 750000],  [new Date(2023, 5, 23), 980000],  [new Date(2023, 5, 24), 1100000],  [new Date(2023, 5, 25), 1260000]
-      ]);
-      var options = {
-        hAxis: {
-          title: 'date'
-        },
-        vAxis: {
-          title: 'rate'
-        },
-        series: {
-            0: { color: '#DF0101' },
-          },
-        backgroundColor: '#fff'
-      };
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
-    </script>
-
-</body> 
-=======
 
 <script>
     $(document).ready(function() {
@@ -473,6 +486,7 @@ $(document).ready(function() {
 
 
 
+
 $(document).ready(function() {
   let name3 = "코스피 200 금융 레버리지지수";
 
@@ -558,61 +572,7 @@ series: [
   window.addEventListener('resize', myChart.resize);
 </script>
 
-
-
-
-
-
-
-
-
-  <script>
-    const api_key = "pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D";
-
-$(document).ready(function() {
-  $.ajax({
-    url: "https://apis.data.go.kr/1220000/retrieveTrifFxrtInfo/getRetrieveTrifFxrtInfo?aplyBgnDt=20230530&weekFxrtTpcd=2&serviceKey=" + api_key,
-    type: "GET",
-    success: function(result) {
-      let exchangeRateTableBody = $("#exchange-rate-table-body");
-      $(result).find("item").each(function() {
-        let titleCell = $("<td></td>").text("원/달러");
-        let country = $(this).find("cntySgn").text();
-        let currency = $(this).find("currSgn").text();
-        let exchangeRate = parseFloat($(this).find("fxrt").text()).toFixed(2);
-
-
-        let newRow = $("<tr>");
-        newRow.append($("<td>").text(country));
-        newRow.append($("<td>").text(currency));
-
-        let rateCell = $("<td>");
-        let previousRate = exchangeRateTableBody.find("tr:last-child td:last-child").text();
-        if (previousRate) {
-          previousRate = parseFloat(previousRate);
-          if (exchangeRate > previousRate) {
-            rateCell.append($("<span>").text(exchangeRate).addClass("arrow-up"));
-          } else if (exchangeRate < previousRate) {
-            rateCell.append($("<span>").text(exchangeRate).addClass("arrow-down"));
-          } else {
-            rateCell.text(exchangeRate);
-          }
-        } else {
-          rateCell.text(exchangeRate);
-        }
-
-        newRow.append(rateCell);
-        exchangeRateTableBody.append(newRow);
-      });
-    },
-    error: function() {
-      console.log("정보를 불러오지 못했습니다");
-    }
-  });
-});
-  </script>
 </body> <!--footer 사이에 공간 만들기-->
->>>>>>> 59fc5ba70c9a4ce0acbb923595a182c01c1e7847
 <footer>
     
 </footer>
