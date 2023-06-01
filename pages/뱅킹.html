@@ -29,27 +29,19 @@
 
 
 <title>온라인지점 : 하나증권</title>
-
-
+<script src="js/includeHTML.js"></script>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1108.0" data-gr-ext-installed="">
 <div class="wrap templetWrap">
 
-  <!-- INCLUDE : HANAW HEADER -->
-  <div id="header">
-    <div class="inner">
-
+    <!-- INCLUDE : HANAW HEADER -->
+    <div include-html="헤더.html">
+        
     </div>
-
-<div id="gnb-area">
-    <!-- GNB : START -->
-    <div id="gnb-wrap">
-
-    </div>
-    <!-- GNB : END -->
-</div>
-</div>
+    <script>
+        includeHTML();
+    </script>
 
 <!-- INCLUDE : QUICK NAVI -->
     <style>
@@ -102,9 +94,9 @@
                    
                   <li id="ICON2"><a><img src="./뱅킹_files/img_sm_quick01.gif" alt="종합잔고조회" class="vam"></a><span><a>종합잔고조회</a></span></li>
                   <li id="ICON3"><a><img src="./뱅킹_files/img_sm_quick02.gif" alt="즉시이체" class="vam"></a><span><a>즉시이체</a></span></li>
-                  <li id="ICON4"><a><img src="./뱅킹_files/img_sm_quick03.gif" alt="일반지로납부" class="vam"></a><span><a">개인정보관리</a></span></li>
-                  <li id="ICON5"><a><img src="./뱅킹_files/img_sm_quick05.gif" alt="신용/대출신청" class="vam"></a><span><a">신용대출신청</a></span></li>
-                  <li id="ICON6"><a><img src="./뱅킹_files/img_sm_quick04.gif" alt="자산관리 캘린더" class="vam"></a><span><a">공모주청약</a></span></li>
+                  <li id="ICON4"><a><img src="./뱅킹_files/img_sm_quick03.gif" alt="일반지로납부" class="vam"></a><span><a>개인정보관리</a></span></li>
+                  <li id="ICON5"><a><img src="./뱅킹_files/img_sm_quick05.gif" alt="신용/대출신청" class="vam"></a><span><a>신용대출신청</a></span></li>
+                  <li id="ICON6"><a><img src="./뱅킹_files/img_sm_quick04.gif" alt="자산관리 캘린더" class="vam"></a><span><a>공모주청약</a></span></li>
 
                 </ul>
             </div>
@@ -112,34 +104,9 @@
             <!-- data -->
             <div class="sm-list">
                 <div class="mb30">
-                    <h4>나의 자산종합<a href="https://www.hanaw.com/main/bank/online/index.cmd#" class="more" id="L2"><span class="blind">나의 자산종합 더보기</span></a></h4>
-                    <div class="asset">
-                        <div class="graph fl"> 
-                            <div class="chart09-5-ctnr graph_img" id="PieChartArea"><canvas id="PieChartArea_canvas" width="205" height="178" style="position: absolute; width: 100%; height: 100%;"></canvas><div id="PieChartArea_selectitem" style="display: none; position: absolute; font-size: 12px; font-family: dotum; color: rgb(68, 68, 68);"></div></div>
-                            <ul class="graph_explain">
-                                <li><span class="b">A</span> : 펀드/RP</li> 
-								<li><span class="b">B</span> : 주식</li> 
-								<li><span class="b">C</span> : ELS/DLS</li> 
-								<li><span class="b">D</span> : 선물/옵션</li> 
-								<li><span class="b">E</span> : CMA</li> 
-								<li><span class="b">F</span> : 연금저축</li> 
-								<li><span class="b">G</span> : 국내채권</li> 
-								<li><span class="b">H</span> : 해외선물/옵션</li> 
-                                <li><span class="b">I</span> : FX마진</li> 
-								<li><span class="b">J</span> : 해외주식</li> 
-								<li><span class="b">K</span> : 랩어카운트</li> 
-								<li><span class="b">L</span> : 신탁</li>
-								<li><span class="b">M</span> : 현금예수금</li> 
-								<li><span class="b">N</span> : 금현물</li> 
-							</ul>
-                        </div>                        
-                        <div class="fl graph_txt" id="AcntSummary2">
-                            <div class="total">합계 <span class="fr"><strong class="txtpoint txtbasic" id="AcntTotal">0</strong>원</span></div>
-                            <ul id="AcntSummary2">
-                                <li>연금상품<span><strong class="num">0</strong>원</span></li>
-                                <li>신용/대출 <span><strong class="num">0</strong>원</span></li>
-                            </ul>
-                        </div>
+                    <h4></h4>
+                    <div class="asset" style="margin-top:20px; margin-left:50px">
+                        <p class = "youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/3UqZgN6sUk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
                     </div>
                 </div>
                 <!-- data --> 
@@ -159,7 +126,7 @@
                             <button type="button" class="btn btn-default min setting" id="L1"><span></span>설정</button>
                         </div>   
                          -->                     
-                        <img src="./온라인지점 _ 하나증권_files/icon_rank_none.png" alt=""> 
+                        <img src="./뱅킹_files/icon_rank_none.png" alt=""> 
                     </li>
                     <li>
                         <ul>
@@ -175,9 +142,9 @@
             <!-- date info  -->
             <div class="sm-info2">
                 <ul>
-                    <li>최종접속일시<span>2023.05.10&nbsp;01:28:08</span></li>
-                    <li>최종이체일<span></span></li>
-                    <li>개인정보 변경일<span></span></li>
+                    <li>최종접속일시<span>2023.05.10</span></li>
+                    <li>최종이체일<span>2023.06.10</span></li>
+                    <li>개인정보 변경일<span>2023.06.10</span></li>
                 </ul>
             </div>
             <!-- date info  --> 
@@ -188,112 +155,42 @@
                     <!--<dd class="j-message"></dd>-->
                     <dd class="bon">
                         <ul>
-                    <li class="off"><a>당일 반대매매 주문현황</a></li><li class="off">
-                      <a href="https://www.hanaw.com/main/bank/online/index.cmd#a">미수/미납 현황</a>
-                    </li>
-                    <li class="off"><a>전일주식 체결현황</a>
-                    </li>
-                    <li class="off">
-                      <a>전일펀드주문내역</a>
-                    </li>
-                    <li class="off">
-                      <a>선물옵션추가 증거금현황</a>
-                    </li><li class="off">
-                      <a>공모주/ELS 청약내역</a>
-                    </li>
-                    <li class="off">
-                      <a>유상청약내역</a>
-                    </li>
-                    <li class="off">
-                      <a>미수동결현황</a>
-                    </li>
-                    <li class="off">
-                      <a>신용/대출 담보비율</a>
-                    </li>
-                  </ul>
+                            <li class="off">
+                                <a>당일 반대매매 주문현황</a>
+                            </li>
+                            <li class="off">
+                            <a>미수/미납 현황</a>
+                            </li>
+                            <li class="off">
+                                <a>전일주식 체결현황</a>
+                            </li>
+                            <li class="off">
+                            <a>전일펀드주문내역</a>
+                            </li>
+                            <li class="off">
+                            <a>선물옵션추가 증거금현황</a>
+                            </li><li class="off">
+                            <a>공모주/ELS 청약내역</a>
+                            </li>
+                            <li class="off">
+                            <a>유상청약내역</a>
+                            </li>
+                            <li class="off">
+                            <a>미수동결현황</a>
+                            </li>
+                            <li class="off">
+                            <a>신용/대출 담보비율</a>
+                            </li>
+                        </ul>
                     </dd>
                 </dl>
-                <!-- 당일 반대매매 주문현황 -->
-                <div class="dia-content0 ci-dialog-content lh22"> 
-                <ul class="list-2dep">
-                </ul>
-                </div>
-                <!-- 미수/미납 현황 -->
-                <div class="dia-content1 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 전일주식 체결현황 -->
-				<div class="dia-content2 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 전일펀드주문내역 -->
-				<div class="dia-content3 ci-dialog-content lh22">
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 공모주/ELS 청약내역 -->
-				<div class="dia-content4 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 유상청약내역 -->
-				<div class="dia-content5 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 선물옵션추가 증거금현황 -->
-				<div class="dia-content6 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-				<!-- 미수동결현황 -->
-				<div class="dia-content7 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				
-				</div>
-				<!-- 신용/대출 담보비율 -->
-				<div class="dia-content8 ci-dialog-content lh22"> 
-				    <ul class="list-2dep">
-				</ul>
-				</div>
-            </div>
-            <!-- //day info -->             
+            </div>  
 
-
-<script>
-
-    function showOB_000000_M_D1Layer(seq,title,ele){
-    	var wrapper = $("#j-OB_000000_M_notice");
-    	ci.dialog.open({
-            id : 'dialog_'+seq, // id 지정
-            title : title, // title 지정
-            dom : $('.dia-content'+seq,wrapper), // 내용으로 들어갈 마크업 지정
-            focus : $(this), 
-            width : 550,
-            height : 400
-        });
-    }
-</script></div>
-        </div>
-        <!-- //right area --> 
-        
-    </div>
-    <!-- //container --> 
-    
-</div>
-<!-- //wrap --> 
-
-<!--b:e--><!-- 추가 20220714 금융소비자보호 소비자경보 배너 위치 변경 -->
-  <!-- 추가 20200409 리서치센터 안내사항 추가 -->
-  </div>
-
-
-  </ul>
-</div>
-
-<div id="footer">
 
 </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
