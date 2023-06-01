@@ -15,7 +15,6 @@ $(document).ready(function () {
   });
 });
 
-
 $(document).ready(function () {
   var tab = $(".tab2 li");
 
