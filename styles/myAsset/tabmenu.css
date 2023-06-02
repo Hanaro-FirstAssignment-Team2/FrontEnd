@@ -1,3 +1,4 @@
+/* 자산 현황 탭 메뉴 -> 순자산/총자산 구분 */
 .tab {
   padding: 33px 0 0px;
 }
@@ -29,6 +30,8 @@
   background: #fff;
   border-bottom: 1px solid white;
 }
+
+/* 순자산 / 총자산 메뉴 Content */
 .tab_content {
   display: none;
   height: 1180px;
@@ -44,19 +47,18 @@
   display: block;
 }
 
+/* 탭 메뉴 내부 Content -> 이체업무 */
 .tab_content .tb1 {
   /* 이중선 젝 */
   border-collapse: collapse;
   width: max-content;
 }
-
 .tab_content .tb1 caption {
   font-size: 18px;
   margin-bottom: 15px;
   width: max-content;
   float: left;
 }
-
 .tab_content .tb1 th {
   background-color: #e7e5e583;
 }
@@ -67,7 +69,6 @@
   text-align: center;
   border: 2px solid #979797;
   font-size: 16px;
-
   vertical-align: top; /* 위 */
   vertical-align: bottom; /* 아래 */
   vertical-align: middle; /* 가운데 */
@@ -79,6 +80,7 @@
   padding-right: 15px;
 }
 
+/* 탭 메뉴 내부 Content -> 계좌별 현황 */
 .tab_content .tb2 {
   /* 이중선 젝 */
   border-collapse: collapse;
@@ -130,6 +132,7 @@
   font-size: 18px;
 }
 
+/* 탭 메뉴 내부 Content -> 상품별 현황 표 */
 .tab_content .tb3 {
   /* 이중선 젝 */
   border-collapse: collapse;

@@ -2,57 +2,43 @@
 <html lang="ko">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="decription" content="content"="증권, 주식거래, 금융상품, 재테크 및 투자, 자산관리 정보, 주식시세 " />
+  <meta name="decription" content="증권, 주식거래, 금융상품, 재테크 및 투자, 자산관리 정보, 주식시세 " />
 
-
+<!-- CSS 파일 가져오기 -->
+<!-- 헤더, 푸터 공통 파일 연동 -->
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
-  
-  <!-- <link rel="stylesheet" type="text/css" href="./뱅킹_files/common.css">
-  <link rel="stylesheet" type="text/css" href="./뱅킹_files/common.pc.css">
-  <link rel="stylesheet" type="text/css" href="./뱅킹_files/ci.grid.css">
-  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.ob.css">
-  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.quicknavi.css">
-  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.sidebar.css"> -->
-
-
+  <!-- 해당 페이지에 적용시킬 CSS 파일 연동 -->
   <link rel="stylesheet" type="text/css" href="../styles/customerSupport/default.css" />
   <link rel="stylesheet" type="text/css" href="../styles/customerSupport/cs.css" />
   <link rel="stylesheet" type="text/css" href="../styles/customerSupport/quicknavi.css" />
   <link rel="stylesheet" type="text/css" href="../styles/customerSupport/hana_common.css" />
 
-
   <title>고객지원 : 하나증권</title>
-
-
-
-
-
 </head>
 
-<!-- <header include-html="header.html"></header> -->
 
 <body class="vsc-initialized">
-
   <div class="wrap templetWrap">
+
+    <!-- Header 헤더 메뉴 -->
     <div id="header">
       <div class="inner">
         <h1><a href="#">하나증권</a></h1>
         <ul class="memberlink" style="margin-left: 570px;">
           <li style="border-color: black; background-color:transparent;"><a
-              href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
+              href="로그인.html" style="color:black">로그인</a>
           </li>
           <li style="border-color: black;background-color:transparent;"><a
-              href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd" style="color:black">ID
+              href="" style="color:black">ID
               등록</a>
           </li>
           <li style="border-color: black;background-color:transparent;"><a
-              href="https://www.hanaw.com/main/customer/certificate/CS_030000_M.cmd" style="color:black">인증센터</a></li>
+              href="" style="color:black">인증센터</a></li>
         </ul>
       </div>
       <div id="gnb-area">
@@ -61,54 +47,43 @@
             <li class="gnb_01">
               <a href="myAsset.html" class="depth1-link ">
                 나의 자산</a>
-
             </li>
             <li class="gnb_02">
               <a href="금융투자상품_1.html" class="depth1-link">
                 금융투자상품</a>
-
             </li>
             <li class="gnb_03">
               <a href="주식파생상품.html" class="depth1-link ">
                 주식파생상품</a>
-
             </li>
             <li class="gnb_04">
               <a href="해외주식파생.html" class="depth1-link ">
                 해외주식파생</a>
-
             </li>
             <li class="gnb_04">
               <a href="연금.html" class="depth1-link ">
                 연금</a>
-
             </li>
             <li class="gnb_05">
               <a href="뱅킹.html" class="depth1-link ">
                 뱅킹</a>
-
             </li>
             <li class="gnb_06">
               <a href="customerSupport.html" class="depth1-link ">
                 고객지원</a>
-
             </li>
-
             <li style="visibility: hidden;">칸 맞춤 </li>
             <li class="gnb_07">
               <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고" style="width: 30px;">
-
             </li>
             <li class="gnb_08">
               <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
-
-            </li>
             </li>
           </ul>
-
         </div>
       </div>
     </div>
+    <!-- //Header 헤더 메뉴 -->
   </div>
   <!-- 내부 스타일 파일 -->
   <style>
@@ -116,22 +91,26 @@
       margin-top: 34px;
     }
   </style>
+  <!-- 퀵 네비게이션 -->
   <div id="quick-navi-wrap">
     <ul id="quick-navi">
       <li class="fl">
-        <a id="access-quickmemu" href="https://www.hanaw.com/main/main/index.cmd" title="홈"><img
+        <a id="access-quickmemu" href="" title="홈"><img
             src="../images/customerSupport/quicknavi_home.gif" alt="home" /></a>
       </li>
-
       <li>
+        <!-- 더 들어갈 부 메뉴들은 존재하지 않아 depth1까지 개발 -->
         <div id="quick-navi-depth1" class="quick-menu-div">
-          <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd"
+          <a href=""
             class="selected-menu quick-menu-depth1">고객지원</a>
         </div>
       </li>
     </ul>
   </div>
+
   <div class="clear"></div>
+
+  <!-- MainContainer -->
   <div id="mainContainer">
     <div class="wrap">
       <div id="container">
@@ -141,18 +120,19 @@
             <p>고객님의 목소리에 항상 귀 기울이겠습니다.</p>
 
             <div class="search">
-              <!-- 검색 버튼 누르면 FAQ 페이지로 이동 -->
-              <form id="searchFaq" method="post" action="https://www.hanaw.com/corebbs5/faq/list/list.cmd">
+              <!-- FAQ 검색 -->
+              <form id="searchFaq" method="post" action="">
                 <div class="fl w50 mr15">
                   <img src="../images/customerSupport/img_search_tit.gif" style="height: 40px; width: 46px" alt="FAQ" />
                 </div>
                 <div class="word pr fl">
                   <input type="text" name="srchWord" title="검색" class="w220 h30" />
                   <div>
-                    <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd#" class="btn j-btn1"></a>
+                    <a href="" class="btn j-btn1"></a>
                   </div>
                 </div>
                 <ul class="fl ml30 j-faq">
+                  <!-- 안내 문구 -->
                   <li>
                     <a href=""
                       title="FAQ에서 ID등록 검색">"ID등록"</a>등을 질문해보세요!
@@ -162,52 +142,54 @@
             </div>
           </div>
         </div>
+        
         <div class="mb30 h150">
+          <!-- 퀵 메뉴 -->
           <div class="sm-quick fl">
             <ul>
               <li>
-                <a href="https://www.hanaw.com/main/customer/customer/CS_010100_P.cmd">
+                <a href="">
                   <img src="../images/customerSupport/img_sm_quick01.gif" alt="계좌개설안내" /><span>계좌개설안내</span>
                 </a>
               </li>
               <li>
-                <a href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd"><img
+                <a href=""><img
                     src="../images/customerSupport/img_sm_quick02.gif" alt="ID등록" /><span>ID등록</span></a>
               </li>
               <li>
-                <a href="https://www.hanaw.com/main/customer/certificate/CS_030000_M.cmd"><img
+                <a href=""><img
                     src="../images/customerSupport/img_sm_quick03.gif" alt="공동인증센터" /><span>인증센터</span></a>
               </li>
               <li>
-                <a href="https://www.hanaw.com/main/customer/customer/CS_060200.cmd"><img
+                <a href=""><img
                     src="../images/customerSupport/img_sm_quick04.gif" alt="수수료안내" /><span>수수료안내</span></a>
               </li>
               <li>
-                <a href="https://www.hanaw.com/main/customer/customer/CS_060301.cmd"><img
+                <a href=""><img
                     src="../images/customerSupport/img_sm_quick05.gif" alt="증거금안내" /><span>증거금안내</span></a>
               </li>
               <li>
-                <a href="https://www.hanaw.com/main/customer/customer/CS_060401.cmd"><img
+                <a href=""><img
                     src="../images/customerSupport/img_sm_quick06.gif" alt="입출금안내" /><span>입출금안내</span></a>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- box area -->
+        <!-- Box Area - 상담 지원 서비스 -->
         <div class="mb50 cb h330 sm-box">
           <div class="sm-box1 fl w306">
             <h4>상담 지원 서비스</h4>
             <div class="up">
               <ul class="mt10">
                 <li class="pr13 pl2 w50p">
-                  <a href="https://www.hanaw.com/corebbs5/qna/list/list.cmd">
+                  <a href="">
                     <img src="../images/customerSupport/img_sm_quick07.gif" alt="고객의소리" />
                     <span>고객의소리</span>
                   </a>
                 </li>
                 <li class="bon pl13 w50p">
-                  <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd#" id="counselTel"><img
+                  <a href="" id="counselTel"><img
                       src="../images/customerSupport/img_sm_quick09.gif" alt="전화예약" /><span>전화예약</span></a>
                 </li>
               </ul>
@@ -217,12 +199,12 @@
                 <dt>PC 원격지원 서비스</dt>
                 <dd>가정에서 생기는 PC문제를 원격으로 해결해 드립니다.</dd>
                 <dd class="more">
-                  <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd#" class="j-btn2">자세히 보기</a>
+                  <a href="" class="j-btn2">자세히 보기</a>
                 </dd>
               </dl>
             </div>
           </div>
-
+        <!-- Box Area - 거래시스템 안내 -->
           <div class="sm-box1 fl ml21 mr21 w306 pr">
             <h4>거래시스템 안내</h4>
             <div class="up">
@@ -231,7 +213,7 @@
                 <dt>1Q HTS 다운로드</dt>
                 <dd>강력하고 안정적인 하나증권 대표 트레이딩</dd>
                 <dd class="more">
-                  <a href="https://www.hanaw.com/main/customer/customer/CS_050100_M.cmd">자세히 보기</a>
+                  <a href="">자세히 보기</a>
                 </dd>
               </dl>
             </div>
@@ -240,12 +222,12 @@
                 <dt>모바일 트레이딩</dt>
                 <dd>모바일 환경에 최적화된 <br />똑똑한 어플리케이션</dd>
                 <dd class="more">
-                  <a href="https://www.hanaw.com/main/customer/customer/CS_050200_M.cmd">자세히 보기</a>
+                  <a href="">자세히 보기</a>
                 </dd>
               </dl>
             </div>
           </div>
-
+        <!-- Box Area - 소비자 보호 서비스 -->
           <div class="sm-box2 fr w306">
             <h4>소비자 보호 서비스</h4>
             <div class="up">
@@ -270,14 +252,14 @@
                   금융사기를 방지하는 서비스
                 </dd>
                 <dd class="more">
-                  <a href="https://www.hanaw.com/main/customer/customer/CS_100101_P.cmd">자세히 보기</a>
+                  <a href="">자세히 보기</a>
                 </dd>
               </dl>
             </div>
           </div>
         </div>
-        <!-- //box area -->
-        <!-- table area -->
+        <!-- //Box Area -->
+        <!-- Table Area - 고객지원센터 안내-->
         <div class="sm-list pr">
           <div class="fl w633">
             <h4>고객지원센터 안내</h4>
@@ -302,30 +284,31 @@
             </dl>
             <dl class="dl2 w120 bgn">
               <dt>
-                <a href="https://www.hanaw.com/main/customer/customer/CS_060700_P.cmd">사고접수</a>
+                <a href="">사고접수</a>
               </dt>
               <dd>분실, 사고신고는 ARS나 고객지원센터로 연락주세요.</dd>
             </dl>
           </div>
+        <!-- Table Area - 이벤트-->
           <div class="fr w306">
             <h4>
-              이벤트<a href="https://www.hanaw.com/corebbs5/eventIng/list/list.cmd" class="more"></a>
+              이벤트<a href="" class="more"></a>
             </h4>
             <ul id="eventArticles" class="submainBoardList mw220">
               <li>
-                <a href="https://www.hanaw.com/corebbs5/eventIng/view/view.cmd?bbsSeq=465" title="국내주식선물 거래 이벤트">국내주식선물
+                <a href="" title="국내주식선물 거래 이벤트">국내주식선물
                   거래 이벤트</a>
                 <div class="icon-new"><span>new</span></div>
                 <span class="date">2023.04.20</span>
               </li>
               <li>
-                <a href="https://www.hanaw.com/corebbs5/eventIng/view/view.cmd?bbsSeq=462"
+                <a href=""
                   title="신용융자·주식담보대출 이자율할인 이벤트">신용융자·주식담보대출 이자율할인 이벤트</a>
                 <div class="icon-new"><span>new</span></div>
                 <span class="date">2023.03.29</span>
               </li>
               <li>
-                <a href="https://www.hanaw.com/corebbs5/eventIng/view/view.cmd?bbsSeq=402"
+                <a href=""
                   title="마이데이터로 MY 자산을 합!">마이데이터로 MY 자산을 합!</a>
                 <div class="icon-new"><span>new</span></div>
                 <span class="date">2022.01.24</span>
@@ -333,16 +316,15 @@
             </ul>
           </div>
         </div>
-        <!-- //table area -->
+        <!-- //Table Area -->
       </div>
     </div>
   </div>
-  </div>
-</body>
 
+
+<!-- Footer 푸터 메뉴 -->
 <div id="footer">
   <div class="guide">
-
     <div class="guide-group">
       <ul class="footerLink">
         <li><a>영업점안내</a></li>
@@ -401,6 +383,7 @@
     </div>
 
   </div>
-</div><!--푸터 인클루드-->
-
+</div>
+<!-- //Footer 푸터 메뉴 -->
+</body>
 </html>

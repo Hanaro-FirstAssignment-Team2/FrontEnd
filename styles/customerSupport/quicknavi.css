@@ -1,3 +1,4 @@
+/* 퀵 네비게이션 */
 #quick-navi-wrap {
   position: absolute;
   width: 100%;
@@ -21,6 +22,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+/* 퀵 메뉴 관련 CSS 구성 */
 #quick-navi .quick-menu-div {
   float: left;
   letter-spacing: -1px;

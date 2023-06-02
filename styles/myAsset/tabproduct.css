@@ -1,3 +1,6 @@
+/* 상품별 자세한 설명을 안내해주는 탭메뉴 */
+
+/* 상품별 탭 메뉴 목록 (순자산, 총자산의 탭메뉴 안에 들어있는 상품별 탭메뉴) */
 .tab2 {
   padding: 43px 0 50px;
 }
@@ -7,7 +10,6 @@
   flex-wrap: wrap;
   margin: auto;
 }
-
 .tab2 ul li {
   width: 12%;
   margin: auto;
@@ -37,6 +39,7 @@
   color: #222;
 }
 
+/* 상품별 탭 메뉴 Content */
 .tab_content2 {
   display: none;
   text-align: center;
@@ -70,7 +73,7 @@
   text-align: right;
   padding-right: 10px;
   border: 2px solid #b0b0b0;
-  vertical-align: middle; /* 가운데 */
+  vertical-align: middle; 
   padding-top: 3px;
   padding-bottom: 3px;
 }
