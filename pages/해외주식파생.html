@@ -28,6 +28,9 @@
   <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
   <meta name="viewport" content="width=1024" />
 
+  <meta name="apple-mobile-web-app-capable" href="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+
   <!--오픈그래프-->
 
   <meta property="og:type" content="website">
@@ -42,34 +45,21 @@
   <meta name="twitter:description" content="하나증권">
   <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
 
-  <link rel="shortcut icon" href="../images/favicon/favicon-16x16.png">
   <meta name="apple-mobile-web-app-title" content="하나증권">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="shortcut icon" href="../images/favicon/favicon-16x16.png">
+
   <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon-16x16.png">
   <link rel="apple-touch-startup-image" href="../images/favicon/favicon-16x16.png">
-  <meta name="apple-mobile-web-app-capable" href="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+ 
 
-
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/jquery-ui-1.10.2.custom.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/common.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/common.pc.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/grid.base.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/grid.pc.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/number-input.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/number-input.pc.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/calendar.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/box.pc.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/ci.grid.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/tab.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/dialog.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/layerlink.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.common.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.main.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.quicknavi.css">
-  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.sidebar.css">
 
 
 
@@ -87,9 +77,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
   <link rel="manifest" href="../images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+
 
   <link rel="shortcut icon" href="../images/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
   <link rel="icon" href="../images/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
@@ -143,6 +131,10 @@
     .arrow-down {
       color: blue;
     }
+
+    a { text-decoration: none; }
+
+    #newsTable { width: 400px; padding: 0; }
   </style>
 </head>
 
@@ -156,20 +148,10 @@
 
     <!-- INCLUDE : HANAW HEADER -->
     <div id="header">
-      <img src="./헤더푸터_files/logo2.png" alt="헤더푸터 로고"
-        style="margin-left:200px; margin-top: 40px; width: 200px; position: absolute;">
 
-
-      <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고"
-        style="margin-left:1130px; margin-top: 60px; width: 30px; position: absolute;">
-
-      <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고"
-        style="margin-left:1170px; margin-top: 62px; width: 25px; position: absolute;">
-
-
-      <div class="inner" style="margin-left: 800px;">
-
-        <ul class="memberlink">
+      <div class="inner">
+        <h1><a href="https://www.hanaw.com/main/main/index.cmd">하나증권</a></h1>
+        <ul class="memberlink" style="margin-left: 520px;">
           <li style="border-color: black; background-color:transparent;"><a
               href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
           </li>
@@ -185,16 +167,9 @@
         <!-- GNB : START -->
 
 
-
-
         <div id="gnb-wrap">
-
-
           <ul id="gnb">
-
             <li class="gnb_01">
-
-
               <a href="나의자산.html" class="depth1-link ">
                 나의 자산</a>
 
@@ -229,6 +204,15 @@
                 고객지원</a>
 
             </li>
+            <li class="gnb_07">
+              <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고" style="width: 30px;">
+
+            </li>
+            <li class="gnb_08">
+              <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
+
+            </li>
+            </li>
           </ul>
 
         </div>
@@ -240,18 +224,21 @@
   <div id="quick-navi-wrap">
     <ul id="quick-navi">
 
-      <li class="fl"><a id="access-quickmemu" href="하나증권.html" title="홈"><img src="../images/해외주식파생/quicknavi_home.gif"
+      <li class="fl"><a id="access-quickmemu" href="하나증권_로그아웃상태.html" title="홈"><img src="../images/해외주식파생/quicknavi_home.gif"
             alt="home"></a></li>
 
       <li>
         <div id="quick-navi-depth1" class="quick-menu-div">
-          <a href="#" class="selected-menu quick-menu-depth1">해외주식파생</a>
+          <a href="/pages/해외주식파생.html" class="selected-menu quick-menu-depth1">해외주식파생</a>
         </div>
       </li>
 
       <li>
         <div id="quick-navi-depth3" class="quick-menu-div">
           <ul>
+            <li>
+              <a href="#">해외주식</a>
+            </li>
             <li>
               <a href="#">해외ETF</a>
             </li>
@@ -267,9 +254,6 @@
             <li>
               <a href="#">FX마진</a>
             </li>
-            <li>
-              <a href="#">CFD</a>
-            </li>
           </ul>
         </div>
       </li>
@@ -283,12 +267,12 @@
       <ul>
         <li>
           <ul class="wt-submenuT">
+            <li><a href="#"><img src="../images/해외주식파생/stock8.png"><br>해외주식</a></li>
             <li><a href="#"><img src="../images/해외주식파생/stock1.jpg"><br>해외ETF</a></li>
             <li><a href="#"><img src="../images/해외주식파생/stock2.jpg"><br>해외주식담보대출</a></li>
             <li><a href="#"><img src="../images/해외주식파생/stock3.jpg"><br>해외선물</a></li>
             <li><a href="#"><img src="../images/해외주식파생/stock4.jpg"><br>해외옵션</a></li>
             <li><a href="#"><img src="../images/해외주식파생/stock5.jpg"><br>FX마진</a></li>
-            <li><a href="#"><img src="../images/해외주식파생/stock7.png"><br>CFD</a></li>
           </ul>
         </li>
       </ul>
@@ -380,46 +364,15 @@
 
 
 
-      <div class="wt-box2 w260 fl mb45">
+      <div class="wt-box2 w260 fl mb45" style="width: 500px;">
         <div class="cb pt50">
           <div style="width: 570px; margin-left:80px;">
             <!-- 뉴스 -->
             <div class="fl w330">
-              <h4>뉴스<a href="#" class="more" title="뉴스 더보기"><img src="../images/해외주식파생/btn_more_board.png"
-                    style="padding-left: 360px;"></a></h4>
-              <ul class="submainBoardList mw245">
-                <li class="isNew">
-                  <a href="#" title="中인민은행 " 디플레이션="" 없다"="" 강조하지만…시장은="" '글쎄'"="" onclick="
-                    openNewsLayer(this,&#39;2023051616072105900011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">中인민은행
-                    "디플레이션 없다" 강조하지만…시장은 '글쎄'</a>
-                  <span class="date">2023-05-16</span>
-                </li>
-                <li class="isNew">
-                  <a href="#" title="김승호 인사처장, 美 방문…NASA 등 &#39;인사 노하우&#39; 살펴본다"
-                    onclick="openNewsLayer(this,&#39;2023051616070804700011&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">김승호
-                    인사처장, 美 방문…NASA 등 '인사 노하우' 살펴본다</a>
-                  <span class="date">2023-05-16</span>
-                </li>
-                <li class="isNew">
-                  <a href="#" title="尹 &#39;간호법 거부권&#39; 행사에 與 " 불가피한="" 선택…野와="" 협상할="" 것""=""
-                    onclick="openNewsLayer(this,&#39;2023051616070715565320&#39;,&#39;2023-05-16&#39;,&#39;16:07&#39;);">尹
-                    '간호법 거부권' 행사에 與 "불가피한 선택…野와 협상할 것"</a>
-                  <span class="date">2023-05-16</span>
-                </li>
-                <li class="isNew">
-                  <a href="#" title="한화리조트 경주, 고급 숙박 수요 맞춤 &#39;프리미어 스위트&#39; 객실 오픈"
-                    onclick="openNewsLayer(this,&#39;2023051616065601001139&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">한화리조트
-                    경주, 고급 숙박 수요 맞춤 '프리미어 스위트' 객실 오픈</a>
-                  <span class="date">2023-05-16</span>
-                </li>
-                <li class="isNew">
-                  <a href="#" title="에스지씨이테크건설(주) (정정)타인에대한채무보증결정"
-                    onclick="openNewsLayer(this,&#39;2023051616065504193915&#39;,&#39;2023-05-16&#39;,&#39;16:06&#39;);">에스지씨이테크건설(주)
-                    (정정)타인에대한채무보증결정</a>
-                  <span class="date">2023-05-16</span>
-                </li>
-              </ul>
-              </ul>
+              <h4>뉴스</h4>
+              <table id="newsTable">
+                <tbody id="newsTableBody"></tbody>
+              </table>
             </div>
             <!-- //뉴스 -->
           </div>
@@ -479,17 +432,11 @@
         </div>
 
         <div class="cscenter">
-          <div class="imgtext">하나증권 고객지원센터 1588-3111 | 주식/금융상품/퇴직연금 상담 02-785-5000<br>해외선물 02-785-7111(24시간) |
-            해외주식 02-3771-3771(24시간)</div>
-          <a>
-            <img src="./헤더푸터_files/blank.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
-          </a>
+          <img src="./헤더푸터_files/footer_csCenter.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
+
         </div>
         <div class="copyright">
-          <div class="hidden">
-            주소 : 서울특별시 영등포구 의사당대로 82(여의도동), 사업자등록번호 : 116-81-05992<br>
-            Copyright ⓒ 2014 Hana Securities Co.,Ltd. All Rights Reserved.
-          </div>
+
           <img src="./헤더푸터_files/copyright.gif" alt="">
         </div>
       </div>
@@ -778,6 +725,42 @@
       });
     });
   </script>
+
+
+<script type="text/javascript">
+  let xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      jsonfunc(this.responseText); //this = xhttp
+      //		jsonfunc(xhttp.responseText); // 둘다 가능
+    }
+  };
+  xhttp.open("GET", "연준.json", true);
+  xhttp.send();
+
+  function jsonfunc(jsonText) {
+    let json = JSON.parse(jsonText); // String -> json으로 변환
+
+    let txt = "";
+    // 접근법 1
+    for (i = 0; i < json.length; i++) {
+      for (j = 0; j < 1; j++) {
+        // key값 가져오기
+        txt += `
+            <tr>
+              <td>${json[i].title}</td>
+              <td><a href="${json[i].link}" target="_blank">&#8640;</a></td>
+
+              
+            </tr>
+          `;
+      }
+      txt += "<br>";
+    }
+    document.getElementById("newsTableBody").innerHTML = txt;
+  }
+</script>
 </body>
 
 </html>
