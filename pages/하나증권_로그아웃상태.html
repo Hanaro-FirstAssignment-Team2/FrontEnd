@@ -12,11 +12,9 @@
     content="증권, 주식, 증권, 인터넷뱅킹, 트레이딩, 주식시세, 주문, 자산관리, 코스피, 코스닥, 해외주식, 금융상품, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, 재테크, 리서치, HTS, 실전투자대회">
 
 
-    <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
-
-    <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
-  
-    <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
 
 
 
@@ -35,9 +33,7 @@
   <link rel="stylesheet" type="text/css" href="./하나증권_files/layerlink.css">
   <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.font.css">
   <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.common.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.layout.css">
   <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.main.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.header.css">
   <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.quicknavi.css">
   <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.sidebar.css">
 
@@ -147,23 +143,13 @@
       <!--// Layer Popup -->
 
       <!-- INCLUDE : HANAW HEADER -->
-      <div id="header" style="z-index: 999; position: absolute;">
-        <img src="./헤더푸터_files/logo2.png" alt="헤더푸터 로고"
-          style="margin-left:200px; margin-top: 40px; width: 200px; position: absolute;">
+      <div id="header">
 
-
-        <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고"
-          style="margin-left:1130px; margin-top: 60px; width: 30px; position: absolute;">
-
-        <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고"
-          style="margin-left:1170px; margin-top: 62px; width: 25px; position: absolute;">
-
-
-        <div class="inner" style="margin-left: 800px;">
-
-          <ul class="memberlink">
+        <div class="inner">
+          <h1><a href="https://www.hanaw.com/main/main/index.cmd">하나증권</a></h1>
+          <ul class="memberlink" style="margin-left: 520px;">
             <li style="border-color: black; background-color:transparent;"><a
-                href="로그인.html" style="color:black">로그인</a>
+                href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
             </li>
             <li style="border-color: black;background-color:transparent;"><a
                 href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd" style="color:black">ID
@@ -177,27 +163,11 @@
           <!-- GNB : START -->
 
 
-
-
           <div id="gnb-wrap">
-
-
             <ul id="gnb">
-
               <li class="gnb_01">
-
-                
-                <a href="#" onclick="need_login()"  class="depth1-link ">
+                <a href="나의자산.html" class="depth1-link ">
                   나의 자산</a>
-
-                <script>
-                    function need_login(){
-                      alert("로그인이 필요합니다.");
-                      location.href = "로그인.html";
-                    }
-
-
-                </script>
 
               </li>
               <li class="gnb_02">
@@ -221,7 +191,7 @@
 
               </li>
               <li class="gnb_05">
-                <a href="#" onclick="need_login()"  class ="depth1-link ">
+                <a href="뱅킹.html" class="depth1-link ">
                   뱅킹</a>
 
               </li>
@@ -229,6 +199,15 @@
                 <a href="고객지원.html" class="depth1-link ">
                   고객지원</a>
 
+              </li>
+              <li class="gnb_07">
+                <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고" style="width: 30px;">
+
+              </li>
+              <li class="gnb_08">
+                <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
+
+              </li>
               </li>
             </ul>
 
@@ -875,17 +854,11 @@
             </div>
 
             <div class="cscenter">
-              <div class="imgtext">하나증권 고객지원센터 1588-3111 | 주식/금융상품/퇴직연금 상담 02-785-5000<br>해외선물 02-785-7111(24시간) |
-                해외주식 02-3771-3771(24시간)</div>
-              <a>
-                <img src="./헤더푸터_files/blank.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
-              </a>
+              <img src="./헤더푸터_files/footer_csCenter.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
+
             </div>
             <div class="copyright">
-              <div class="hidden">
-                주소 : 서울특별시 영등포구 의사당대로 82(여의도동), 사업자등록번호 : 116-81-05992<br>
-                Copyright ⓒ 2014 Hana Securities Co.,Ltd. All Rights Reserved.
-              </div>
+
               <img src="./헤더푸터_files/copyright.gif" alt="">
             </div>
           </div>
@@ -895,22 +868,6 @@
     </div>
   </div>
 
-
-
-
-  <div id="footer">
-
-    <div class="inner">
-
-    </div>
-
-
-
-  </div>
-
-
-
-  </div>
 </body>
 
 </html>
