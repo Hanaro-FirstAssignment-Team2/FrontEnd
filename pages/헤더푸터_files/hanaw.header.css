@@ -1,47 +1,184 @@
 @charset "utf-8";
-.templetWrap{background: url(/common/img/bg_body.gif) repeat-x ;}
-.wrap {width:100%; min-width:1160px;}
-.bgSub01 {background:url('/common/img/bg_body.gif') repeat-x 0 0;}
-.bgSub02 {background:url('/common/img/bg_body.gif') repeat-x 0 0;}
-#header {position:relative; overflow:visible; width:100%; height:111px; padding-top:3px; font-family:'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '굴림', Gulim, sans-serif; line-height:18px; border-bottom:1px solid #ececec; z-index:11}
-#header .inner {position:relative; width:960px; height:50%; margin:0 auto; z-index:5;}
-#header .inner .logo {position:absolute; left:0; top:36px;}
-#header .memberlink {position:absolute; left:214px; top:21px}
-#header .memberlink li {float:left; height:22px; margin-left:-1px; padding:0 7px; border:#CCC solid 1px; font-size:12px; background-color:#fff}
-#header .memberlink li a{text-decoration:none}
-#header .memberlink li:first-child {border:#1a623c solid 1px; color:#FFF; background:url(/common/img/btn_bg_login.gif) repeat-x}
-#header .memberlink li span {color:#FFF}
-#header .toplink {position:absolute; right:0; top:20px;}
-#header .toplink > li {display:inline; padding:0 0 0 6px; }
-.ie8 #header .toplink > li {background-position:  100% 0px;}
-#header .toplink > li:first-child {border-left:none}
-#header .toplink > li a {display:inline-block; width:65px; height:22px; font-size:13px; line-height:21px; border-radius:11px; background-color:#008485; color:#fff; text-decoration:none; text-align:center}
-#header .toplink > li img {margin-top:-1px}
-#header .sns-header {position:absolute; right:75px; top:20px;/*background:url('../img/line_v_gab.gif') no-repeat 0 6px;*/padding-left: 7px;}
-#header .sns-header li {float:left; margin-left:5px}
-#header .topsrch { position:absolute; right:150px; top:20px; width:134px; height:25px; padding:2px 0 0 2px; background:url(/common/img/bg_top_search.gif) no-repeat; z-index:100 }
-#header .topsrch input { border:0; vertical-align:top; margin-top:2px;}
-#header .topsrch input[type="text"] {padding: 0; padding-left: 8px; border: none; background-color: transparent;}
-#header .inner h1 a {position:absolute; display:block; left:0; top:52px; width:160px; height:37px; background:url(/common/img/logo.png?ver20220630) no-repeat 0 0; font-size:0; text-indent:-9999px; z-index:100}
-#gnb-area {position:relative; top:40px; width:100%; height:42px}
+.templetWrap {
+  background: url(/common/img/bg_body.gif) repeat-x;
+}
+.wrap {
+  width: 100%;
+  min-width: 1160px;
+}
+.bgSub01 {
+  background: url("/common/img/bg_body.gif") repeat-x 0 0;
+}
+.bgSub02 {
+  background: url("/common/img/bg_body.gif") repeat-x 0 0;
+}
+#header {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  height: 111px;
+  padding-top: 3px;
+  font-family: "NanumGothicWeb", "맑은 고딕", "Malgun Gothic", "굴림", Gulim,
+    sans-serif;
+  line-height: 18px;
+  border-bottom: 1px solid #ececec;
+  z-index: 11;
+}
+#header .inner {
+  position: relative;
+  width: 960px;
+  height: 50%;
+  margin: 0 auto;
+  z-index: 5;
+}
+#header .inner .logo {
+  position: absolute;
+  left: 0;
+  top: 36px;
+}
+#header .memberlink {
+  position: absolute;
+  left: 214px;
+  top: 21px;
+}
+#header .memberlink li {
+  float: left;
+  height: 22px;
+  margin-left: -1px;
+  padding: 0 7px;
+  border: #ccc solid 1px;
+  font-size: 12px;
+  background-color: #fff;
+}
+#header .memberlink li a {
+  text-decoration: none;
+}
+#header .memberlink li:first-child {
+  border: #1a623c solid 1px;
+  color: #fff;
+  background: url(/common/img/btn_bg_login.gif) repeat-x;
+}
+#header .memberlink li span {
+  color: #fff;
+}
+#header .toplink {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+#header .toplink > li {
+  display: inline;
+  padding: 0 0 0 6px;
+}
+.ie8 #header .toplink > li {
+  background-position: 100% 0px;
+}
+#header .toplink > li:first-child {
+  border-left: none;
+}
+#header .toplink > li a {
+  display: inline-block;
+  width: 65px;
+  height: 22px;
+  font-size: 13px;
+  line-height: 21px;
+  border-radius: 11px;
+  background-color: #008485;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#header .toplink > li img {
+  margin-top: -1px;
+}
+#header .sns-header {
+  position: absolute;
+  right: 75px;
+  top: 20px; /*background:url('../img/line_v_gab.gif') no-repeat 0 6px;*/
+  padding-left: 7px;
+}
+#header .sns-header li {
+  float: left;
+  margin-left: 5px;
+}
+#header .topsrch {
+  position: absolute;
+  right: 150px;
+  top: 20px;
+  width: 134px;
+  height: 25px;
+  padding: 2px 0 0 2px;
+  background: url(../헤더푸터_files/logo2.png) no-repeat;
+  z-index: 100;
+}
+#header .topsrch input {
+  border: 0;
+  vertical-align: top;
+  margin-top: 2px;
+}
+#header .topsrch input[type="text"] {
+  padding: 0;
+  padding-left: 8px;
+  border: none;
+  background-color: transparent;
+}
+#header .inner h1 a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 52px;
+  width: 160px;
+  height: 37px;
+  background: url(/common/img/logo.png?ver20220630) no-repeat 0 0;
+  font-size: 0;
+  text-indent: -9999px;
+  z-index: 100;
+}
+#gnb-area {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 42px;
+}
 #gnb-wrap {
   width: 960px;
   margin: 0 auto;
   z-index: 10010;
 }
-#gnb {margin:-29px 0 0 210px}
-.ie #gnb {margin:-28px 0 0 210px}
+#gnb {
+  margin: -29px 0 0 210px;
+}
+.ie #gnb {
+  margin: -28px 0 0 210px;
+}
 /* 파생 분리 후 적용
 #gnb > li {display:block; float:left}
 */
 /* 임시 */
-#gnb > li {display:inline-block; float:left; margin:0 14px 0 0}
-#gnb .depth1-link, #gnb .depth2-wrap .depth2-link{font-family:'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '굴림', Gulim, sans-serif}
-.ie #gnb > li {margin:0 18px 0 0}
-.ie #gnb .depth1-link{font-size:17px;}
-.ie.ie8 #gnb > li {margin:0 11px 0 0}
+#gnb > li {
+  display: inline-block;
+  float: left;
+  margin: 0 14px 0 0;
+}
+#gnb .depth1-link,
+#gnb .depth2-wrap .depth2-link {
+  font-family: "NanumGothicWeb", "맑은 고딕", "Malgun Gothic", "굴림", Gulim,
+    sans-serif;
+}
+.ie #gnb > li {
+  margin: 0 18px 0 0;
+}
+.ie #gnb .depth1-link {
+  font-size: 17px;
+}
+.ie.ie8 #gnb > li {
+  margin: 0 11px 0 0;
+}
 /**/
-#gnb > li:last-child {margin-right:0; text-align:right}
+#gnb > li:last-child {
+  margin-right: 0;
+  text-align: right;
+}
 
 /* 파생 분리 후 적용
 #gnb .gnb_01 {width:100px}
@@ -52,40 +189,52 @@
 #gnb .gnb_06 {width:75px}
 #gnb .gnb_07 {width:125px;text-align:right}
 */
-#gnb .depth1-link {display:inline-block;height:42px;font-size:18px;font-weight:bold;color:#000;text-decoration:none;font-family:'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '굴림', Gulim, sans-serif}
-#gnb .depth1-link:hover, #gnb .depth1-link.selected {border-bottom:6px solid #00856a}
+#gnb .depth1-link {
+  display: inline-block;
+  height: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-family: "NanumGothicWeb", "맑은 고딕", "Malgun Gothic", "굴림", Gulim,
+    sans-serif;
+}
+#gnb .depth1-link:hover,
+#gnb .depth1-link.selected {
+  border-bottom: 6px solid #00856a;
+}
 #gnb .depth2-wrap {
-    overflow: visible;
-    display: block;
-    width: 100%;
-    height: 0;
-    display: none;
-    background-color: #FAFAFA;
-    position: absolute;
-    left: 0;
-    font-size: 13px;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #E7E7E7;
-    text-align:left;
-    z-index: 10010;
+  overflow: visible;
+  display: block;
+  width: 100%;
+  height: 0;
+  display: none;
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  font-size: 13px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: left;
+  z-index: 10010;
 }
 
 #gnb .depth2-wrap .subtitle {
-    width:960px;
-    margin:0 auto;
-    padding:20px 0 20px 14px;
-    font-size:15px;
-    font-weight:bold;
-    color:#333333;
-    border-bottom:1px solid #d9d9d9;
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 20px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 #gnb .depth2-wrap .subtitle a {
-    color:#333333;
+  color: #333333;
 }
 
 #gnb .depth2-wrap .subtitle a:hover {
-    color:#008268;
+  color: #008268;
 }
 
 #gnb .depth2-wrap.opened {
@@ -98,7 +247,6 @@
   width: 960px;
   margin: 20px auto;
   background-image: url(/templets/main/img/MAIN/bg_dotline_sm.gif);
-
 }
 /* 
 .trading_notice{
@@ -107,15 +255,14 @@
 }
  */
 #gnb .depth2-wrap .depth2-link {
-  display:block;
-  font-size:14px;
+  display: block;
+  font-size: 14px;
   font-weight: bold;
-  color : #282828;
-  margin-bottom:5px
+  color: #282828;
+  margin-bottom: 5px;
 }
 
-#gnb .depth2-wrap .depth2-ul > li{
-
+#gnb .depth2-wrap .depth2-ul > li {
   /*float: left;
   width: 196px;
   display: inline-block;*/
@@ -123,44 +270,43 @@
   line-height: 20px;
   padding-left: 15px;
   padding-bottom: 20px;
-  letter-spacing:-1px;
+  letter-spacing: -1px;
 }
 
 #gnb .depth4-ul {
-    overflow: hidden;
-    height: 0;
-    display: none;
- }
+  overflow: hidden;
+  height: 0;
+  display: none;
+}
 
 #gnb .depth4-ul > li {
-    text-indent:10px;
-    background: url('/common/img/bu_4depth.gif') no-repeat 3px 8px
+  text-indent: 10px;
+  background: url("/common/img/bu_4depth.gif") no-repeat 3px 8px;
 }
 
 #gnb .depth4-ul.opened {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #d3d3d3;
-    padding: 10px;
-    z-index: 10;
-    box-shadow: 2px 2px #EEEEEE;
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 2px 2px #eeeeee;
 }
 
 #gnb .depth4-indi:after {
-    content: ' +';
+  content: " +";
 }
 #gnb .depth4-indi.opened:after {
-    content: ' –';
+  content: " –";
 }
 
 #gnb .depth3-ul {
-
 }
 
-#gnb .depth3-ul > li{
+#gnb .depth3-ul > li {
   position: relative;
 }
 
@@ -169,7 +315,7 @@
   width: 960px;
   margin: 0 auto;
   height: 155px;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
 }
 
 #gnb .quick-menus {
@@ -180,7 +326,6 @@
   padding-right: 12px;
   position: relative;
 }
-
 
 #gnb .events {
   display: inline-block;
@@ -196,45 +341,127 @@
   letter-spacing: 0;
 }
 
-#gnb .quick-menus ul { padding-top: 14px; position: relative; }
-#gnb .quick-menus li { float: left; margin-right: 20px; width:63px; height:63px; }
-#gnb .quick-menus li a { display:block; width:63px; padding-top:72px; color:#333; font-size:13px; text-align:center; white-space: nowrap; }
-#gnb .quick-menus li a:hover { text-decoration:none; color:#00856a; }
-#gnb .quick-menus li.img01 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat 0 0; } /* 주식매매 */
-#gnb .quick-menus li.img02 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -70px 0; } /* 펀드매매 */
-#gnb .quick-menus li.img03 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -140px 0; } /* 즉시이체 */
-#gnb .quick-menus li.img04 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -210px 0; } /* 잔고조회 */
-#gnb .quick-menus li.img05 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -280px 0; } /* 거래내역 */
-#gnb .quick-menus li.img06 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -350px 0; } /* 상품상담 */
-#gnb .quick-menus li.img07 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -420px 0; } /* 업무서비스안내 */
-#gnb .quick-menus li.img08 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -490px 0; } /* 펀드검색 */
-#gnb .quick-menus li.img09 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -560px 0; } /* 추천펀드 */
-#gnb .quick-menus li.img10 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -630px 0; } /* ELS DLS */
-#gnb .quick-menus li.img11 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -700px 0; } /* 연금저축계좌안내 */
-#gnb .quick-menus li.img12 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -770px 0; } /* 스마트투자제안 */
-#gnb .quick-menus li.img13 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -840px 0; } /* 투자정보 */
-#gnb .quick-menus li.img14 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -910px 0; } /* 해외주식 */
-#gnb .quick-menus li.img15 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -980px 0; } /* 개인정보관리 */
-#gnb .quick-menus li.img16 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1050px 0; } /* 선물옵션매매 */
-#gnb .quick-menus li.img17 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1120px 0; } /* 경제분석 */
-#gnb .quick-menus li.img18 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1190px 0; } /* Market Strategy */
-#gnb .quick-menus li.img19 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1260px 0; } /* 산업분석 */
-#gnb .quick-menus li.img20 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1330px 0; } /* Daily */
-#gnb .quick-menus li.img21 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1400px 0; } /* 계좌개설안내 */
-#gnb .quick-menus li.img22 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1470px 0; } /* ID등록 */
-#gnb .quick-menus li.img23 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1540px 0; } /* 공인인증 */
-#gnb .quick-menus li.img24 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1610px 0; } /* 모바일트레이딩 */
-#gnb .quick-menus li.img25 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1820px 0; } /* 신용/대출 가능종목 */
-#gnb .quick-menus li.img26 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1890px 0; } /* 휴면계좌조회 */
-#gnb .quick-menus li.img27 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1960px 0; } /* 홈페이지 이용가이드 */
-#gnb .quick-menus li.img28 { background:url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -2100px 0; } /* 원격지원 */
-#gnb .events ul { padding-top: 14px; position: relative; }
-#gnb .events li { float: left;margin-right: 10px;position: relative; }
+#gnb .quick-menus ul {
+  padding-top: 14px;
+  position: relative;
+}
+#gnb .quick-menus li {
+  float: left;
+  margin-right: 20px;
+  width: 63px;
+  height: 63px;
+}
+#gnb .quick-menus li a {
+  display: block;
+  width: 63px;
+  padding-top: 72px;
+  color: #333;
+  font-size: 13px;
+  text-align: center;
+  white-space: nowrap;
+}
+#gnb .quick-menus li a:hover {
+  text-decoration: none;
+  color: #00856a;
+}
+#gnb .quick-menus li.img01 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat 0 0;
+} /* 주식매매 */
+#gnb .quick-menus li.img02 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -70px 0;
+} /* 펀드매매 */
+#gnb .quick-menus li.img03 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -140px 0;
+} /* 즉시이체 */
+#gnb .quick-menus li.img04 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -210px 0;
+} /* 잔고조회 */
+#gnb .quick-menus li.img05 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -280px 0;
+} /* 거래내역 */
+#gnb .quick-menus li.img06 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -350px 0;
+} /* 상품상담 */
+#gnb .quick-menus li.img07 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -420px 0;
+} /* 업무서비스안내 */
+#gnb .quick-menus li.img08 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -490px 0;
+} /* 펀드검색 */
+#gnb .quick-menus li.img09 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -560px 0;
+} /* 추천펀드 */
+#gnb .quick-menus li.img10 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -630px 0;
+} /* ELS DLS */
+#gnb .quick-menus li.img11 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -700px 0;
+} /* 연금저축계좌안내 */
+#gnb .quick-menus li.img12 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -770px 0;
+} /* 스마트투자제안 */
+#gnb .quick-menus li.img13 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -840px 0;
+} /* 투자정보 */
+#gnb .quick-menus li.img14 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -910px 0;
+} /* 해외주식 */
+#gnb .quick-menus li.img15 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -980px 0;
+} /* 개인정보관리 */
+#gnb .quick-menus li.img16 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1050px 0;
+} /* 선물옵션매매 */
+#gnb .quick-menus li.img17 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1120px 0;
+} /* 경제분석 */
+#gnb .quick-menus li.img18 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1190px 0;
+} /* Market Strategy */
+#gnb .quick-menus li.img19 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1260px 0;
+} /* 산업분석 */
+#gnb .quick-menus li.img20 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1330px 0;
+} /* Daily */
+#gnb .quick-menus li.img21 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1400px 0;
+} /* 계좌개설안내 */
+#gnb .quick-menus li.img22 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1470px 0;
+} /* ID등록 */
+#gnb .quick-menus li.img23 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1540px 0;
+} /* 공인인증 */
+#gnb .quick-menus li.img24 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1610px 0;
+} /* 모바일트레이딩 */
+#gnb .quick-menus li.img25 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1820px 0;
+} /* 신용/대출 가능종목 */
+#gnb .quick-menus li.img26 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1890px 0;
+} /* 휴면계좌조회 */
+#gnb .quick-menus li.img27 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -1960px 0;
+} /* 홈페이지 이용가이드 */
+#gnb .quick-menus li.img28 {
+  background: url(/templets/main/img/MAIN/icon_quick_all.png) no-repeat -2100px 0;
+} /* 원격지원 */
+#gnb .events ul {
+  padding-top: 14px;
+  position: relative;
+}
+#gnb .events li {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
 #gnb .events li .event-term {
   position: absolute;
   top: 63px;
   left: 0;
-  background: url('/templets/main/img/MAIN/bu_dot.gif') no-repeat 3px 7.5px;
+  background: url("/templets/main/img/MAIN/bu_dot.gif") no-repeat 3px 7.5px;
   text-indent: 8px;
 }
 
@@ -262,5 +489,9 @@
   background: url(/templets/main/img/MAIN/bg_shadow_sm.png);
 }
 
-#gnb .gnb_04 .banner-area{height:165px}
-#gnb .gnb_04 .quick-menus{padding:0}
+#gnb .gnb_04 .banner-area {
+  height: 165px;
+}
+#gnb .gnb_04 .quick-menus {
+  padding: 0;
+}
