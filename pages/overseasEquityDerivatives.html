@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>해외주식파생 : 하나증권</title>
+
+  <!--메타태그-->
+
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="application-name" content="하나증권">
+  <meta name="subject" content="하나증권">
+  <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 " />
+  <meta name="keywords"
+    content="하나증권, 증권, 주식, 주식거래, 트레이딩, 주식시세, 인터넷뱅킹, 자산관리, 코스피, 코스닥, 다우, 나스닥, 해외주식, 금융상품, 파생상품, 파생, 선물, 옵션, 채권, 펀드, CMA, RP, 신탁, Wrap, ELS, DLS, ISA, CFD, fx마진, 재테크, 리서치, 주식전략, 투자전략, 퀀트, 퀀트투자, HTS" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="Location" content="South Korea" />
+  <meta name="Distribution" content="global" />
+  <meta name="author" content="Hana Financial Investment Co.,Ltd." />
+  <meta name="robots" content="index, flow">
+  <meta http-equiv="refresh" content="600">
+  <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
+  <meta name="viewport" content="width=1024" />
+
+  <meta name="apple-mobile-web-app-capable" href="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
+
+  <!--오픈그래프-->
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="하나증권">
+  <meta property="og:site_name" content="하나증권">
+  <meta property="og:image" content="siteimage.jpg"> <!--이미지 수정-->
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="400">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="video">
+  <meta name="twitter:title" content="하나증권">
+  <meta name="twitter:description" content="하나증권">
+  <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
+
+  <meta name="apple-mobile-web-app-title" content="하나증권">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="shortcut icon" href="../images/favicon/favicon-16x16.png">
+
+  <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-startup-image" href="../images/favicon/favicon-16x16.png">
+ 
+
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
+  <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
+
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+
+
+  <link rel="shortcut icon" href="../images/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
+  <link rel="icon" href="../images/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
+
+  <link rel="stylesheet" type="text/css" href="../styles/common.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/overseasEquityDerivatives/overseasEquityDerivatives.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="../javascripts/jquery.js"></script>
+  <script src="../javascripts/API/kosdaq.js"></script>
+  <script src="../javascripts/API/kospi.js"></script>
+  <script src="../javascripts/API/kospi200.js"></script>
+  <script src="../javascripts/API/dollar.js"></script>
+  <script src="../javascripts/API/yen.js"></script>
+  <script src="../javascripts/API/euro.js"></script>
+  <script src="../javascripts/API/yuan.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 250px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    td.rate {
+      font-weight: bold;
+    }
+
+    .arrow-up {
+      color: #DF0101;
+    }
+
+    .arrow-down {
+      color: blue;
+    }
+
+    a { text-decoration: none; }
+
+    #newsTable { width: 400px; padding: 0; }
+  </style>
+</head>
+
+<body oncontextmenu="return false"> <!--우클릭 금지-->
+
+  <div class="wrap templetWrap">
+
+
+    <!-- Layer Popup -->
+    <!--// Layer Popup -->
+
+    <!-- INCLUDE : HANAW HEADER -->
+    <div id="header">
+
+      <div class="inner">
+        <h1><a href="https://www.hanaw.com/main/main/index.cmd">하나증권</a></h1>
+        <ul class="memberlink" style="margin-left: 520px;">
+          <li style="border-color: black; background-color:transparent;"><a
+              href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
+          </li>
+          <li style="border-color: black;background-color:transparent;"><a
+              href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd" style="color:black">ID
+              등록</a>
+          </li>
+          <li style="border-color: black;background-color:transparent;"><a
+              href="https://www.hanaw.com/main/customer/certificate/CS_030000_M.cmd" style="color:black">인증센터</a></li>
+        </ul>
+      </div>
+      <div id="gnb-area">
+        <!-- GNB : START -->
+
+
+        <div id="gnb-wrap">
+          <ul id="gnb">
+            <li class="gnb_01">
+              <a href="나의자산.html" class="depth1-link ">
+                나의 자산</a>
+
+            </li>
+            <li class="gnb_02">
+              <a href="금융투자상품_1.html" class="depth1-link">
+                금융투자상품</a>
+
+            </li>
+            <li class="gnb_03">
+              <a href="주식파생상품.html" class="depth1-link ">
+                주식파생상품</a>
+
+            </li>
+            <li class="gnb_04">
+              <a href="해외주식파생.html" class="depth1-link ">
+                해외주식파생</a>
+
+            </li>
+            <li class="gnb_04">
+              <a href="연금.html" class="depth1-link ">
+                연금</a>
+
+            </li>
+            <li class="gnb_05">
+              <a href="뱅킹.html" class="depth1-link ">
+                뱅킹</a>
+
+            </li>
+            <li class="gnb_06">
+              <a href="고객지원.html" class="depth1-link ">
+                고객지원</a>
+
+            </li>
+            <li class="gnb_07">
+              <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고" style="width: 30px;">
+
+            </li>
+            <li class="gnb_08">
+              <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
+
+            </li>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 퀵네비 -->
+  <div id="quick-navi-wrap">
+    <ul id="quick-navi">
+
+      <li class="fl"><a id="access-quickmemu" href="하나증권_로그아웃상태.html" title="홈"><img src="../images/overseasEquityDerivatives/quicknavi_home.gif"
+            alt="home"></a></li>
+
+      <li>
+        <div id="quick-navi-depth1" class="quick-menu-div">
+          <a href="/pages/overseasEquityDerivatives.html" class="selected-menu quick-menu-depth1">해외주식파생</a>
+        </div>
+      </li>
+
+      <li>
+        <div id="quick-navi-depth3" class="quick-menu-div">
+          <ul>
+            <li>
+              <a href="#">해외주식</a>
+            </li>
+            <li>
+              <a href="#">해외ETF</a>
+            </li>
+            <li>
+              <a href="#">해외주식담보대출</a>
+            </li>
+            <li>
+              <a href="#">해외선물</a>
+            </li>
+            <li>
+              <a href="#">해외옵션</a>
+            </li>
+            <li>
+              <a href="#">FX마진</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="container">
+
+    <div class="wt-submenu mb30">
+      <ul>
+        <li>
+          <ul class="wt-submenuT">
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock8.png"><br>해외주식</a></li>
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock1.jpg"><br>해외ETF</a></li>
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock2.jpg"><br>해외주식담보대출</a></li>
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock3.jpg"><br>해외선물</a></li>
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock4.jpg"><br>해외옵션</a></li>
+            <li><a href="#"><img src="../images/overseasEquityDerivatives/stock5.jpg"><br>FX마진</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+    <section class="video-product-guide2">
+      <div class="video-body2" style="background: #f1f6ff; border: 1px solid transparent; border-radius: 2em;">
+        <ul class="video-product-guide2-wrap2">
+          <li class="video-product-guide2-items guide05">
+            <a href="#">
+              <strong class="tit">나의 투자 성향을<br>
+                알아볼까요?
+              </strong>
+              <p class="tit-sub">하나증권이 알려주는<br>
+                나의 투자 성향
+              </p>
+              <div class="tag-wrap">
+                <p>#투자성향</p>
+                <p>#포트폴리오</p>
+              </div>
+              <div class="cardicon2">
+                <img src="../images/overseasEquityDerivatives/graph1.png" width="135px" alt="etf">
+              </div>
+            </a>
+          </li>
+          <li class="video-product-guide-item guide06">
+            <a href="#">
+              <strong class="tit">해외주식은<br>
+                무엇이 다를까요?
+              </strong>
+              <p class="tit-sub">해외주식에 대한<br>
+                궁금증 해결하기
+              </p>
+              <div class="tag-wrap">
+                <p>#해외주식</p>
+                <p>#국내주식</p>
+              </div>
+              <div class="cardicon2">
+                <img src="../images/overseasEquityDerivatives/questionmark2.png" width="170px" alt="etf">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+    <div id="container">
+
+
+      <div id="jisuInfo">
+        <div class="wt-box2 w300 fl mb45">
+          <h4>지수정보</h4>
+          <div class="wt_kospi">
+            <div class="wt_kospi_list" style="display: flex;">
+              <div id="container2" style="width: 680px; height: 340px; margin-bottom: -50px;"></div>
+              <div style="margin-top:120px">
+                <table id="kospi-table">
+                  <tbody id="kospi-table-body"></tbody>
+                  <table id="kosdaq-table">
+                    <tbody id="kosdaq-table-body"></tbody>
+                    <table id="kospi200-table">
+                      <tbody id="kospi200-table-body"></tbody>
+                    </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="wt-box2 w260 fl mb45">
+        <div style="width: 350px;">
+          <h4>환율 (1원/통화)</h4>
+          <div class="wt_rate">
+            <table id="exchange-rate-table">
+              <tbody id="exchange-rate-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="wt-box2 w260 fl mb45" style="width: 500px;">
+        <div class="cb pt50">
+          <div style="width: 570px; margin-left:80px;">
+            <!-- 뉴스 -->
+            <div class="fl w330">
+              <h4>뉴스</h4>
+              <table id="newsTable">
+                <tbody id="newsTableBody"></tbody>
+              </table>
+            </div>
+            <!-- //뉴스 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="guide">
+
+      <div class="guide-group">
+        <ul class="footerLink">
+          <li><a>영업점안내</a></li>
+          <li><a>전자금융거래 이용자 유의사항</a></li>
+          <li><a>이용약관</a></li>
+          <li><a>개인정보처리방침</a></li>
+          <li><a>개인(신용)정보 열람 및 이용·제공 현황 조회</a></li>
+          <li><a>그룹사간 고객정보 제공내역 조회</a></li>
+          <li><a>보호금융상품등록부</a></li>
+          <li><a>신용정보활용체제</a></li>
+          <li><a>상품공시실</a></li>
+          <li><a>전자민원접수</a></li>
+          <li><a>스튜어드십 코드</a></li>
+        </ul>
+
+        <div class="familysite">
+          <div class="sbox">
+            <a>하나네트워크</a>
+          </div>
+          <ul class="familisite-list">
+            <li><a>하나금융그룹</a></li>
+            <li><a>하나은행</a></li>
+            <li><a>하나증권</a></li>
+            <li><a>하나카드</a></li>
+            <li><a>하나캐피탈</a></li>
+            <li><a>하나생명</a></li>
+            <li><a>하나저축은행</a></li>
+            <li><a>하나자산신탁</a></li>
+            <li><a>하나대체투자자산운용</a></li>
+            <li><a>하나펀드서비스</a></li>
+            <li><a>하나금융티아이</a></li>
+            <li><a>핀크</a></li>
+            <li><a>하나금융나눔재단</a></li>
+            <li><a>하나금융공익재단</a></li>
+            <li><a>하나케어센터</a></li>
+            <li><a>하나미소금융재단</a></li>
+            <li><a>하나고등학교</a></li>
+          </ul>
+        </div>
+
+        <div class="sns-footer">
+          <ul>
+            <li><a><img src="./헤더푸터_files/icon_facebook.gif" alt="페이스북"></a></li>
+            <li><a><img src="./헤더푸터_files/icon_blog.gif" alt="블로그"></a></li>
+          </ul>
+        </div>
+
+        <div class="cscenter">
+          <img src="./헤더푸터_files/footer_csCenter.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
+
+        </div>
+        <div class="copyright">
+
+          <img src="./헤더푸터_files/copyright.gif" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div><!--푸터 인클루드-->
+
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script>
+
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    google.charts.setOnLoadCallback(drawBackgroundColor);
+
+    function drawBackgroundColor() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'X');
+      data.addColumn('number', 'Nasdaq');
+
+      data.addRows([
+        [new Date(2023, 5, 17), 0], [new Date(2023, 5, 18), 230000], [new Date(2023, 5, 19), 270000], [new Date(2023, 5, 20), 400000], [new Date(2023, 5, 21), 410000], [new Date(2023, 5, 22), 750000], [new Date(2023, 5, 23), 980000], [new Date(2023, 5, 24), 1100000], [new Date(2023, 5, 25), 1260000]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'date'
+        },
+        vAxis: {
+          title: 'rate'
+        },
+        series: {
+          0: { color: '#DF0101' },
+        },
+        backgroundColor: '#fff'
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      let name = "금융";
+
+      $.ajax({
+        type: "GET",
+        url: "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
+          name,
+        data: {},
+        success: function (response) {
+          let kosdaq = response["response"]["body"]["items"]["item"];
+          let kosdaqTableBody = $("#kosdaq-table-body");
+
+          for (let i = 0; i < kosdaq.length; i++) {
+            let mise = kosdaq[i];
+            let kosdaq_title = mise["idxCsf"];
+            let kosdaq_jongga = mise["clpr"];
+            let kosdaq_rate = mise["vs"];
+
+
+            let row = $("<tr></tr>");
+
+            let titleCell = $("<td></td>").text("KOSDAQ");
+            let jonggaCell = $("<td></td>").text(kosdaq_jongga);
+            let rateCell = $("<td></td>").text(kosdaq_rate).addClass("rate");
+
+
+            if (kosdaq_rate > 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+            } else if (kosdaq_rate < 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+            }
+
+
+            row.append(titleCell, jonggaCell, rateCell);
+
+
+            kosdaqTableBody.append(row);
+          }
+        },
+      });
+    });
+
+
+
+
+
+
+
+    $(document).ready(function () {
+      let name2 = "금융업";
+
+      $.ajax({
+        type: "GET",
+        url: "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
+          name2,
+        data: {},
+        success: function (response) {
+          let kospi = response["response"]["body"]["items"]["item"];
+          let kospiTableBody = $("#kospi-table-body");
+
+          for (let i = 0; i < kospi.length; i++) {
+            let mise = kospi[i];
+            let kospi_title = mise["idxCsf"];
+            let kospi_jongga = mise["clpr"];
+            let kospi_rate = mise["vs"];
+
+
+            let row = $("<tr></tr>");
+
+            let titleCell = $("<td></td>").text("KOSPI");
+            let jonggaCell = $("<td></td>").text(kospi_jongga);
+            let rateCell = $("<td></td>").text(kospi_rate).addClass("rate");
+
+
+            if (kospi_rate > 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+            } else if (kospi_rate < 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+            }
+
+
+            row.append(titleCell, jonggaCell, rateCell);
+
+
+            kospiTableBody.append(row);
+          }
+        },
+      });
+    });
+
+
+
+
+    $(document).ready(function () {
+      let name3 = "코스피 200 금융 레버리지지수";
+
+      $.ajax({
+        type: "GET",
+        url: "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getDerivationProductMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&numOfRows=1&pageNo=1&resultType=json&idxNm=" +
+          name3,
+        data: {},
+        success: function (response) {
+          let kospi200 = response["response"]["body"]["items"]["item"];
+          let kospi200TableBody = $("#kospi200-table-body");
+
+          for (let i = 0; i < kospi200.length; i++) {
+            let kospi200mise = kospi200[i];
+            let kospi200title = kospi200mise["idxNm"];
+            let kospi200jongga = kospi200mise["clpr"];
+            let kospi200rate = kospi200mise["vs"];
+
+
+            let row = $("<tr></tr>");
+
+            let titleCell = $("<td></td>").text("KOSPI 200");
+            let jonggaCell = $("<td></td>").text(kospi200jongga);
+            let rateCell = $("<td></td>").text(kospi200rate).addClass("rate");
+
+
+            if (kospi200rate > 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-up").text("▲ "));
+            } else if (kospi200rate < 0) {
+              rateCell.prepend($("<b></b>").addClass("arrow-down").text("▼ "));
+            }
+
+
+            row.append(titleCell, jonggaCell, rateCell);
+
+
+            kospi200TableBody.append(row);
+          }
+        },
+      });
+    });
+
+
+
+  </script>
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container2');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+      xAxis: {
+        type: 'category',
+        data: ['5/31', '5/30', '5/29', '5/28', '5/27', '5/26', '5/25', '5/24', '5/23', '5/22', '5/21', '5/20', '5/19', '5/18', '5/17', '5/16']
+      },
+      yAxis: {
+        type: 'value',
+        min: 1230000,
+        max: 1310000
+      },
+      series: [
+        {
+          data: [1234305, 1250057, 1268884, 1265790, 1265790, 1265790, 1272078, 1256025, 1248416, 1269809, 1297569, 1297569, 1297569, 1297569, 1301743, 1293529],
+          type: 'line',
+          lineStyle: { color: '#DF0101' },
+          color: '#DF0101'
+        }
+      ]
+    };
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+
+
+
+
+  <script>
+    const api_key = "pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D";
+
+    let countryList = ["US", "JP", "CN", "EU", "GB", "RU", "VN", "IN", "HK"]
+    let countryName = ["미국", "일본", "중국", "유럽", "영국", "러시아", "베트남", "인도", "홍콩"]
+
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = ('0' + (date.getMonth() + 1)).slice(-2);
+    const day = ('0' + date.getDate()).slice(-2);
+    const dateStr = year + month + day;
+
+    // console.log(dateStr);
+
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://apis.data.go.kr/1220000/retrieveTrifFxrtInfo/getRetrieveTrifFxrtInfo?aplyBgnDt=" + dateStr + "&weekFxrtTpcd=2&serviceKey=" + api_key,
+        type: "GET",
+        success: function (result) {
+          let exchangeRateTableBody = $("#exchange-rate-table-body");
+          $(result).find("item").each(function () {
+            let dname = $(this).find("cntySgn").text();
+            for (var i = 0; i < 9; i++) {
+              if (dname == countryList[i]) {
+                let titleCell = $("<td></td>").text("원/달러");
+                let country = countryName[i]
+                let currency = $(this).find("currSgn").text();
+                let exchangeRate = parseFloat($(this).find("fxrt").text()).toFixed(2);
+
+
+                let newRow = $("<tr>");
+                newRow.append($("<td>").text(country));
+                newRow.append($("<td>").text(currency));
+
+                let rateCell = $("<td>");
+                let previousRate = exchangeRateTableBody.find("tr:last-child td:last-child").text();
+                if (previousRate) {
+                  previousRate = parseFloat(previousRate);
+                  if (exchangeRate > previousRate) {
+                    rateCell.append($("<span>").text(exchangeRate).addClass("arrow-up"));
+                  } else if (exchangeRate < previousRate) {
+                    rateCell.append($("<span>").text(exchangeRate).addClass("arrow-down"));
+                  } else {
+                    rateCell.text(exchangeRate);
+                  }
+                } else {
+                  rateCell.text(exchangeRate);
+                }
+
+                newRow.append(rateCell);
+                exchangeRateTableBody.append(newRow);
+              }
+            }
+
+
+          });
+        },
+        error: function () {
+          console.log("정보를 불러오지 못했습니다");
+        }
+      });
+    });
+  </script>
+
+
+<script type="text/javascript">
+  let xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      jsonfunc(this.responseText); //this = xhttp
+      //		jsonfunc(xhttp.responseText); // 둘다 가능
+    }
+  };
+  xhttp.open("GET", "fed.json", true);
+  xhttp.send();
+
+  function jsonfunc(jsonText) {
+    let json = JSON.parse(jsonText); // String -> json으로 변환
+
+    let txt = "";
+    // 접근법 1
+    for (i = 0; i < json.length; i++) {
+      for (j = 0; j < 1; j++) {
+        // key값 가져오기
+        txt += `
+            <tr>
+              <td>${json[i].title}</td>
+              <td><a href="${json[i].link}" target="_blank">&#8640;</a></td>
+
+              
+            </tr>
+          `;
+      }
+      txt += "<br>";
+    }
+    document.getElementById("newsTableBody").innerHTML = txt;
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+.tab {
+  padding: 33px 0 0px;
+}
+.tab ul {
+  display: flex;
+  height: 47px;
+}
+.tab ul li {
+  flex: 1;
+  position: relative;
+  margin: 0 0 0 -1px;
+  border: 1px solid #929292;
+}
+.tab ul li button {
+  font-size: 20px;
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: #d7d7d7;
+}
+.tab ul li.on {
+  z-index: 2;
+  height: 46px;
+  border-color: black;
+}
+
+.tab ul li.on button {
+  background: #fff;
+  border-bottom: 1px solid white;
+}
+.tab_content {
+  display: none;
+  height: 1180px;
+  /* 흰색으로 지우느라 끊어질 선 이어주기 위해 -2하고 탭 메뉴에서 2px로 합쳐져서 -1px해줌 */
+  margin: -2px 0 0 -1px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 20px;
+  color: #000;
+}
+.tab_content.on {
+  display: block;
+}
+
+.tab_content .tb1 {
+  /* 이중선 젝 */
+  border-collapse: collapse;
+  width: max-content;
+}
+
+.tab_content .tb1 caption {
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: max-content;
+  float: left;
+}
+
+.tab_content .tb1 th {
+  background-color: #e7e5e583;
+}
+.tab_content .tb1 th,
+.tab_content .tb1 td {
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #979797;
+  font-size: 16px;
+
+  vertical-align: top; /* 위 */
+  vertical-align: bottom; /* 아래 */
+  vertical-align: middle; /* 가운데 */
+}
+
+.tab_content .tb1 td {
+  text-align: right;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.tab_content .tb2 {
+  /* 이중선 젝 */
+  border-collapse: collapse;
+}
+
+.tab_content .tb2 caption {
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: max-content;
+  float: left;
+}
+
+.tab_content .tb2 th {
+  background-color: #e7e5e583;
+}
+.tab_content .tb2 th,
+.tab_content .tb2 td {
+  width: 10%;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #979797;
+  font-size: 16px;
+
+  vertical-align: top; /* 위 */
+  vertical-align: bottom; /* 아래 */
+  vertical-align: middle; /* 가운데 */
+}
+.tab_content .tb2 td {
+  text-align: right;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.tab_content .tb2 .q_btn {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.tab_content .tb2 .q_btn button {
+  font-size: 12px;
+  width: 90px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.tab_content span {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.tab_content .tb3 {
+  /* 이중선 젝 */
+  border-collapse: collapse;
+}
+
+.tab_content .tb3 th {
+  background-color: #c7c6c6;
+  font-weight: bold;
+}
+/* 다른 td도 이렇게 됨. */
+.tab_content .tb3 th,
+.tab_content .tb3 td {
+  height: 26px;
+  text-align: center;
+  border: 2px solid #b0b0b0;
+  font-size: 16px;
+
+  vertical-align: top; /* 위 */
+  vertical-align: bottom; /* 아래 */
+  vertical-align: middle; /* 가운데 */
+}
+
+.tab_content .tb3 th:first-child,
+.tab_content .tb3 td:first-child {
+  border-left: 0;
+}
+.tab_content .tb3 th:last-child,
+.tab_content .tb3 td:last-child {
+  border-right: 0;
+}
+
+.tab_content .tb3 td {
+  text-align: right;
+  padding-right: 15px;
+  font-size: 14px;
+  height: 30px;
+}

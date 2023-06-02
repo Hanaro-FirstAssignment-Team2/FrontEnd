@@ -1,0 +1,464 @@
+/* sub main */
+.sm-visual {
+  background: url(../img/OB/bg_sm_visual.gif) no-repeat;
+}
+.sm-visual h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.sm-visual h3 span {
+  color: #03838e;
+  font-size: 36px;
+  display: block;
+  margin-top: 21px;
+}
+.sm-visual p {
+  font-family: 나눔고딕, NanumGothic, ng, "NanumGothicWeb", 굴림, Gulim,
+    sans-serif;
+  letter-spacing: 0;
+}
+.sm-visual ul li {
+  background: url(../img/common/icon_check.gif) no-repeat 0 7px;
+  padding-left: 20px;
+  letter-spacing: 0;
+}
+.sm-visual ul li span {
+  font-weight: bold;
+  width: 110px;
+  display: inline-block;
+  letter-spacing: -1px;
+}
+.sm-quick {
+  background: url(../img/OB/bg_sm_quick.gif) no-repeat;
+  height: 131px;
+  padding: 28px 35px 30px;
+  text-align: center;
+  vertical-align: bottom;
+}
+.sm-quick ul li {
+  float: left;
+  width: 105px;
+  height: 70px;
+}
+.sm-quick ul li span {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 13px;
+  height: 20px;
+}
+.sm-quick ul li span a {
+  color: #fff;
+}
+.sm-list {
+  padding: 37px 30px 0 0;
+}
+.sm-list h4 {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #313131;
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.sm-list .asset {
+  border-bottom: 1px solid #dfdfdf;
+  display: inline-block;
+  background: #fafafa;
+}
+
+.sm-list .graph {
+  border-right: 1px solid #dfdfdf;
+}
+.sm-list .graph_img {
+  height: 300px;
+  padding-top: 50px;
+}
+
+.sm-list .asset .img {
+  vertical-align: middle;
+  width: 350px;
+  height: 350px;
+}
+
+.sm-list .graph_explain {
+  width: 100%;
+  overflow: hidden;
+  line-height: 17px;
+  padding: 13px 0 18px 30px;
+}
+.sm-list .graph_explain li {
+  float: left;
+  width: 33.3%;
+  box-sizing: border-box;
+  letter-spacing: -0.3px;
+}
+.sm-list .graph_txt {
+  width: 334px;
+  padding: 10px 30px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.sm-list .graph_txt div.total {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.sm-list .graph_txt div.total span strong {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.sm-list .graph_txt ul li {
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 10px;
+  padding-left: 12px;
+}
+.sm-list .graph_txt ul li span {
+  float: right;
+}
+.sm-list .graph_txt ul li span strong {
+  letter-spacing: 0;
+  margin-right: 5px;
+}
+.sm-list .cal {
+  background: url(../img/common/bg_sm_cal.gif) no-repeat;
+  height: 145px;
+  position: relative;
+}
+.sm-list .cal div.today {
+  position: absolute;
+  left: 18px;
+  top: 0;
+  padding: 0 10px 0 10px;
+  width: 132px;
+}
+.sm-list .cal div.memo {
+  position: absolute;
+  left: 156px;
+  top: 0;
+  padding: 0 10px 0 10px;
+  width: 162px;
+}
+.sm-list .cal div.acco {
+  position: absolute;
+  left: 324px;
+  top: 0;
+  padding: 0 10px 0 10px;
+  width: 162px;
+}
+.sm-list .cal div.fina {
+  position: absolute;
+  left: 492px;
+  top: 0;
+  padding: 0 10px 0 10px;
+  width: 162px;
+}
+.sm-list .cal dt {
+  position: relative;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0;
+  height: 25px;
+  line-height: 26px;
+  padding-left: 17px;
+}
+.sm-list .cal dt a {
+  margin-top: -2px;
+}
+.sm-list .cal dd {
+  padding: 10px 0px 0 0;
+  margin-right: 7px;
+  text-align: center;
+}
+.sm-list .cal dd > ul li {
+  background: url(../img/common/bu_check3.gif) no-repeat 0 7px;
+  padding-left: 17px;
+  margin-left: 5px;
+  font-size: 13px;
+  text-align: left;
+  word-wrap: break-word;
+}
+.sm-list .cal div.today dd {
+  color: #333;
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.ob-top {
+  background-color: white;
+
+  border: #d2d2d2 solid 1px;
+  border-radius: 20px;
+  position: relative;
+  height: 120px;
+  width: 960px;
+}
+.ob-top .sm-info1 {
+  position: absolute;
+  height: 120px;
+  top: 8px;
+  left: 20px;
+}
+.ob-top .sm-info1 ul {
+  margin-top: 5px;
+}
+.ob-top .sm-info1 ul li {
+  position: relative;
+}
+.ob-top .sm-info1 ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ob-top .sm-info1 ul li p {
+  height: 100%;
+  transform: translateY(-25%);
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 40px;
+  color: #333;
+  word-wrap: break-word;
+  margin-left: 90px;
+}
+
+.ob-top .sm-info1 ul li p span {
+  color: #03838e;
+  font-size: 35px;
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ob-top .sm-info2 {
+  height: 50%;
+  margin-top: 25px;
+  margin-left: 400px;
+  width: 210px;
+}
+
+.ob-top .sm-info2 ul {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+.ob-top .sm-info2 ul li {
+  position: relative;
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
+  padding-left: 8px;
+  color: #333;
+  height: 25px;
+}
+
+.ob-top .sm-info2 ul li span {
+  position: absolute;
+  right: 0;
+  color: #555;
+}
+
+.ob-top .sm-info3 {
+  position: absolute;
+
+  /* right: 0; */
+  top: 0;
+  margin-top: 25px;
+  margin-left: 640px;
+  margin-right: 10px;
+  width: 280px;
+}
+
+.ob-top .sm-info3 ul {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: -25px;
+  width: 298px;
+  background-color: #555;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 30px;
+}
+.ob-top .sm-info3 ul li {
+  position: relative;
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 12px;
+  padding-left: 8px;
+  color: white;
+  height: 25px;
+}
+
+.ob-top .sm-info3 ul li span {
+  position: absolute;
+  right: 0;
+  color: white;
+}
+
+.infotime {
+  background-color: white;
+  border: #d2d2d2 solid 1px;
+  border-radius: 40px;
+  position: relative;
+  height: 90px;
+  width: 960px;
+}
+.infotime ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.infotime ul li {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+.infotime ul span {
+  font-weight: bold;
+  font-size: large;
+}
+
+.sm-list {
+  padding: 37px 30px 0 0;
+  width: 960px;
+}
+
+.sm-list h4 {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #313131;
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.sm-list .graph {
+  width: 536px;
+  height: 450px;
+  box-sizing: border-box;
+  border-right: 1px solid #dfdfdf;
+}
+.sm-list .graph_img {
+  width: 205px;
+  margin: 0 auto;
+}
+.sm-list .graph_explain {
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 150px;
+  line-height: 17px;
+  padding: 13px 0 18px 30px;
+}
+.sm-list .graph_explain li {
+  float: left;
+  height: 20%;
+  width: 33.3%;
+  bottom: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.3px;
+}
+.sm-list .graph_txt {
+  width: 394px;
+  padding: 10px 30px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.sm-list .graph_txt div.total {
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.sm-list .graph_txt div.total span strong {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.sm-list .graph_txt ul li {
+  background: url(../../images/나의자산/bu_dot.gif) no-repeat 0 10px;
+  padding-left: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sm-list .graph_txt ul li span {
+  float: right;
+}
+.sm-list .graph_txt ul li span strong {
+  letter-spacing: 0;
+  margin-right: 5px;
+}
+
+.sm-list2 h4 {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #313131;
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+}
+.sm-list2 .asset2 {
+  display: flex;
+}
+.sm-list2 .asset2 .img {
+  vertical-align: middle;
+  width: 280px;
+}
+.sm-list2 .graph2 {
+  margin-top: 15px;
+  margin-left: 40px;
+
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  height: 448px;
+  box-sizing: border-box;
+}
+.sm-list2 .graph_img2 {
+  width: 250px;
+  height: 220px;
+  margin: 50px 75px 50px auto;
+}
+.sm-list2 .graph_explain2 {
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0px 0 18px 35px;
+}
+.sm-list2 .graph_explain2 li {
+  float: left;
+  width: 33.3%;
+  margin-bottom: -10px;
+  box-sizing: border-box;
+  letter-spacing: -0.3px;
+}
+
+.sm-list2 .graph_explain2 span {
+  font-size: 12px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sm_list2 .graph_txt2 {
+  height: 500px;
+  table-layout: fixed;
+}
+.sm_list2 .graph_txt2 .tb3 td {
+  padding: 5px;
+  background: #03838e;
+}

@@ -1,0 +1,76 @@
+.tab2 {
+  padding: 43px 0 50px;
+}
+
+.tab2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.tab2 ul li {
+  width: 12%;
+  margin: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.tab2 ul li button {
+  width: 100%;
+  border: none;
+  border-left: white;
+  border-right: white;
+  border-bottom: white;
+  background: none;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  box-sizing: border-box;
+  outline: 0;
+  cursor: pointer;
+}
+
+.tab2 ul li button:focus,
+.tab2 ul li.on button {
+  border: 1px solid #222;
+  color: #222;
+}
+
+.tab_content2 {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+.tab_content2.on {
+  display: block;
+}
+
+.tab_content2 table {
+  border: 2px solid #b0b0b0;
+  border-collapse: collapse;
+  width: 900px;
+  margin: auto;
+  height: 100px;
+}
+.tab_content2 .tb4 th {
+  background-color: #f2f1f1;
+  border: 2px solid #b0b0b0;
+  border-color: #b0b0b0;
+  font-size: 14px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.tab_content2 .tb4 td {
+  text-align: right;
+  padding-right: 10px;
+  border: 2px solid #b0b0b0;
+  vertical-align: middle; /* 가운데 */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

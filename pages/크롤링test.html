@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./크롤링.js"></script>
+    <script type="module" src="./FrontEnd/javascripts/jquery.js"></script>
+    <script
+      type="module"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script
+      type="module"
+      src="https://code.jquery.com/jquery-1.12.4.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/axios/dist/axios.min.js"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <!-- <h3 id="text1">텍스트1</h3> -->
+
+      <p id="demo"></p>
+
+      <table id="newsTable">
+        <thead>
+          <tr>
+            <th>뉴스 제목</th>
+            <th>링크</th>
+          </tr>
+        </thead>
+        <tbody id="newsTableBody"></tbody>
+      </table>
+
+      <script type="text/javascript">
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+          if (xhttp.readyState == 4 && xhttp.status == 200) {
+            jsonfunc(this.responseText); //this = xhttp
+            //		jsonfunc(xhttp.responseText); // 둘다 가능
+          }
+        };
+        xhttp.open("GET", "주식.json", true);
+        xhttp.send();
+
+        function jsonfunc(jsonText) {
+          let json = JSON.parse(jsonText); // String -> json으로 변환
+
+          let txt = "";
+          // 접근법 1
+          for (i = 0; i < json.length; i++) {
+            for (j = 0; j < 1; j++) {
+              // key값 가져오기
+              txt += `
+                  <tr>
+                    <td>${json[i].title}</td>
+                    <td><a href="${json[i].link}" target="_blank">more</a></td>
+
+                    
+                  </tr>
+                `;
+            }
+            txt += "<br>";
+          }
+          document.getElementById("newsTableBody").innerHTML = txt;
+        }
+      </script>
+    </div>
+  </body>
+</html>

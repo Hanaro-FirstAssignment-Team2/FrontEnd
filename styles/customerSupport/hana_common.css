@@ -1,0 +1,200 @@
+/* btn-css */
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.btn.del {
+  height: 16px;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+.btn.min {
+  height: 23px;
+  padding: 0 7px 3px 6px;
+  border-radius: 3px;
+}
+.btn.sm {
+  height: 27px;
+  line-height: 21px;
+  padding: 0 9px 2px 8px;
+}
+a.btn.sm {
+  height: 27px;
+  line-height: 20px;
+  padding: 2px 9px 2px 8px;
+  text-decoration: none;
+}
+.btn.ubtn {
+  width: 76px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 39px;
+  padding: 0 12px 2px 12px;
+}
+.btn.md {
+  font-size: 14px;
+  font-weight: bold;
+  height: 39px;
+  padding: 0 20px 4px;
+}
+.btn.md2 {
+  font-size: 14px;
+  font-weight: bold;
+  height: 39px;
+  padding: 0 36px 4px;
+}
+.btn.md3 {
+  font-size: 14px;
+  font-weight: bold;
+  height: 39px;
+  padding: 0 20px;
+}
+.btn.md4 {
+  font-size: 12px;
+  height: 26px;
+}
+.btn.lg {
+  font-size: 16px;
+  font-weight: bold;
+  height: 62px;
+  padding: 0 20px 4px 20px;
+}
+.btn.pb {
+  font-size: 12px;
+  height: 34px;
+  padding: 0 18px 4px;
+}
+.btn.full {
+  width: 100%;
+  height: 32px;
+  padding: 0 0 4px;
+  border-radius: 3px;
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-w {
+  background: none !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.btn-default.on {
+  color: #008268;
+}
+.btn-default {
+  color: #555;
+  background-color: #fff;
+  border-color: #b1b1b1;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active {
+  border-color: #858585;
+  color: #008268;
+}
+.btn-default:active,
+.btn-default.active,
+.btn-default {
+  background-image: none;
+}
+
+/* btn-icon */
+.down span {
+  margin-right: 5px;
+  background: url(../../images/customerSupport/icon_btn.gif) no-repeat -98px 1px;
+  width: 13px;
+  height: 18px;
+  display: inline-block;
+}
+
+.arr1 span {
+  margin-left: 5px;
+  background: url(../../images/customerSupport/icon_btn.gif) no-repeat -54px 0;
+  width: 5px;
+  height: 14px;
+  display: inline-block;
+}
+
+.submainBoardList li a {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.submainBoardList li .icon-new {
+  display: none;
+}
+.submainBoardList li.isNew .icon-new {
+  display: inline-block;
+}
+
+.submainBoardList.mw170 a {
+  max-width: 170px;
+}
+.submainBoardList.mw170 li.isNew a {
+  max-width: 155px;
+}
+.submainBoardList.mw185 a {
+  max-width: 185px;
+}
+.submainBoardList.mw185 li.isNew a {
+  max-width: 170px;
+}
+.submainBoardList.mw215 a {
+  max-width: 215px;
+}
+.submainBoardList.mw215 li.isNew a {
+  max-width: 196px;
+}
+.submainBoardList.mw220 a {
+  max-width: 220px;
+}
+.submainBoardList.mw220 li.isNew a {
+  max-width: 205px;
+}
+.submainBoardList.mw245 a {
+  max-width: 245px;
+}
+.submainBoardList.mw245 li.isNew a {
+  max-width: 230px;
+}
+.submainBoardList.mw500 a {
+  max-width: 500px;
+}
+.submainBoardList.mw500 li.isNew a {
+  max-width: 500px;
+}
+
+.icon-new {
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+  margin: 3px 2px 2px;
+  background: url(../img/common/icon_new.png) no-repeat;
+  vertical-align: middle;
+}
+.icon-new > span {
+  display: none;
+}
