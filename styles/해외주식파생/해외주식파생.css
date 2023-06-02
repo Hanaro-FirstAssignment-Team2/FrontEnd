@@ -538,9 +538,11 @@ padding-left: 200px;
 .sm-list li .date { position:absolute; top:3px; right:0; letter-spacing:0; }
 
 
-.w330 h4 { color:#333; background: transparent; font-weight:bold; font-size:18px; border-bottom:2px solid #313131; width:480px; padding-bottom:10px; padding-left: 50px; margin-bottom:12px; position:relative; }
+.w330 h4 { color:#333; background: transparent; font-weight:bold; font-size:18px; border-bottom:2px solid #313131; width:500px; padding-bottom:10px; padding-left: 30px; margin-bottom:12px; position:relative; }
 
 .wt-box .more{ position:absolute; right:0; top:6px; width:16px; height:16px; background:url(../img/common/icon_more.gif) no-repeat 0 0; }
+
+#newsTableBody { width: 400px; }
 
 
 

@@ -7,7 +7,6 @@
     <title>연금 : 하나증권</title>
 
     <!--메타태그-->
-
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <meta http-equiv="Content-Style-Type" content="text/css">
@@ -24,28 +23,18 @@
     <meta name="viewport" content="width=1024" /> 
 
     <!--오픈그래프-->
-
     <meta property="og:type" content="website">
     <meta property="og:title" content="하나증권">
     <meta property="og:site_name" content="하나증권">
-    <meta property="og:image" content="siteimage.jpg"> <!--이미지 수정-->
-    <meta property="og:image:width" content="1000">
-    <meta property="og:image:height" content="400">
     <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="video">
-    <meta name="twitter:title" content="하나증권">
-    <meta name="twitter:description" content="하나증권">
-    <meta name="twitter:image" content="logo.png"> <!--이미지 수정-->
     
     <!--파비콘-->
-
     <link rel="shortcut icon" href="../images/favicon/favicon-16x16.png"> 
     <meta name="apple-mobile-web-app-title" content="하나증권">
     <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon-16x16.png">
     <link rel="apple-touch-startup-image" href="../images/favicon/favicon-16x16.png">
     <meta name="apple-mobile-web-app-capable" href="yes">
     <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
-
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
@@ -64,14 +53,11 @@
     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="shortcut icon" href="../images/favicon3.ico" type="image/x-icon"> <!--파비콘 수정-->
-    <link rel="icon" href="../images/favicon3.ico" type="image/x-icon"><!--파비콘 수정-->
-
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="../styles/common.css" />
     <link rel="stylesheet" type="text/css" href="../styles/연금/연금.css" /> 
 
-    <!--웹폰트 나눔고딕-->
-
+    <!-- webfont -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
@@ -80,32 +66,31 @@
 <body oncontextmenu="return false"> <!--우클릭 금지-->
     
 
-
 <!-- 퀵네비 -->
 <div id="quick-navi-wrap">
     <ul id="quick-navi">
-        
+
     	<li class="fl"><a id="access-quickmemu" href="하나증권.html" title="홈"><img src="../images/연금/quicknavi_home.gif" alt="home">&nbsp;&nbsp;연금</a></li>
     	
         <li>
             <div id="quick-navi-depth1" class="quick-menu-div">
                 <a href="#" class="selected-menu quick-menu-depth1"></a>
-                </div>
+            </div>
         </li>
 
     	<li>
             <div id="quick-navi-depth3" class="quick-menu-div">
                 <ul>
-                <li>
+                    <li>
                         <a href="#" >연금저축계좌개설</a>
                     </li>
-                <li>
+                    <li>
                         <a href="#" >연금저축ETF</a>
                     </li>
-                <li>
+                    <li>
                         <a href="#" >연금저축펀드</a>
                     </li>
-                <li>
+                    <li>
                         <a href="#" >개인형IRP/퇴직연금</a>
                     </li>
                 </ul>
@@ -114,14 +99,11 @@
 
     </ul>
 </div>
-<div class="clear"></div> 
 
-
-
-
+    <!-- 서브메뉴 -->
     <div id="container">
 
-        <div class="wt-submenu mb30"> <!--연금 서브메뉴--> 
+        <div class="wt-submenu mb30">
             <ul>
                 <li>
                     <ul class="wt-submenuT"> 
@@ -134,9 +116,7 @@
             </ul>
         </div>
 
-
-
-
+        <!-- 카드형 컨텐츠 -->
         <section class="video-product-guide">
             <div class="video-body">
                 <ul class="video-product-guide-wrap">
@@ -172,7 +152,7 @@
                             <div class="cardicon">
                             <img src="../images/연금/money2.png" width="130px" alt="etf">
                         </div>
-                        </a>
+                      </a>
                     </li>
                     <li class="video-product-guide-item guide03">
                         <a href="#"> 
@@ -210,49 +190,42 @@
                 </ul>
             </div>
         </section>
-    </section>
+
+        <!-- 퇴직연금의 필요성 -->
+        <section class="video-product-guide2">
+            <div class="video-body2" style="background: #f1f6ff; border: 1px solid transparent; border-radius: 2em;">
+                <ul class="video-product-guide2-wrap">
+                    <li class="video-product-guide2-item guide01">
+                        <img src="../images/연금/questionmark.png" width="300px" alt="human"><br><br>
+                    </li>
+                    <li class="video-product-guide2-item guide02">
+                        <p style="font-size: 26px; font-weight: 800; padding-top: 60px; padding-bottom: 50px;">퇴직연금 왜 필요할까요?</p>
+                        <p style="font-size: 17px; padding-bottom: 35px;"><img src="../images/연금/lightbulb2.png" width="30px" alt="lightbulb">노후 준비를 위한 든든한 자금</p>
+                        <p style="font-size: 17px;"><img src="../images/연금/lightbulb2.png" width="30px" alt="lightbulb">절세 효과</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--하나증권 소개글--> 
+        <section class="video-product-guide2">
+                <div class="video-body2">
+                    <ul class="video-product-guide2-wrap">
+                        <li class="video-product-guide2-item guide01">
+                            <img src="../images/연금/house.png" width="260px" alt="hana"><br><br>
+                            <p class="mint"><strong>자산관리 명가 '하나증권'</strong></p>  
+                            <br><strong>대한민국 최초의 펀드판매회사로<br>48년간의 자산관리 핵심 노하우 집약</strong>
+                        </li>
+                        <li class="video-product-guide2-item guide02"> <!--하나증권 IRP Youtube 영상--> 
+                            <iframe width="600px" height="338px" src="https://www.youtube.com/embed/NDPDJ7kkV4s?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </div>
+        </section>
 
 
-
-    <section class="video-product-guide2">
-        <div class="video-body2" style="background: #f1f6ff; border: 1px solid transparent; border-radius: 2em;">
-            <ul class="video-product-guide2-wrap">
-                <li class="video-product-guide2-item guide01">
-                    <img src="../images/연금/questionmark.png" width="300px" alt="human"><br><br>
-
-                </li>
-                <li class="video-product-guide2-item guide02">
-                    <p style="font-size: 26px; font-weight: 800; padding-top: 60px; padding-bottom: 50px;">퇴직연금 왜 필요할까요?</p>
-                    <p style="font-size: 17px; padding-bottom: 35px;"><img src="../images/연금/lightbulb2.png" width="30px" alt="lightbulb">노후 준비를 위한 든든한 자금</p>
-                    <p style="font-size: 17px;"><img src="../images/연금/lightbulb2.png" width="30px" alt="lightbulb">절세 효과</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-</section>
-
-
-
-
-<section class="video-product-guide2">
-        <div class="video-body2">
-            <ul class="video-product-guide2-wrap">
-                <li class="video-product-guide2-item guide01">
-                    <img src="../images/연금/house.png" width="260px" alt="hana"><br><br>
-                    <p class="mint"><strong>자산관리 명가 '하나증권'</strong></p>  <!--하나증권 소개글--> 
-                    <br><strong>대한민국 최초의 펀드판매회사로<br>48년간의 자산관리 핵심 노하우 집약</strong>
-                </li>
-                <li class="video-product-guide2-item guide02"> <!--하나증권 IRP Youtube 영상--> 
-                    <iframe width="600px" height="338px" src="https://www.youtube.com/embed/NDPDJ7kkV4s?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-            </ul>
-        </div>
-    </section>
-</section>
-
-
-
-        <ul class="yeongeum-list"> <!--연금 보고서-->
+        <!--연금 보고서-->
+        <ul class="yeongeum-list"> 
             <li>
                 <a href="https://www.hanaw.com/download/bbs/pdf/lifetimeReport_200508.pdf" target="_blank"><h2>연금으로 노후 준비 든든하게</h2><img src="../images/연금/yeongum_1.jpg" alt="연금으로 노후 준비 든든하게"></a>
                 <div class="caption">
@@ -272,9 +245,9 @@
                 </div>
             </li>
         </ul>
+
     </div>
-</body> 
+  </body> 
 <footer>
-    
 </footer>
 </html>
