@@ -121,7 +121,7 @@ fieldset[disabled] .btn {
 /* btn-icon */
 .down span {
   margin-right: 5px;
-  background: url(../../images/고객지원/icon_btn.gif) no-repeat -98px 1px;
+  background: url(../../images/customerSupport/icon_btn.gif) no-repeat -98px 1px;
   width: 13px;
   height: 18px;
   display: inline-block;
@@ -130,7 +130,7 @@ fieldset[disabled] .btn {
 
 .arr1 span {
   margin-left: 5px;
-  background: url(../../images/고객지원/icon_btn.gif) no-repeat -54px 0;
+  background: url(../../images/customerSupport/icon_btn.gif) no-repeat -54px 0;
   width: 5px;
   height: 14px;
   display: inline-block;

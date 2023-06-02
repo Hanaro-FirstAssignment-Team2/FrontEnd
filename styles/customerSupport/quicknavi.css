@@ -24,10 +24,10 @@
 #quick-navi .quick-menu-div {
   float: left;
   letter-spacing: -1px;
-  background: url(../images/고객지원/quicknavi_bg.gif) no-repeat 100% 0;
+  background: url(../images/customerSupport/quicknavi_bg.gif) no-repeat 100% 0;
 }
 #quick-navi #quick-navi-depth1 {
-  background: url(../images/고객지원/quicknavi_bg2.gif) no-repeat 100% 0;
+  background: url(../images/customerSupport/quicknavi_bg2.gif) no-repeat 100% 0;
 }
 #quick-navi #quick-navi-depth1 > a {
   padding-right: 35px;
