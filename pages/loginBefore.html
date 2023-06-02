@@ -18,21 +18,8 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/common.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/common.pc.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/grid.base.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/grid.pc.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/number-input.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/number-input.pc.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/calendar.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/box.pc.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/ci.grid.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/tab.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/dialog.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/layerlink.css">
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.font.css">
-
-  <link rel="stylesheet" type="text/css" href="./하나증권_files/hanaw.main.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main/common.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main/hanaw.main.css">
 
 
 
@@ -137,17 +124,14 @@
     <div class="wrap templetWrap">
 
 
-      <!-- Layer Popup -->
-      <!--// Layer Popup -->
-
-      <!-- INCLUDE : HANAW HEADER -->
+   
       <div id="header">
 
         <div class="inner">
           <h1><a href="https://www.hanaw.com/main/main/index.cmd">하나증권</a></h1>
           <ul class="memberlink" style="margin-left: 520px;">
             <li style="border-color: black; background-color:transparent;"><a
-                href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
+                href="login.html" style="color:black">로그인</a>
             </li>
             <li style="border-color: black;background-color:transparent;"><a
                 href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd" style="color:black">ID
@@ -158,14 +142,24 @@
           </ul>
         </div>
         <div id="gnb-area">
-          <!-- GNB : START -->
+     
 
 
           <div id="gnb-wrap">
             <ul id="gnb">
               <li class="gnb_01">
-                <a href="나의자산.html" class="depth1-link ">
+                  
+                <a href="#" onclick="need_login()"  class="depth1-link ">
                   나의 자산</a>
+
+                <script>
+                    function need_login(){
+                      alert("로그인이 필요합니다.");
+                      location.href = "login.html";
+                    }
+
+
+                </script>
 
               </li>
               <li class="gnb_02">
@@ -189,7 +183,7 @@
 
               </li>
               <li class="gnb_05">
-                <a href="뱅킹.html" class="depth1-link ">
+                <a href="#" onclick="need_login()" class ="depth1-link ">
                   뱅킹</a>
 
               </li>
