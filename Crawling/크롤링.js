@@ -58,8 +58,8 @@ const parsing = async (keyword) => {
 }
 
 parsing("미국 금리");
-parsing("연준");
+parsing("fed");
 parsing("환율");
-parsing("나스닥");
+parsing("nasdaq");
 parsing("미중 무역전쟁");
 parsing("주식");

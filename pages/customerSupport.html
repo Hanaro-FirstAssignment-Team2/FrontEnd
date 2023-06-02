@@ -12,21 +12,24 @@
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
   <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.header.css">
+  
+  <!-- <link rel="stylesheet" type="text/css" href="./뱅킹_files/common.css">
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/common.pc.css">
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/ci.grid.css">
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.ob.css">
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.quicknavi.css">
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/hanaw.sidebar.css"> -->
 
-  <link rel="stylesheet" type="text/css" href="../styles/고객지원/default.css" />
-  <link rel="stylesheet" type="text/css" href="../styles/고객지원/cs.css" />
-  <link rel="stylesheet" type="text/css" href="../styles/고객지원/quicknavi.css" />
-  <link rel="stylesheet" type="text/css" href="../styles/고객지원/hana_common.css" />
+
+  <link rel="stylesheet" type="text/css" href="../styles/customerSupport/default.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/customerSupport/cs.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/customerSupport/quicknavi.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/customerSupport/hana_common.css" />
 
 
   <title>고객지원 : 하나증권</title>
 
-  <style>
-    body {
-      font-family: 나눔고딕, NanumGothic, ng, "NanumGothicWeb", 굴림, Gulim,
-        sans-serif;
-    }
-  </style>
+
 
 
 
@@ -37,11 +40,10 @@
 <body class="vsc-initialized">
 
   <div class="wrap templetWrap">
-    <!-- INCLUDE : HANAW HEADER -->
     <div id="header">
       <div class="inner">
         <h1><a href="#">하나증권</a></h1>
-        <ul class="memberlink" style="margin-left: 520px;">
+        <ul class="memberlink" style="margin-left: 570px;">
           <li style="border-color: black; background-color:transparent;"><a
               href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
           </li>
@@ -54,13 +56,10 @@
         </ul>
       </div>
       <div id="gnb-area">
-        <!-- GNB : START -->
-
-
         <div id="gnb-wrap">
           <ul id="gnb">
             <li class="gnb_01">
-              <a href="나의자산.html" class="depth1-link ">
+              <a href="myAsset.html" class="depth1-link ">
                 나의 자산</a>
 
             </li>
@@ -90,10 +89,12 @@
 
             </li>
             <li class="gnb_06">
-              <a href="고객지원.html" class="depth1-link ">
+              <a href="customerSupport.html" class="depth1-link ">
                 고객지원</a>
 
             </li>
+
+            <li style="visibility: hidden;">칸 맞춤 </li>
             <li class="gnb_07">
               <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고" style="width: 30px;">
 
@@ -119,7 +120,7 @@
     <ul id="quick-navi">
       <li class="fl">
         <a id="access-quickmemu" href="https://www.hanaw.com/main/main/index.cmd" title="홈"><img
-            src="../images/고객지원/quicknavi_home.gif" alt="home" /></a>
+            src="../images/customerSupport/quicknavi_home.gif" alt="home" /></a>
       </li>
 
       <li>
@@ -143,7 +144,7 @@
               <!-- 검색 버튼 누르면 FAQ 페이지로 이동 -->
               <form id="searchFaq" method="post" action="https://www.hanaw.com/corebbs5/faq/list/list.cmd">
                 <div class="fl w50 mr15">
-                  <img src="../images/고객지원/img_search_tit.gif" style="height: 40px; width: 46px" alt="FAQ" />
+                  <img src="../images/customerSupport/img_search_tit.gif" style="height: 40px; width: 46px" alt="FAQ" />
                 </div>
                 <div class="word pr fl">
                   <input type="text" name="srchWord" title="검색" class="w220 h30" />
@@ -153,7 +154,7 @@
                 </div>
                 <ul class="fl ml30 j-faq">
                   <li>
-                    <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd#"
+                    <a href=""
                       title="FAQ에서 ID등록 검색">"ID등록"</a>등을 질문해보세요!
                   </li>
                 </ul>
@@ -166,28 +167,28 @@
             <ul>
               <li>
                 <a href="https://www.hanaw.com/main/customer/customer/CS_010100_P.cmd">
-                  <img src="../images/고객지원/img_sm_quick01.gif" alt="계좌개설안내" /><span>계좌개설안내</span>
+                  <img src="../images/customerSupport/img_sm_quick01.gif" alt="계좌개설안내" /><span>계좌개설안내</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd"><img
-                    src="../images/고객지원/img_sm_quick02.gif" alt="ID등록" /><span>ID등록</span></a>
+                    src="../images/customerSupport/img_sm_quick02.gif" alt="ID등록" /><span>ID등록</span></a>
               </li>
               <li>
                 <a href="https://www.hanaw.com/main/customer/certificate/CS_030000_M.cmd"><img
-                    src="../images/고객지원/img_sm_quick03.gif" alt="공동인증센터" /><span>인증센터</span></a>
+                    src="../images/customerSupport/img_sm_quick03.gif" alt="공동인증센터" /><span>인증센터</span></a>
               </li>
               <li>
                 <a href="https://www.hanaw.com/main/customer/customer/CS_060200.cmd"><img
-                    src="../images/고객지원/img_sm_quick04.gif" alt="수수료안내" /><span>수수료안내</span></a>
+                    src="../images/customerSupport/img_sm_quick04.gif" alt="수수료안내" /><span>수수료안내</span></a>
               </li>
               <li>
                 <a href="https://www.hanaw.com/main/customer/customer/CS_060301.cmd"><img
-                    src="../images/고객지원/img_sm_quick05.gif" alt="증거금안내" /><span>증거금안내</span></a>
+                    src="../images/customerSupport/img_sm_quick05.gif" alt="증거금안내" /><span>증거금안내</span></a>
               </li>
               <li>
                 <a href="https://www.hanaw.com/main/customer/customer/CS_060401.cmd"><img
-                    src="../images/고객지원/img_sm_quick06.gif" alt="입출금안내" /><span>입출금안내</span></a>
+                    src="../images/customerSupport/img_sm_quick06.gif" alt="입출금안내" /><span>입출금안내</span></a>
               </li>
             </ul>
           </div>
@@ -201,13 +202,13 @@
               <ul class="mt10">
                 <li class="pr13 pl2 w50p">
                   <a href="https://www.hanaw.com/corebbs5/qna/list/list.cmd">
-                    <img src="../images/고객지원/img_sm_quick07.gif" alt="고객의소리" />
+                    <img src="../images/customerSupport/img_sm_quick07.gif" alt="고객의소리" />
                     <span>고객의소리</span>
                   </a>
                 </li>
                 <li class="bon pl13 w50p">
                   <a href="https://www.hanaw.com/main/customer/customer/CS_000000_M.cmd#" id="counselTel"><img
-                      src="../images/고객지원/img_sm_quick09.gif" alt="전화예약" /><span>전화예약</span></a>
+                      src="../images/customerSupport/img_sm_quick09.gif" alt="전화예약" /><span>전화예약</span></a>
                 </li>
               </ul>
             </div>
