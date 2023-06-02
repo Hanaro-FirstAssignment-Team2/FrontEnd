@@ -33,6 +33,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+/* 이전 브라우저에 대한 HTML5 디스플레이 역할 재설정 */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -54,6 +55,10 @@ ul {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+ /* 
+  * 1. 기본 글꼴 모음을 sans-serif로 설정합니다.
+ * 2. 사용자 줌을 비활성화하지 않고 방향 변경 후 iOS 텍스트 크기 조정을 방지합니다.
+ */
 
 html {
   font-family: "MalgunGothic", "맑은 고딕", "돋움", "dotom", Tahoma, Geneva,
@@ -67,6 +72,7 @@ html {
 
 /**
  * Remove default margin.
+ 기본 여백 제거
  */
 
 body {
@@ -75,6 +81,7 @@ body {
 
 /**
  * Remove border when inside `a` element in IE 8/9.
+ IE 8/9에서 `a` 요소 안에 있을 때 테두리를 제거합니다.
  */
 
 img {
