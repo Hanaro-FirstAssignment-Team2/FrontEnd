@@ -91,7 +91,7 @@
 #header .sns-header {
   position: absolute;
   right: 75px;
-  top: 20px; /*background:url('../img/line_v_gab.gif') no-repeat 0 6px;*/
+  top: 20px; 
   padding-left: 7px;
 }
 #header .sns-header li {
@@ -126,7 +126,7 @@
   top: 52px;
   width: 160px;
   height: 37px;
-  background: url(/common/img/logo.png?ver20220630) no-repeat 0 0;
+  background: url(../../pages/헤더푸터_files/logo2.png) no-repeat 0 0;
   font-size: 0;
   text-indent: -9999px;
   z-index: 100;
