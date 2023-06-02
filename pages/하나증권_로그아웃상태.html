@@ -202,9 +202,18 @@
 
               <li class="gnb_01">
 
-
-                <a href="로그인.html" class="depth1-link ">
+                
+                <a href="#" onclick="need_login()"  class="depth1-link ">
                   나의 자산</a>
+
+                <script>
+                    function need_login(){
+                      alert("로그인이 필요합니다.");
+                      location.href = "로그인.html";
+                    }
+
+
+                </script>
 
               </li>
               <li class="gnb_02">
@@ -228,7 +237,7 @@
 
               </li>
               <li class="gnb_05">
-                <a href="로그인.html" class="depth1-link ">
+                <a href="#" onclick="need_login()"  class ="depth1-link ">
                   뱅킹</a>
 
               </li>
