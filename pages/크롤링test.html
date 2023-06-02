@@ -32,6 +32,16 @@
 
       <p id="demo"></p>
 
+      <table id="newsTable">
+        <thead>
+          <tr>
+            <th>뉴스 제목</th>
+            <th>링크</th>
+          </tr>
+        </thead>
+        <tbody id="newsTableBody"></tbody>
+      </table>
+
       <script type="text/javascript">
         let xhttp = new XMLHttpRequest();
 
@@ -50,13 +60,20 @@
           let txt = "";
           // 접근법 1
           for (i = 0; i < json.length; i++) {
-            for (key in json[i]) {
+            for (j = 0; j < 1; j++) {
               // key값 가져오기
-              txt += key + ":" + json[i][key];
+              txt += `
+                  <tr>
+                    <td>${json[i].title}</td>
+                    <td><a href="${json[i].link}" target="_blank">more</a></td>
+
+                    
+                  </tr>
+                `;
             }
             txt += "<br>";
           }
-          document.getElementById("demo").innerHTML = txt;
+          document.getElementById("newsTableBody").innerHTML = txt;
         }
       </script>
     </div>
