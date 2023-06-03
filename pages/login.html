@@ -19,11 +19,12 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="../styles/login/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/login/main_basic.css">
     <link rel="stylesheet" type="text/css" href="../styles/login/hanaw.common.css">
     <link rel="stylesheet" type="text/css" href="../styles/login/hanaw.layout.css">
     <link rel="stylesheet" type="text/css" href="../styles/login/hanaw.cs.css">
     <link rel="stylesheet" type="text/css" href="../styles/login/hanaw.header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/Fund/hanaw.font.css">
 
     <link rel="stylesheet" type="text/css" href="../styles/login/hanaw.quicknavi.css">
 
@@ -35,10 +36,7 @@
     <div class="wrap templetWrap">
 
 
-        <!-- Layer Popup -->
-        <!--// Layer Popup -->
-
-        <!-- INCLUDE : HANAW HEADER -->
+         <!--// 헤더 -->
         <div id="header">
             <img src="./헤더푸터_files/logo2.png" alt="헤더푸터 로고"
                 style="margin-left:200px; margin-top: 40px; width: 200px; position: absolute;">
@@ -50,24 +48,24 @@
             <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고"
                 style="margin-left:1170px; margin-top: 62px; width: 25px; position: absolute;">
 
+             <!-- 하나은행 외부 링크 제거함 -->
 
             <div class="inner" style="margin-left: 800px;">
 
                 <ul class="memberlink">
                     <li style="border-color: black; background-color:transparent;"><a
-                            href="https://www.hanaw.com/main/customer/login/index.cmd" style="color:black">로그인</a>
+                            href="login.html" style="color:black">로그인</a>
                     </li>
                     <li style="border-color: black;background-color:transparent;"><a
-                            href="https://www.hanaw.com/main/customer/member/CS_020200_P.cmd" style="color:black">ID
+                            href="" style="color:black">ID
                             등록</a>
                     </li>
                     <li style="border-color: black;background-color:transparent;"><a
-                            href="https://www.hanaw.com/main/customer/certificate/CS_030000_M.cmd"
+                            href=""
                             style="color:black">인증센터</a></li>
                 </ul>
             </div>
             <div id="gnb-area">
-                <!-- GNB : START -->
 
 
 
@@ -79,38 +77,39 @@
 
                         <li class="gnb_01">
 
+                             <!--// 나의 자산, 뱅킹 접근 시 로그인 화면으로 이동 -->
 
-                            <a href="나의자산.html" class="depth1-link ">
+                            <a href="login.html" class="depth1-link ">
                                 나의 자산</a>
 
                         </li>
                         <li class="gnb_02">
-                            <a href="금융투자상품_1.html" class="depth1-link">
+                            <a href="financialInvestmentProduct1.html" class="depth1-link">
                                 금융투자상품</a>
 
                         </li>
                         <li class="gnb_03">
-                            <a href="주식파생상품.html" class="depth1-link ">
+                            <a href="equityDerivatives.html" class="depth1-link ">
                                 주식파생상품</a>
 
                         </li>
                         <li class="gnb_04">
-                            <a href="해외주식파생.html" class="depth1-link ">
+                            <a href="overseasEquityDerivatives.html" class="depth1-link ">
                                 해외주식파생</a>
 
                         </li>
                         <li class="gnb_04">
-                            <a href="연금.html" class="depth1-link ">
+                            <a href="pension.html" class="depth1-link ">
                                 연금</a>
 
                         </li>
                         <li class="gnb_05">
-                            <a href="뱅킹.html" class="depth1-link ">
+                            <a href="login.html" class="depth1-link ">
                                 뱅킹</a>
 
                         </li>
                         <li class="gnb_06">
-                            <a href="고객지원.html" class="depth1-link ">
+                            <a href="customerSupport.html" class="depth1-link ">
                                 고객지원</a>
 
                         </li>
@@ -122,7 +121,7 @@
     </div>
         <div id="quick-navi-wrap">
             <ul id="quick-navi">
-                <li class="fl"><img src="./로그인_files/quicknavi_home.gif" alt="home"></a></li>
+                <li class="fl"><img src="../images/login/quicknavi_home.gif" alt="home"></a></li>
                 <li>
                     <div id="quick-navi-depth1" class="quick-menu-div">
                         <a class="selected-menu quick-menu-depth1">로그인</a>
@@ -167,19 +166,23 @@
 
 
 
+                                     <!--// 공동인증서 로그인 시 alert 화면 후 loginAfter 로 이동 -->
 
                                     <div class="tac mb35">
 
-                                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
-                                            function login() {
-                                                swal("Good job!", "You clicked the button!", "success");
-                                            }
-                                        </script>
-                                        <button type="button" class="btn btn-green lg w260"  onclick="location.href='하나증권_로그인상태.html'">공동인증서
+                                        <button type="button" class="btn btn-green lg w260"  onclick="login()">공동인증서
                                             로그인</button>
                                     </div>
 
+                                    <script>
+                                    function login(){
 
+                                    
+                                    alert("민새미님 반갑습니다!");
+                                    location.href=" loginAfter.html";
+
+                                    }
+                                    </script>
 
                                     <div class="logininput-log_1">
                                         자동로그아웃:
@@ -228,13 +231,13 @@
                                             <span id="pass_wd_tk_btn"><label for="Tk_pass_wd_checkbox"
                                                     class="transkey_label"><input type="checkbox"
                                                         id="Tk_pass_wd_checkbox" class="transkey_checkbox"
-                                                        style="display:none;"><img src="./로그인_files/input_transkey.png"
+                                                        style="display:none;"><img src="../images/login/input_transkey.png"
                                                         id="Tk_pass_wd_img"
                                                         style="vertical-align:middle;"></label></span>
                                         </div>
 
 
-                                        
+                                        <!--// 정규식으로 아이디,비밀번호 형식 체크 -->
                                         <script>
                                             function check(){
                                    
@@ -249,7 +252,8 @@
                                                 
 
                                                 if (id.match(email)!=null && pw.match(password)!=null) {
-                                                        location.href="하나증권_로그인상태.html";
+                                                        alert("민새미님 반갑습니다!");
+                                                        location.href=" loginAfter.html";
                                                     }
                                                     else {
                                                         alert("입력 형식이 맞지 않습니다.");
@@ -260,13 +264,14 @@
 
 
                                         </script>
-
+                                        <!--// radio 타입으로 공동인증서 사용 여부 체크 -->
                                         <div class="logininput-data1 hide-on-tablet">
                                             공동인증서
                                             <input type="radio" id="certUse" class="radio" checked="checked"
-                                                title="공동인증서 사용"><label for="certUse">사용</label>
+                                                title="공동인증서 사용" name="use_notuse"><label for="certUse">사용</label>
+
                                             <input type="radio" id="certUnused" class="radio ml64"
-                                                title="공동인증서 미사용"><label for="certUnused" class="ml64">미사용</label>
+                                                title="공동인증서 미사용" name="use_notuse" ><label for="certUnused"class="ml64">미사용</label>
                                         </div>
 
 
@@ -304,7 +309,7 @@
 
                             </div>
                         </div>
-
+                        
                         <div class="container">
                             <h4 class="title-2dep">계좌개설 안내</h4>
                             <div class="mb15">영업점, 은행, 인터넷에서 편리하게 계좌를 개설하실 수 있습니다. 계좌개설, ID등록방법을 확인하세요.</div>

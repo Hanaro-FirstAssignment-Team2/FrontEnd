@@ -1,3 +1,5 @@
+/* header 메인 메뉴 */
+
 @charset "utf-8";
 .templetWrap {
   background: url(../../images/고객지원/bg_body.gif) repeat-x;
@@ -94,7 +96,7 @@
 #header .sns-header {
   position: absolute;
   right: 75px;
-  top: 20px; /*background:url('../img/line_v_gab.gif') no-repeat 0 6px;*/
+  top: 20px; 
   padding-left: 7px;
 }
 #header .sns-header li {

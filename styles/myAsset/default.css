@@ -99,6 +99,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
+/* 이전 브라우저에 대한 HTML5 디스플레이 역할 재설정 */
 article,
 aside,
 details,
@@ -140,6 +141,17 @@ strong {
   font-weight: bold;
 }
 
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+ /* 
+  * 1. 기본 글꼴 모음을 sans-serif로 설정합니다.
+ * 2. 사용자 줌을 비활성화하지 않고 방향 변경 후 iOS 텍스트 크기 조정을 방지합니다.
+ */
+
 html {
   font-family: "MalgunGothic", "맑은 고딕", "돋움", "dotom", Tahoma, Geneva,
     sans-serif;
@@ -152,6 +164,7 @@ html {
 
 /**
  * Remove default margin.
+ 기본 여백 제거
  */
 
 body {
@@ -160,6 +173,7 @@ body {
 
 /**
  * Remove border when inside `a` element in IE 8/9.
+  IE 8/9에서 `a` 요소 안에 있을 때 테두리를 제거합니다.
  */
 
 img {
@@ -167,9 +181,10 @@ img {
 }
 
 /**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 1. 모든 브라우저에서 상속되지 않는 올바른 글꼴 패밀리.
+ * 2. 모든 브라우저에서 올바른 글꼴 크기가 상속되지 않습니다.
+ * 3. Firefox 4+, Safari 5 및 Chrome에서 다르게 설정된 여백을 해결합니다.
+ */
  */
 button,
 input,
@@ -337,9 +352,6 @@ body {
   font-weight: bolder;
 }
 
-/*
-.png24 {tmp:expression(setPng24(this));}
-*/
 
 /* position */
 .pr {
