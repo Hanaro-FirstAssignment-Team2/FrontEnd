@@ -1,15 +1,6 @@
-/**
- * 메인 배너
- *
- */
+
 var MainBanner = (function() {
 
-
-	/**
-	 * hanaw.com 데스크탑 메인 페이지 UI
-	 *
-	 * 오상원
-	 */
 
 	var mainBannerImgs = [];
 	var mainBannerImgsTemp = [
