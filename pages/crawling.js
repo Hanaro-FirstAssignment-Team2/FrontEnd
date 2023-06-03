@@ -37,17 +37,20 @@ const parsing = async (keyword) => {
 
   }
 
-    if(informations.length>5){
+    if(informations.length>5){ //기사는 5개만 가져오기 
       return false;
     }
 
-    var file = keyword+".json";
+    var file = keyword+".json"; //키워드에 따른 .json 파일 생성
 
+    //파일 접근 (열기)
+    // 에러 처리
     fs.open(file, 'w', function(err, fd){
             if(err) throw err;
       
     });    
 
+    // .json 파일 생성
     fs.writeFileSync(keyword+".json", JSON.stringify(informations));
     console.log(keyword + " 파일 생성 완료");
     
@@ -57,6 +60,7 @@ const parsing = async (keyword) => {
   return informations;
 }
 
+//각 기사 키워드는 6개로 구분
 parsing("미국 금리");
 parsing("fed");
 parsing("환율");
