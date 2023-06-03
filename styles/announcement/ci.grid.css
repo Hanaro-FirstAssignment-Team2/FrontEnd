@@ -61,7 +61,7 @@
 	text-decoration: none;
 }
 .tableBodyDiv td, .miniGrid td{
-    padding:0 8px !important;	
+    padding:0 8px !important;
 }
 
 
@@ -153,14 +153,7 @@ caption{display:none;}/* caption{height:0px;width:0px;visibility: hidden;} */
 .tableBodyDiv thead tr{position: absolute;top: -9999px;left: -9999px; }
 .tableBodyDiv thead th{line-height: 0;visibility:hidden;font-size: 0px;height: 0;border-top: none;border-bottom: none;}
 
-.tableBodyDiv td, .miniGrid td{
-	/* .width: 100%;  IE6 */
-	*:first-child+html width: 100%;  /*IE7 */
-	overflow : hidden;
-    white-space: nowrap;
-    text-overflow : ellipsis;
-	-o-text-overflow : ellipsis;
-}
+
 
 .tableContainer .yesbr td{
 	overflow : visible;
