@@ -141,7 +141,7 @@ table caption {
     line-height: 0;
     overflow: hidden;
     visibility: hidden;
-    display: none; /* 이 속성을 넣었을때 리더기에서 읽히는지...*/
+    display: none; 
 }
 
 

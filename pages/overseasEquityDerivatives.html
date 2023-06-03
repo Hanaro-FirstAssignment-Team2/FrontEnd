@@ -84,7 +84,7 @@
 
   <link rel="stylesheet" type="text/css" href="../styles/common.css" />
   <link rel="stylesheet" type="text/css" href="../styles/overseasEquityDerivatives/overseasEquityDerivatives.css" />
-
+  <link rel="stylesheet" type="text/css" href="./뱅킹_files/common.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,6 +102,7 @@
   <script src="../javascripts/API/yen.js"></script>
   <script src="../javascripts/API/euro.js"></script>
   <script src="../javascripts/API/yuan.js"></script>
+  <script src="../pages/crawling.js"></script>
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
 
   <style>
@@ -170,37 +171,37 @@
         <div id="gnb-wrap">
           <ul id="gnb">
             <li class="gnb_01">
-              <a href="나의자산.html" class="depth1-link ">
+              <a href="myAsset.html" class="depth1-link ">
                 나의 자산</a>
 
             </li>
             <li class="gnb_02">
-              <a href="금융투자상품_1.html" class="depth1-link">
+              <a href="financialInvestmentProduct1.html" class="depth1-link">
                 금융투자상품</a>
 
             </li>
             <li class="gnb_03">
-              <a href="주식파생상품.html" class="depth1-link ">
+              <a href="equityDerivatives.html" class="depth1-link ">
                 주식파생상품</a>
 
             </li>
             <li class="gnb_04">
-              <a href="해외주식파생.html" class="depth1-link ">
+              <a href="overseasEquityDerivatives.html" class="depth1-link ">
                 해외주식파생</a>
 
             </li>
             <li class="gnb_04">
-              <a href="연금.html" class="depth1-link ">
+              <a href="pension.html" class="depth1-link ">
                 연금</a>
 
             </li>
             <li class="gnb_05">
-              <a href="뱅킹.html" class="depth1-link ">
+              <a href="banking.html" class="depth1-link ">
                 뱅킹</a>
 
             </li>
             <li class="gnb_06">
-              <a href="고객지원.html" class="depth1-link ">
+              <a href="customerSupport.html" class="depth1-link ">
                 고객지원</a>
 
             </li>
@@ -635,16 +636,16 @@
     option = {
       xAxis: {
         type: 'category',
-        data: ['5/31', '5/30', '5/29', '5/28', '5/27', '5/26', '5/25', '5/24', '5/23', '5/22', '5/21', '5/20', '5/19', '5/18', '5/17', '5/16']
+        data: ['6/2','6/1','5/31', '5/30', '5/29', '5/28', '5/27', '5/26', '5/25', '5/24', '5/23', '5/22']
       },
       yAxis: {
         type: 'value',
-        min: 1230000,
-        max: 1310000
+        min: 1220000,
+        max: 1340000
       },
       series: [
         {
-          data: [1234305, 1250057, 1268884, 1265790, 1265790, 1265790, 1272078, 1256025, 1248416, 1269809, 1297569, 1297569, 1297569, 1297569, 1301743, 1293529],
+          data: [ 1272078, 1256025, 1248416, 1269809, 1297569, 1297569, 1297569, 1297569, 1301743, 1293529, 1310098, 1324077 ],
           type: 'line',
           lineStyle: { color: '#DF0101' },
           color: '#DF0101'
