@@ -1,0 +1,39 @@
+﻿
+.rc_main-visual{}
+.rc_main-visual{position:relative;width:100%;height:355px; background: url(../img/RC/bg_main_visual.gif) no-repeat;}
+.rc_main-visual .txt{ position:absolute; top:15px; left:16px;}
+.rc_main-visual .copy{color:#333; font-weight:bold; font-size:22px;font-family:나눔고딕, NanumGothic, ng, 'NanumGothicWeb', 굴림, Gulim, sans-serif; }
+.rc_main-visual h3{color:#03838e; font-weight:600; font-size:36px; margin:15px 0 15px;font-family:나눔고딕, NanumGothic, ng, 'NanumGothicWeb', 굴림, Gulim, sans-serif; letter-spacing:-1px; }
+.rc_main-visual .btn{position:absolute; bottom:26px; right:40px;}
+.rc_main-visual .book1.over div{position:absolute; background:url(../img/RC/img_book1_on.png) no-repeat; width:140px; height:182px; }
+.rc_main-visual .book2.over div{position:absolute; background:url(../img/RC/img_book2_on.png) no-repeat; width:140px; height:182px; }
+.rc_main-visual .btn ul li{float:left; }
+
+.rc_main-menu{ position:relative;width:709px;height:90px; margin-bottom: 8px; background: url(../img/RC/bg_main_menu.gif) no-repeat;  }
+.rc_main-menu ul {margin:0 auto; width:0px;}
+.rc_main-menu ul li{float:left;}
+.rc_main-menu .arr1{ position:relative;width:14px; height:23px; display:inline-block; background:url(../img/RC/menu_arr1.gif) no-repeat; float:left; top:33px; left:15px; margin-right:17px;}
+.rc_main-menu .arr2{ position:relative;width:14px; height:23px; display:inline-block; background:url(../img/RC/menu_arr2.gif) no-repeat; float:right; top:33px; right:15px; margin-left:17px;}
+.rc_main-list {position: relative; width: 709px;}
+.rc_main-list .box { border:1px solid #dddddf; padding:15px 14px 0 14px; background:#fff; }
+.rc_main-list .box h6{margin-bottom:10px;}
+.rc_main-list .box .view-img{border:1px solid #d4d4d4; width:200px; height:107px;}
+.rc_main-list .box .view-img img{position: relative; top: 7px; left: -30px;}
+.rc_main-list .box dl{padding-bottom:10px;}
+.rc_main-list .box dt{font-weight:bold; }
+.rc_main-list .box dd{font-weight:normal !important;}
+.rc_main-list .box strong{font-weight:normal !important;}
+.rc_main-list .box .date{font-size:9px !important; color:#999; letter-spacing:0;}
+.rc_main-list .box p{text-align:right; min-height:30px;}
+.rc_main-list .box .email {margin:0;background:url(../img/RC/icon.png) no-repeat -169px 2px !important; width:13px; height:15px;display:inline-block; vertical-align:middle;}
+.rc_main-list .box .btm{border-top:1px solid #f2f2f2; height:100%; margin:0 -15px 0 -16px; padding:5px 15px 5px 10px; height:33px;}
+.rc_main-list .box ul li{float:left;}
+.rc_main-list .icon_heart { background:url(../img/RC/icon.png) no-repeat 0px 3px; padding-left:20px;}
+.rc_main-list .box-contents {max-height: 200px; word-break: break-all;text-overflow: ellipsis;overflow: hidden;}
+
+
+#container.rc_container{padding-bottom:350px}
+.box-instruction2.rc-box{position:absolute;bottom:0;}
+.box-instruction2.rc-box li{background:url(../img/common/bu_dot_2dep.gif) no-repeat 9px 10px;padding-left:20px;}
+.box-instruction2.rc-box ul li .list-3dep li {background:url(../img/common/bu_dot_3dep.gif) no-repeat 0px 7px;padding-left:11px;}
+.box-instruction2.rc-box ul li .list-3dep li .indent2{line-height:22px;}
