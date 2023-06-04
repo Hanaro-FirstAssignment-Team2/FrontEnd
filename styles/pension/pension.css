@@ -16,14 +16,11 @@ div.contentCenter {width: 960px; position: relative; margin: 0 auto;}
 
 .wrap {width:100%; min-width:1160px;}
 
-
+#mainContainer {margin-top: 34px;}
 
 .wrap {margin-left:-50px}
 .iPad .wrap {margin-left:0}
 .iPad .wrap, .wrap .wrap {margin-left:auto}
-
-
-#mainContainer {margin-top: 34px;}
 
 #quick-navi-wrap {position: absolute; width: 100%; height: 34px; background-color: #f8f8f8; border-bottom: 1px solid #e5e5e5; z-index:1}
 #quick-navi-wrap.fixed {top: 0px; position: fixed; z-index: 10000;}
@@ -33,7 +30,7 @@ div.contentCenter {width: 960px; position: relative; margin: 0 auto;}
 #quick-navi #quick-navi-depth1 > a {padding-right: 35px; }
 #quick-navi .quick-menu-div a.selected-menu {float: left; height: 34px; color: #555555; padding:4px 50px 0 10px;}
 #quick-navi .quick-menu-div a:hover {color: #008268;}
-#quick-navi .quick-menu-div .selected-menu {}
+#quick-navi .quick-menu-div .selected-menu {  }
 #quick-navi .quick-menu-div > ul {position: absolute; visibility: hidden;}
 #quick-navi .quick-menu-div > ul.opened {padding: 10px 0 10px 0; margin: 33px 0 0 -18px; visibility: visible; height: auto; background-color: #ffffff; border: 1px solid #dfdfdf; z-index: 10001;}
 #quick-navi .quick-menu-div > ul > li {font-size: 13px; padding: 3px 20px 4px 20px;}
@@ -86,14 +83,17 @@ margin: 20px auto;
 padding-left: 170px;
 padding-top: 0;
 }
+
 h1 {
 text-align: center;
 }
+
 .yeongeum-list {
 list-style: none;
 padding: 0;
 padding-top: 80px;
 }
+
 .yeongeum-list li {
 float: left;
 padding: 0;
@@ -101,6 +101,7 @@ margin: 32px;
 overflow: hidden;
 position: relative;
 }
+
 .yeongeum-list img {
 width: 280px;
 margin: 0;
@@ -125,6 +126,7 @@ z-index: 10;
 color: white;
 text-align: center;
 }
+
 .content { clear:both; width: 100%;}
 .vs { clear:both; width: 100%; height:100vh; overflow:hidden;}
 .page { clear:both; width: 100%;}
@@ -161,42 +163,6 @@ a:hover { text-decoration: none; color:#04b4b4; }
 
 
 
-
-
-.video-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.video-head .btn_arrow {
-  font-size: 14px;
-  color: #73757C;
-}
-.video-head .page-tit-s {
-  padding-left: 0 !important;
-  margin: 0 !important;
-}
-.video-head .page-tit-s::before {
-  display: none;
-}
-.video-head .page-tit-s::after {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  margin-left: 16px;
-}
-.video-head .page-tit-s.book::after {
-  background: url(/inc_renewal/img/FP/sp_video_ico.png) 0 0 no-repeat;
-}
-.video-head .page-tit-s.bell::after {
-  background: url(/inc_renewal/img/FP/sp_video_ico.png) -50px 0 no-repeat;
-}
-.video-head .page-tit-s.mag::after {
-  background: url(/inc_renewal/img/FP/sp_video_ico.png) -100px 0 no-repeat;
-}
-
 .video-body {
   display: flex;
   width: 88%;
@@ -210,6 +176,7 @@ a:hover { text-decoration: none; color:#04b4b4; }
   width: calc(100% + 24px);
   margin-left: -24px;
 }
+
 .video-product-guide-wrap * {
   box-sizing: border-box;
 }
@@ -222,12 +189,14 @@ a:hover { text-decoration: none; color:#04b4b4; }
   border-radius: 16px;
   padding: 40px 32px 0;
 }
+
 .video-product-guide-item .tit {
   font-size: 20px;
   line-height: 30px;
   color: #1A1D29;
   font-weight: 600;
 }
+
 .video-product-guide-item .tit-sub {
   font-size: 14px;
   line-height: 21px;
@@ -235,9 +204,11 @@ a:hover { text-decoration: none; color:#04b4b4; }
   font-weight: 300;
   margin-top: 8px;
 }
+
 .video-product-guide-item .tag-wrap {
   margin-top: 20px;
 }
+
 .video-product-guide-item .tag-wrap p {
   font-size: 13px;
   font-weight: 400;
@@ -245,62 +216,62 @@ a:hover { text-decoration: none; color:#04b4b4; }
   color: #1A1D29;
   font-weight: 700;
 }
+
 .video-product-guide-item.guide01 {
   background: #ecfbf7;
 }
+
 .video-product-guide-item.guide01::after {
   content: "";
   display: block;
   width: 128px;
   height: 128px;
-  background: url(../images/연금/money4.jpg) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
+
 .video-product-guide-item.guide02 {
   background: #fcfaed;
 }
+
 .video-product-guide-item.guide02::after {
   content: "";
   display: block;
   width: 128px;
   height: 129px;
-  background: url(../images/연금/money2.jpg) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
+
 .video-product-guide-item.guide03 {
   background: #f6f6f6;
 }
+
 .video-product-guide-item.guide03::after {
   content: "";
   display: block;
   width: 128px;
   height: 128px;
-  background: url(/inc_renewal/img/FP/img_video_g3.png) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
+
 .video-product-guide-item.guide04 {
   background: #ecfbf7;
 }
+
 .video-product-guide-item.guide04::after {
   content: "";
   display: block;
   width: 128px;
   height: 128px;
-  background: url(/inc_renewal/img/FP/img_video_g4.png) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
-
-
-
-
 
 
 
@@ -327,6 +298,7 @@ a:hover { text-decoration: none; color:#04b4b4; }
   width: calc(100% + 24px);
   margin-left: -24px;
 }
+
 .video-product-guide2-wrap * {
   box-sizing: border-box;
 }
@@ -339,12 +311,14 @@ a:hover { text-decoration: none; color:#04b4b4; }
   border-radius: 16px;
   padding: 40px 32px 0;
 }
+
 .video-product-guide2-item .tit {
   font-size: 20px;
   line-height: 30px;
   color: #1A1D29;
   font-weight: 600;
 }
+
 .video-product-guide2-item .tit-sub {
   font-size: 14px;
   line-height: 21px;
@@ -352,9 +326,11 @@ a:hover { text-decoration: none; color:#04b4b4; }
   font-weight: 300;
   margin-top: 8px;
 }
+
 .video-product-guide2-item .tag-wrap {
   margin-top: 20px;
 }
+
 .video-product-guide2-item .tag-wrap p {
   font-size: 13px;
   font-weight: 400;
@@ -362,29 +338,32 @@ a:hover { text-decoration: none; color:#04b4b4; }
   color: #1A1D29;
   font-weight: 700;
 }
+
 .video-product-guide2-item.guide01 {
   background: transparent;
 }
+
 .video-product-guide2-item.guide01::after {
   content: "";
   display: block;
   width: 128px;
   height: 128px;
-  background: url(../images/연금/money4.jpg) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
+
 .video-product-guide2-item.guide02 {
   background: transparent
 }
+
 .video-product-guide2-item.guide02::after {
   content: "";
   display: block;
   width: 128px;
   height: 129px;
-  background: url(../images/연금/money2.jpg) no-repeat;
   position: absolute;
   right: 24px;
   bottom: 24px;
 }
+
