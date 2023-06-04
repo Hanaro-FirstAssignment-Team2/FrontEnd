@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.skipNavigation {position:absolute; top:0; left:0; width:100%; height:0; overflow:visible;}
+.skipNavigation a {position:absolute; left:-999999px; width:100%; height:30px; font-size:16px; font-weight:bold; background:#eee; color:#333; text-align:center; line-height:30px;}
+.skipNavigation a:focus {left:0; z-index:100}
+
+
+/* layout */
+#container {position:relative; width:960px; margin:0 auto; overflow:visible; padding-top:50px;}
+#container:after {content:' '; clear:both; display:block; width:0; height:0; overflow:hidden;}
+#container.full {width:100%; padding-top:0}
+#container .contents {width:100%; min-height:500px; padding:27px 0 76px 0;}
+#container.w100p { width:100%; }
+#container .rc_area_con {width:710px; margin-right:30px; float:left;}
+#container .rc_area_aside {width:220px;float:left;}
+#container .fp_area_con {width:710px; margin-right:30px; float:left;}
+#container .fp_area_aside {position: absolute; width:220px; bottom:0; top:57px;left:740px; background:url(../img/FP/bg_aside.gif) repeat-y;  padding:22px;}
+
+
+#footer {width:100%; line-height:16px; margin-top:85px; background:#e7e7e7; display: inline-block;}
+#footer:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+#footer .inner {width:960px; margin:0 auto;}
+#footer .guide {position:relative; float:left; width:100%; padding: 30px 0; background: #fff;  border-top: 1px solid #d0d0d0;}
+
+#footer .guide .guide-group {position:relative; display:block; width:960px; margin:0 auto}
+
+#footer .guide .guide-group ul.footerLink {width:750px; margin-bottom:5px; font-size:13px; overflow:hidden}
+#footer .guide .guide-group ul.footerLink li {float:left; margin-bottom:10px; padding:0 7px 0 6px; background:url('../img/line_v_gab.gif')no-repeat 100% 4px }
+#footer .guide .guide-group ul.footerLink li:last-child {background:none}
+
+#footer .guide .guide-group .familysite {position:absolute; right:0; top:0; font-size:13px}
+#footer .guide .guide-group .sns-footer {position:absolute; right:0; top:30px}
+#footer .guide .guide-group .sns-footer ul li {float:left; margin-left:5px}
+
+#footer .cscenter {width:960px; margin:0 auto; padding-left:6px}
+
+#footer cite {display:block; width:960px; margin:8px auto; padding-left:6px }
+#footer .copyright {width:960px;margin:15px auto 8px;padding-left:6px}
+#footer address {font-size:11px}
+#footer .footerMenu {width:100%; padding:30px 10px}
+#footer .footerMenu ul {width:100%;}
+#footer .footerMenu ul:after {display:block;clear:both;content:''}
+#footer .footerMenu ul li {float:left; width:165px; height:215px; padding-left:15px; border-left:1px solid #f3f3f3; border-right:1px solid #d7d7d7}
+.ie8 #footer .footerMenu ul li {width: 148px;}
+#footer .footerMenu ul li:first-child {width:138px; border-left:0}
+#footer .footerMenu ul li.last-child {width:142px; border-right:0}
+#footer .footerMenu ul li span.tit {display:block; font-weight:bold; color:#333333}
+#footer .footerMenu ul li ul {padding-top:10px;}
+#footer .footerMenu ul li ul li {float:none; height:auto; padding: 4px 0 4px 7px; display:block; background:url('../img/bu_4depth.gif') no-repeat 0 11px; border:0; font-size:13px}
+#footer .footerMenu ul li ul li.bgn {background:none}
+
+#footer .familysite { position:absolute; top:0; right:0; margin-top: -5px;}
+#footer .familysite .sbox a { display:block; padding:4px 0 0 10px; width:150px; height:24px; background:url(../../pages/헤더푸터_files/icon_select_ar.gif) no-repeat 96% 6px; border:1px solid #bdbdbd; font-size:13px; text-decoration:none; }
+#footer .familysite > .familisite-list {display: none; position:absolute; bottom:23px; left:0;padding:6px 0; width:150px; background:#fff; border:1px solid #bdbdbd; }
+#footer .familysite > .familisite-list.opened {display: block;}
+#footer .familysite > .familisite-list li a { display:block; padding:0 10px 4px; font-size:13px; text-decoration:none; }
+#footer .familysite > .familisite-list li a:hover { color:#008268; }

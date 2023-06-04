@@ -11,7 +11,7 @@
 #quick-navi #quick-navi-depth1 > a {padding-right: 35px;}
 #quick-navi .quick-menu-div a.selected-menu {float: left; height: 34px; color: #555555; padding:4px 50px 0 10px;}
 #quick-navi .quick-menu-div a:hover {color: #008268;}
-#quick-navi .quick-menu-div .selected-menu {}
+
 #quick-navi .quick-menu-div > ul {position: absolute; visibility: hidden;}
 #quick-navi .quick-menu-div > ul.opened {padding: 10px 0 10px 0; margin: 33px 0 0 -18px; visibility: visible; height: auto; background-color: #ffffff; border: 1px solid #dfdfdf; z-index: 10001;}
 #quick-navi .quick-menu-div > ul > li {font-size: 13px; padding: 3px 20px 4px 20px;}
