@@ -1,6 +1,6 @@
 @charset "utf-8";
 .templetWrap {
-  background: url(/common/img/bg_body.gif) repeat-x;
+  background: url(/common/img/bg_body.gif) repeat-x #000000;background : rgba(0, 0, 0, 0.6);
 }
 .wrap {
   width: 100%;
@@ -129,7 +129,7 @@
   top: 52px;
   width: 160px;
   height: 37px;
-  background: url(../../images/header/hanaLogoBlack.png) no-repeat 0 0;
+  background: url(../../images/header/hanaLogoWhite.png) no-repeat 0 0;
   font-size: 0;
   text-indent: -9999px;
   z-index: 100;
@@ -194,7 +194,7 @@
   height: 42px;
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-family: "NanumGothicWeb", "맑은 고딕", "Malgun Gothic", "굴림", Gulim,
     sans-serif;
