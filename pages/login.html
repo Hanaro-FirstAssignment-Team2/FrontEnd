@@ -36,7 +36,7 @@
          <!-- Header 헤더 메뉴 -->
     <div id="header">
         <div class="inner">
-          <h1><a href="#">하나증권</a></h1>
+          <h1><a href="loginBefore.html">하나증권</a></h1>
           <ul class="memberlink" style="margin-left: 570px;">
             <li style="border-color: black; background-color:transparent;"><a
                 href="loginBefore.html" style="color:black">로그인</a>
@@ -205,10 +205,18 @@
                                             <span id="pass_wd_tk_btn"><label for="Tk_pass_wd_checkbox"
                                                     class="transkey_label"><input type="checkbox"
                                                         id="Tk_pass_wd_checkbox" class="transkey_checkbox"
-                                                        style="display:none;"><img src="../images/login/input_transkey.png"
+                                                        style="display:none;"><img src="../images/login/input_transkey.png" onclick="search_onclick()"
                                                         id="Tk_pass_wd_img"
                                                         style="vertical-align:middle;"></label></span>
                                         </div>
+
+                                        <script>
+                                            // 키패드 이미지 클릭 시 alert 출력
+            
+                                            function search_onclick(){
+                                                alert("점검 중 입니다.")
+                                            }
+                                        </script>
 
 
                                         <!--// 정규식으로 아이디,비밀번호 형식 체크 -->
