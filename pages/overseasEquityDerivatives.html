@@ -485,8 +485,9 @@
 
   <script>
     $(document).ready(function () {
-      let name = "금융";
+      let name = "금융"; //키워드를 금융으로 설정
 
+      // Open API
       $.ajax({
         type: "GET",
         url: "https://apis.data.go.kr/1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=pU1MzzPLAHvlki6lv%2FJhqyTwdI7PQyi%2BWg62j5Hn9q4etzDWYhC%2BQo7YdAdiUglkcf%2BducizzXUHgveXqXxtNg%3D%3D&resultType=json&pageNo=1&numOfRows=1&idxNm=" +
@@ -498,9 +499,9 @@
 
           for (let i = 0; i < kosdaq.length; i++) {
             let mise = kosdaq[i];
-            let kosdaq_title = mise["idxCsf"];
-            let kosdaq_jongga = mise["clpr"];
-            let kosdaq_rate = mise["vs"];
+            let kosdaq_title = mise["idxCsf"]; //지수분류명 : 지수의 분류명칭
+            let kosdaq_jongga = mise["clpr"]; //종가 : 정규시장의 매매시간, 종료시까지 형성되는 최종가격
+            let kosdaq_rate = mise["vs"]; //대비 : 전일 대비 등락
 
 
             let row = $("<tr></tr>");
@@ -525,11 +526,6 @@
         },
       });
     });
-
-
-
-
-
 
 
     $(document).ready(function () {
@@ -684,13 +680,13 @@
         success: function (result) {
           let exchangeRateTableBody = $("#exchange-rate-table-body");
           $(result).find("item").each(function () {
-            let dname = $(this).find("cntySgn").text();
+            let dname = $(this).find("cntySgn").text(); //국가부호
             for (var i = 0; i < 9; i++) {
               if (dname == countryList[i]) {
                 let titleCell = $("<td></td>").text("원/달러");
                 let country = countryName[i]
-                let currency = $(this).find("currSgn").text();
-                let exchangeRate = parseFloat($(this).find("fxrt").text()).toFixed(2);
+                let currency = $(this).find("currSgn").text(); //통화부호
+                let exchangeRate = parseFloat($(this).find("fxrt").text()).toFixed(2); //환율
 
 
                 let newRow = $("<tr>");
