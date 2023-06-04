@@ -189,7 +189,7 @@
 .wt-box2 h4{height:40px;background:url(/templets/main/img/WT/bg_wt_boxtit2.gif) no-repeat; color:#fff; font-weight:bold; font-size:16px; padding-left:19px; padding-top:7px;}
 .wt-box2 > ul{height:380px; border:1px solid #dbdbdb; border-top: none !important;}
 
-.wt_kospi {height:380px; border:1px solid #dbdbdb; border-top: none !important;}
+.wt_kospi {height:380px; border:0px solid #dbdbdb; border-top: none !important;}
 .wt_kospi_list {padding: 5px 16px 10px;}
 .wt_rate {height:380px; border:1px solid #dbdbdb; border-top: none !important;padding: 5px 16px 10px;}
 .wt_rate table {width: 100%;}

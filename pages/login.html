@@ -11,12 +11,9 @@
 
 
   
-    <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.font.css">
-
-    <link rel="stylesheet" type="text/css" href="./헤더푸터_files/hanaw.layout.css">
-   
-    <link rel="stylesheet" type="text/css" href="../styles/header/hanaw.header.css">
-
+        <link rel="stylesheet" type="text/css" href="../styles/header/font.css">
+        <link rel="stylesheet" type="text/css" href="../styles/header/header.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer/layout.css"> 
 
 
     <link rel="stylesheet" type="text/css" href="../styles/login/main_basic.css">
@@ -36,88 +33,65 @@
     <div class="wrap templetWrap">
 
 
-         <!--// 헤더 -->
-        <div id="header">
-            <img src="./헤더푸터_files/logo2.png" alt="헤더푸터 로고"
-                style="margin-left:200px; margin-top: 40px; width: 200px; position: absolute;">
-
-
-            <img src="./헤더푸터_files/search.png" alt="헤더푸터 로고"
-                style="margin-left:1130px; margin-top: 60px; width: 30px; position: absolute;">
-
-            <img src="./헤더푸터_files/menu.png" alt="헤더푸터 로고"
-                style="margin-left:1170px; margin-top: 62px; width: 25px; position: absolute;">
-
-             <!-- 하나은행 외부 링크 제거함 -->
-
-            <div class="inner" style="margin-left: 800px;">
-
-                <ul class="memberlink">
-                    <li style="border-color: black; background-color:transparent;"><a
-                            href="login.html" style="color:black">로그인</a>
-                    </li>
-                    <li style="border-color: black;background-color:transparent;"><a
-                            href="" style="color:black">ID
-                            등록</a>
-                    </li>
-                    <li style="border-color: black;background-color:transparent;"><a
-                            href=""
-                            style="color:black">인증센터</a></li>
-                </ul>
-            </div>
-            <div id="gnb-area">
-
-
-
-
-                <div id="gnb-wrap">
-
-
-                    <ul id="gnb">
-
-                        <li class="gnb_01">
-
-                             <!--// 나의 자산, 뱅킹 접근 시 로그인 화면으로 이동 -->
-
-                            <a href="login.html" class="depth1-link ">
-                                나의 자산</a>
-
-                        </li>
-                        <li class="gnb_02">
-                            <a href="financialInvestmentProduct1.html" class="depth1-link">
-                                금융투자상품</a>
-
-                        </li>
-                        <li class="gnb_03">
-                            <a href="equityDerivatives.html" class="depth1-link ">
-                                주식파생상품</a>
-
-                        </li>
-                        <li class="gnb_04">
-                            <a href="overseasEquityDerivatives.html" class="depth1-link ">
-                                해외주식파생</a>
-
-                        </li>
-                        <li class="gnb_04">
-                            <a href="pension.html" class="depth1-link ">
-                                연금</a>
-
-                        </li>
-                        <li class="gnb_05">
-                            <a href="login.html" class="depth1-link ">
-                                뱅킹</a>
-
-                        </li>
-                        <li class="gnb_06">
-                            <a href="customerSupport.html" class="depth1-link ">
-                                고객지원</a>
-
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
+         <!-- Header 헤더 메뉴 -->
+    <div id="header">
+        <div class="inner">
+          <h1><a href="#">하나증권</a></h1>
+          <ul class="memberlink" style="margin-left: 570px;">
+            <li style="border-color: black; background-color:transparent;"><a
+                href="loginBefore.html" style="color:black">로그인</a>
+            </li>
+            <li style="border-color: black;background-color:transparent;"><a
+                href="" style="color:black">ID
+                등록</a>
+            </li>
+            <li style="border-color: black;background-color:transparent;"><a
+                href="" style="color:black">인증센터</a></li>
+          </ul>
         </div>
+        <div id="gnb-area">
+          <div id="gnb-wrap">
+            <ul id="gnb">
+              <li class="gnb_01">
+                <a href="myAsset.html" class="depth1-link ">
+                  나의 자산</a>
+              </li>
+              <li class="gnb_02">
+                <a href="financialInvestmentProduct1.html" class="depth1-link">
+                  금융투자상품</a>
+              </li>
+              <li class="gnb_03">
+                <a href="equityDerivatives.html" class="depth1-link ">
+                  주식파생상품</a>
+              </li>
+              <li class="gnb_04">
+                <a href="overseasEquityDerivatives.html" class="depth1-link ">
+                  해외주식파생</a>
+              </li>
+              <li class="gnb_04">
+                <a href="pension.html" class="depth1-link ">
+                  연금</a>
+              </li>
+              <li class="gnb_05">
+                <a href="banking.html" class="depth1-link ">
+                  뱅킹</a>
+              </li>
+              <li class="gnb_06">
+                <a href="customerSupport.html" class="depth1-link ">
+                  고객지원</a>
+              </li>
+              <li style="visibility: hidden;">칸 맞춤 </li>
+              <li class="gnb_07">
+                <img src="../images/header/search.png" alt="헤더푸터 로고" style="width: 30px;">
+              </li>
+              <li class="gnb_08">
+                <img src="../images/header/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //Header 헤더 메뉴 -->
     </div>
         <div id="quick-navi-wrap">
             <ul id="quick-navi">

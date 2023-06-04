@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width">
     <title>연금 : 하나증권</title>
 
     <!--메타태그-->
-
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="application-name" content="하나증권">
     <meta name="subject" content="하나증권">
     <meta name="description" content="증권, 주식거래, 금융상품, 재테크, 투자, 자산관리 정보, 주식시세 ">
@@ -24,8 +18,6 @@
     <meta name="author" content="Hana Financial Investment Co.,Ltd.">
     <meta name="robots" content="index, flow">
     <meta http-equiv="refresh" content="600">
-    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1, Transition=12)">
-    <meta name="viewport" content="width=1024">
 
     <!--오픈그래프-->
     <meta property="og:type" content="website">
@@ -38,11 +30,6 @@
     <meta name="apple-mobile-web-app-title" content="하나증권">
     <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon-16x16.png">
     <link rel="apple-touch-startup-image" href="../images/favicon/favicon-16x16.png">
-    <meta name="apple-mobile-web-app-capable" href="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" href="black-translucent">
-
-
-
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
@@ -61,12 +48,17 @@
     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="../styles/header/font.css">
     <link rel="stylesheet" type="text/css" href="../styles/header/header.css">
     <link rel="stylesheet" type="text/css" href="../styles/footer/layout.css">
 
     <link rel="stylesheet" type="text/css" href="../styles/common.css">
     <link rel="stylesheet" type="text/css" href="../styles/pension/pension.css">
+    <link rel="stylesheet" type="text/css" href="../styles/pension/quicknavi.css">
+    <link rel="stylesheet" type="text/css" href="../styles/pension/submenu.css">
+    <link rel="stylesheet" type="text/css" href="../styles/pension/card.css">
+    <link rel="stylesheet" type="text/css" href="../styles/pension/pensionList.css">
 
     <!-- 웹폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,11 +66,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
-<body oncontextmenu="return false"> <!--우클릭 금지-->
+<!--우클릭 금지-->
+<body oncontextmenu="return false"> 
     <div class="wrap templetWrap">
 
-
-        <!-- INCLUDE : HANAW HEADER -->
+        <!-- 헤더 인클루드 -->
         <div id="header">
 
             <div class="inner">
@@ -96,9 +88,7 @@
               </ul>
             </div>
             <div id="gnb-area">
-              <!-- GNB : START -->
-      
-      
+              <!-- GNB -->
               <div id="gnb-wrap">
                 <ul id="gnb">
                     <li class="gnb_01">
@@ -142,11 +132,8 @@
                   </li>
                   <li class="gnb_08">
                     <img src="../images/header/menu.png" alt="헤더푸터 로고" style=" width: 25px;">
-      
-                  </li>
                   </li>
                 </ul>
-      
               </div>
             </div>
           </div>
@@ -157,7 +144,7 @@
     <ul id="quick-navi">
         
     	<li class="fl"><a id="access-quickmemu" href="loginBefore.html" title="홈"><img src="../images/pension/quicknavi_home.gif" alt="home">&nbsp;&nbsp;연금</a></li>
-    	
+    
         <li>
             <div id="quick-navi-depth1" class="quick-menu-div">
                 <a href="/pages/pension.html" class="selected-menu quick-menu-depth1"></a>
@@ -182,17 +169,13 @@
                     </ul>
                 </div>
             </li>
-
     </ul>
 </div>
 <div class="clear"></div> 
 
-
-
-
     <div id="container">
-
-        <div class="wt-submenu mb30"> <!--연금 서브메뉴-->
+    <!-- 서브메뉴 -->
+        <div class="wt-submenu"> 
             <ul>
                 <li>
                     <ul class="wt-submenuT">
@@ -205,13 +188,11 @@
             </ul>
         </div>
 
-
-
-
-        <section class="video-product-guide">
-            <div class="video-body">
-                <ul class="video-product-guide-wrap">
-                    <li class="video-product-guide-item guide01">
+        <!-- 카드형 컨텐츠 -->
+        <div class="card-product-guide">
+            <div class="card-body">
+                <ul class="card-product-guide-wrap">
+                    <li class="card-product-guide-item guide01">
                         <a href="#">
                             <strong class="tit">IRP에 대해<br>
                                 자세히 알아볼까요?
@@ -224,11 +205,11 @@
                                 <p>#퇴직연금</p>
                             </div>
                             <div class="cardicon">
-                                <img src="../images/pension/money5.png" width="145px" alt="IRP">
+                                <img src="../images/pension/money5.png" width="145" alt="IRP">
                             </div>
                         </a>
                     </li>
-                    <li class="video-product-guide-item guide02">
+                    <li class="card-product-guide-item guide02">
                         <a href="#">
                             <strong class="tit">연금저축ETF에 대해<br>
                                 궁금하다면?
@@ -241,11 +222,11 @@
                                 <p>#금융상품</p>
                             </div>
                             <div class="cardicon">
-                                <img src="../images/pension/money2.png" width="130px" alt="연금저축ETF">
+                                <img src="../images/pension/money2.png" width="130" alt="연금저축ETF">
                             </div>
                         </a>
                     </li>
-                    <li class="video-product-guide-item guide03">
+                    <li class="card-product-guide-item guide03">
                         <a href="#">
                             <strong class="tit">연금저축펀드에 대해<br>
                                 자세히 알아볼까요?
@@ -257,11 +238,11 @@
                                 <p>#금융상품</p>
                             </div>
                             <div class="cardicon">
-                                <img src="../images/pension/money4.png" width="130px" alt="연금저축펀드">
+                                <img src="../images/pension/money4.png" width="130" alt="연금저축펀드">
                             </div>
                         </a>
                     </li>
-                    <li class="video-product-guide-item guide04">
+                    <li class="card-product-guide-item guide04">
                         <a href="#">
                             <strong class="tit">DB형/DC형에 대해<br>
                                 궁금하다면?
@@ -274,50 +255,44 @@
                                 <p>#DC형</p>
                             </div>
                             <div class="cardicon2">
-                                <img src="../images/pension/money6.png" width="150px" alt="퇴직연금">
+                                <img src="../images/pension/money6.png" width="150" alt="퇴직연금">
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section>
-        </section>
+        </div>
 
-
-
-        <section class="video-product-guide2">
-            <div class="video-body2" style="background: #f1f6ff; border: 1px solid transparent; border-radius: 2em;">
-                <ul class="video-product-guide2-wrap">
-                    <li class="video-product-guide2-item guide01">
-                        <img src="../images/pension/questionmark.png" width="300px" alt="human"><br><br>
-
+        <!-- 퇴직연금의 필요성 안내 -->
+        <div class="card-product-guide2">
+            <div class="card-body2" style="background: #f1f6ff; border: 1px solid transparent; border-radius: 2em;">
+                <ul class="card-product-guide2-wrap">
+                    <li class="card-product-guide2-item guide01">
+                        <img src="../images/pension/questionmark.png" width="300" alt="human"><br><br>
                     </li>
-                    <li class="video-product-guide2-item guide02">
+                    <li class="card-product-guide2-item guide02">
                         <p style="font-size: 26px; font-weight: 800; padding-top: 60px; padding-bottom: 50px;">퇴직연금 왜
                             필요할까요?</p>
                         <p style="font-size: 17px; padding-bottom: 35px;"><img src="../images/pension/lightbulb2.png"
-                                width="30px" alt="lightbulb">노후 준비를 위한 든든한 자금</p>
-                        <p style="font-size: 17px;"><img src="../images/pension/lightbulb2.png" width="30px"
+                                width="30" alt="lightbulb">노후 준비를 위한 든든한 자금</p>
+                        <p style="font-size: 17px;"><img src="../images/pension/lightbulb2.png" width="30"
                                 alt="lightbulb">절세 효과</p>
                     </li>
                 </ul>
             </div>
-        </section>
-        </section>
+        </div>
 
-
-
-
-        <section class="video-product-guide2">
-            <div class="video-body2">
-                <ul class="video-product-guide2-wrap">
-                    <li class="video-product-guide2-item guide01">
-                        <img src="../images/pension/house.png" width="260px" alt="hana"><br><br>
-                        <p class="mint"><strong>자산관리 명가 '하나증권'</strong></p> <!--하나증권 소개글-->
+        <!-- 하나증권 소개글 -->
+        <div class="card-product-guide2">
+            <div class="card-body2">
+                <ul class="card-product-guide2-wrap">
+                    <li class="card-product-guide2-item guide01">
+                        <img src="../images/pension/house.png" width="260" alt="hana"><br><br>
+                        <p class="mint"><strong>자산관리 명가 '하나증권'</strong></p>
                         <br><strong>대한민국 최초의 펀드판매회사로<br>48년간의 자산관리 핵심 노하우 집약</strong>
                     </li>
-                    <li class="video-product-guide2-item guide02"> <!--하나증권 IRP Youtube 영상-->
-                        <iframe width="600px" height="338px"
+                    <li class="card-product-guide2-item guide02"> <!--하나증권 IRP Youtube 영상-->
+                        <iframe width="600" height="338"
                             src="https://www.youtube.com/embed/NDPDJ7kkV4s?controls=0&autoplay=1&mute=1&loop=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -325,12 +300,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        </section>
+        </div>
 
-
-
-        <ul class="yeongeum-list"> <!--연금 보고서-->
+        <!--연금 보고서-->
+        <ul class="yeongeum-list"> 
             <li>
                 <a href="https://www.hanaw.com/download/bbs/pdf/lifetimeReport_200508.pdf" target="_blank">
                     <h2>연금으로 노후 준비 든든하게</h2><img src="../images/pension/yeongum_1.jpg" alt="연금으로 노후 준비 든든하게">
@@ -358,6 +331,8 @@
         </ul>
     </div>
 </body>
+
+<!-- 푸터 인클루드 -->
 <div id="footer">
     <div class="guide">
 
@@ -378,47 +353,116 @@
 
             <div class="familysite">
                 <div class="sbox">
-                    <a>하나네트워크</a>
+                <a href="#" class="familysite-opener" title="하나네트워크 패밀리 사이트">하나네트워크</a>
                 </div>
                 <ul class="familisite-list">
-                    <li><a>하나금융그룹</a></li>
-                    <li><a>하나은행</a></li>
-                    <li><a>하나증권</a></li>
-                    <li><a>하나카드</a></li>
-                    <li><a>하나캐피탈</a></li>
-                    <li><a>하나생명</a></li>
-                    <li><a>하나저축은행</a></li>
-                    <li><a>하나자산신탁</a></li>
-                    <li><a>하나대체투자자산운용</a></li>
-                    <li><a>하나펀드서비스</a></li>
-                    <li><a>하나금융티아이</a></li>
-                    <li><a>핀크</a></li>
-                    <li><a>하나금융나눔재단</a></li>
-                    <li><a>하나금융공익재단</a></li>
-                    <li><a>하나케어센터</a></li>
-                    <li><a>하나미소금융재단</a></li>
-                    <li><a>하나고등학교</a></li>
-                </ul>
-            </div>
+                  <li><a href="http://www.hanafn.com" target="_blank">하나금융그룹</a></li>
+                  <li><a href="https://www.kebhana.com" target="_blank">하나은행</a></li>
+                  <li><a href="https://www.hanaw.com" target="_blank">하나증권</a></li>
+                  <li><a href="https://www.hanacard.co.kr" target="_blank">하나카드</a></li>
+                  <li><a href="https://www.hanacapital.co.kr" target="_blank">하나캐피탈</a></li>
+                  <li><a href="https://www.hanalife.co.kr" target="_blank">하나생명</a></li>
+                  <li><a href="https://www.hanasavings.com" target="_blank">하나저축은행</a></li>
+                  <li><a href="http://www.hanatrust.com" target="_blank">하나자산신탁</a></li>
+                  <li><a href="https://hana-aamc.com" target="_blank">하나대체투자자산운용</a></li>
+                  <li><a href="http://www.hanais.co.kr" target="_blank">하나펀드서비스</a></li>
+                  <li><a href="https://www.hanati.co.kr" target="_blank">하나금융티아이</a></li>
+                  <li><a href="https://www.finnq.com" target="_blank">핀크</a></li>
+                  <li><a href="http://www.hana-nanum.com" target="_blank">하나금융나눔재단</a></li>
+                  <li><a href="http://www.hanafoundation.or.kr" target="_blank">하나금융공익재단</a></li>
+                  <li><a href="http://www.hanacarecenter.or.kr" target="_blank">하나케어센터</a></li>
+                  <li><a href="http://www.hanamiso.org" target="_blank">하나미소금융재단</a></li>
+                  <li><a href="http://www.hana.hs.kr" target="_blank">하나고등학교</a></li></ul>
+                </div>
+                <script>
+                  (function() {
+                
+                    var familysite = $('.familysite');
+                    var opener = familysite.find('.familysite-opener');
+                    var list = familysite.find('.familisite-list');
+                    var delay = null;
+                
+                    function openList() {
+                      if (delay !== null) {
+                        clearTimeout(delay);
+                      }
+                      list.addClass('opened');
+                      list.find('a:first').focus();
+                    }
+                
+                    function closeList(e) {
+                      if (e && (e.type === 'keydown' || e.type === 'click')) {
+                        if (delay !== null) {
+                          clearTimeout(delay);
+                        }
+                        list.removeClass('opened');
+                        opener.focus();
+                
+                        return;
+                      }
+                      delay = setTimeout(function() {
+                        list.removeClass('opened');
+                        opener.focus();
+                      }, 300);
+                    }
+                    opener.on('click', function(e) {
+                      e.preventDefault();
+                      if (list.hasClass('opened')) {
+                        closeList(e);
+                      } else {
+                        openList();
+                      }
+                    });
+                    list.find('a').on('click', function() {
+                      closeList(e);
+                    });
+                    list.find('a').on('keydown.closefamily', function(e) {
+                      var keyCode = e.keyCode;
+                      if (keyCode === 27) {
+                        closeList(e);
+                      }
+                    });
+                    list.find('a:first').on('keydown', function(e) {
+                      var keycode = e.keyCode || e.which;
+                      if (e.shiftKey && keycode == 9) {
+                        e.preventDefault();
+                        closeList(e);
+                      }
+                    });
+                    list.find('a:last').on('keydown', function(e) {
+                
+                      var keycode = e.keyCode || e.which;
+                      if (!e.shiftKey && keycode == 9) {
+                        e.preventDefault();
+                        closeList(e);
+                      }
+                    });
+                
+                    opener.add(list).on('mouseleave', function(e) {
+                      closeList(e);
+                    });
+                
+                    list.on('mouseenter', function(e) {
+                      openList();
+                    });
+                  })();
+                </script>
 
             <div class="sns-footer">
                 <ul>
-                    <li><a><img src="../images/footer/icon_facebook.gif" alt="페이스북"></a></li>
-                    <li><a><img src="../images/footer/icon_blog.gif" alt="블로그"></a></li>
+                    <li><a href="https://www.facebook.com/hanadtpage" target="_blank"><img src="../images/footer/icon_facebook.gif" alt="페이스북"></a></li>
+                    <li><a href="https://blog.naver.com/hanadtsec" target="_blank"><img src="../images/footer/icon_blog.gif" alt="블로그"></a></li>
                 </ul>
             </div>
 
             <div class="cscenter">
-                <img src="../images/footer/footer_csCenter.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융">
-
+                <a href="https://www.hanafn.com:8002/main/index.do" target="_blank"><img src="../images/footer/footer_csCenter.gif" style="width:100%; height:100%" alt="하나금융그룹 행복한 금융"></a>
             </div>
             <div class="copyright">
-                
-                <img src="../images/footer/copyright.gif" alt="">
+                <img src="../images/footer/copyright.gif" alt="카피라이트">
             </div>
         </div>
 
     </div>
-</div>  <!--푸터 인클루드-->
-
+</div>  
 </html>
