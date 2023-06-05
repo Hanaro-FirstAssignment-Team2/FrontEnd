@@ -54,9 +54,16 @@
               <div id="gnb-wrap">
                 <ul id="gnb">
                     <li class="gnb_01">
-                        <a href="myAsset.html" class="depth1-link ">
+                        <a href="login.html" class="depth1-link " onclick="need_login()">
                           나의 자산</a>
           
+                          <script>
+                            function need_login(){
+                              alert("로그인이 필요합니다.");
+                              location.href = "login.html";
+                            }
+                            </script>
+
                       </li>
                       <li class="gnb_02">
                         <a href="financialInvestmentProduct1.html" class="depth1-link">
@@ -79,7 +86,7 @@
           
                       </li>
                       <li class="gnb_05">
-                        <a href="banking.html" class="depth1-link ">
+                        <a href="login.html" class="depth1-link " onclick="need_login()">
                           뱅킹</a>
           
                       </li>
