@@ -24,10 +24,9 @@
     <tr>
         <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/52392858?v=4" alt="김익환"></span></td>
         <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/76938304?v=4" alt="민새미"></span></td>
-        <td align="center"><span> <img width="160px" src="https://github.com/account" alt="남성희"></span></td>
+        <td align="center"><span> <img width="160px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/9d51e25d-180c-47f5-9c80-31b782f47d60" alt="남성희"></span></td>
         <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/76957075?v=4" alt="노유빈"></span></td>
-        <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/131989040?v=4
-" alt="남송윤"></span></td>
+        <td align="center"><span> <img width="160px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/c4a6ca11-4937-4f00-985f-c984041dac4e" alt="남송윤"></span></td>
     </tr>
     <tr>
         <td align="center"><a href="github.com/dlrghks2090">@dlrghks2090</a></td>
@@ -153,17 +152,7 @@ For building and running the application you need:
           <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/e7d52fc1-4103-4fe7-a8e2-f03566046177"
  alt="고객지원"></span></td>
       </tr>
-     <tr>
-          <td align="center">연금</td>
-          <td align="center">뱅킹</td>
-          <td align="center">고객지원</td>
-      </tr>
-      <tr>
-          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/9d0e1d1f-9790-4ed1-9823-8b04c08607eb" alt="연금"></span></td>
-          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/1d7a2063-cecc-47b6-b500-3184b8c4c3f2" alt="뱅킹"></span></td>
-          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/e7d52fc1-4103-4fe7-a8e2-f03566046177"
- alt="고객지원"></span></td>
-      </tr>
+     
 </table>
 
 <br>
