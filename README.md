@@ -22,7 +22,7 @@
         <td align="center">남송윤</td>
     </tr>
     <tr>
-        <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/5687bcfe-d556-40fd-95e6-9dda166f21fb" alt="남성희_프로필"></span></td>
+        <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/52392858?v=4" alt="김익환"></span></td>
         <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/4f8ea031-6b54-40e1-ba92-b6487266473a" alt="권민선_프로필"></span></td>
         <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/d99ca37c-4967-42eb-82ef-9797f81537fe" alt="박지영_프로필"></span></td>
         <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/180b9215-919a-461d-9e9b-16cd8d75e394" alt="임채동_프로필"></span></td>
