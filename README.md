@@ -1,7 +1,7 @@
 # 하나증권Lite
 
-<p align="center"><img src="https://github.com/Ansix1207/ERP/assets/39394642/9e147103-7597-41ff-a3b9-b2cf9ec892ca" alt="어드민하나_로고" width="300px"></p>
-<p align="center"><a href="[https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAnsix1207%2FERP&count_bg=%23FF99E5&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
+<p align="center"><img src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/1bae11e6-7b13-48de-942f-c6719ec16070" alt="하나증권Lite_로고" width="300px"></p>
+
 
 <br>
 
@@ -23,10 +23,11 @@
     </tr>
     <tr>
         <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/52392858?v=4" alt="김익환"></span></td>
-        <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/4f8ea031-6b54-40e1-ba92-b6487266473a" alt="권민선_프로필"></span></td>
-        <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/d99ca37c-4967-42eb-82ef-9797f81537fe" alt="박지영_프로필"></span></td>
-        <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/180b9215-919a-461d-9e9b-16cd8d75e394" alt="임채동_프로필"></span></td>
-        <td align="center"><span> <img width="160px" src="https://github.com/Ansix1207/ERP/assets/39394642/7e318fe4-9e3e-4d8c-a763-7956b5f9aa80" alt="최안식_프로필"></span></td>
+        <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/76938304?v=4" alt="민새미"></span></td>
+        <td align="center"><span> <img width="160px" src="https://github.com/account" alt="남성희"></span></td>
+        <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/76957075?v=4" alt="노유빈"></span></td>
+        <td align="center"><span> <img width="160px" src="https://avatars.githubusercontent.com/u/131989040?v=4
+" alt="남송윤"></span></td>
     </tr>
     <tr>
         <td align="center"><a href="github.com/dlrghks2090">@dlrghks2090</a></td>
