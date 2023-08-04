@@ -139,7 +139,7 @@ For building and running the application you need:
         <td align="center">금융투자상품</td>
     </tr>
     <tr>
-        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/2c38bfdc-38f7-4669-88dd-7d896db11f20) alt="메인페이지"></span></td>
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/2c38bfdc-38f7-4669-88dd-7d896db11f20" alt="메인페이지"></span></td>
         <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/559cc2fc-acb4-4673-8fd9-eef8f45bc134) alt="나의자산"></span></td>
         <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/f663be14-397a-4285-8142-be5d0c728a8e)
  alt="금융투자상품"></span></td>
