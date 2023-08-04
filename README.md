@@ -96,7 +96,7 @@ For building and running the application you need:
 
 ## 📖 주요 기능
 ### 로그인<br>
-### Oepn Api<br>
+### Open Api<br>
 ### Crawling<br>
 ### 메인 페이지
 ```
@@ -135,13 +135,14 @@ For building and running the application you need:
 <table>
     <tr>
         <td align="center">메인페이지</td>
-        <td align="center">신규 손님 가입</td>
-        <td align="center">상품 검색</td>
+        <td align="center">나의 자산</td>
+        <td align="center">금융투자상품</td>
     </tr>
     <tr>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/3b254903-aa20-431e-bc21-912bfd6ca3b0" alt="메인페이지"></span></td>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/957857cb-c63a-4852-ba69-44cd59cdd5ce" alt="신규손님가입"></span></td>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/526d4c82-39bd-4189-920d-1e697747bd0a" alt="상품검색"></span></td>
+        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/2c38bfdc-38f7-4669-88dd-7d896db11f20) alt="메인페이지"></span></td>
+        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/559cc2fc-acb4-4673-8fd9-eef8f45bc134) alt="나의자산"></span></td>
+        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/f663be14-397a-4285-8142-be5d0c728a8e)
+ alt="금융투자상품"></span></td>
     </tr>
     <tr>
         <td align="center">프로필</td>
