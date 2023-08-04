@@ -78,26 +78,13 @@ For building and running the application you need:
 <br>
 <hr style="border:0; height:2px; background:gray;">
 
-## 🐰: Stacks 
-
-### Enviornment
-<img src="https://img.shields.io/badge/INTELLIJ IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"> <img src="https://img.shields.io/badge/GIT-F05032?style=flat-square&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/GITHUB-181717?style=flat-square&logo=github&logoColor=white">
-
-### Config
-<img src="https://img.shields.io/badge/APACHE TOMCAT-F8DC75?style=flat-square&logo=apachetomcat&logoColor=black">
-
-### Development
-<img src="https://img.shields.io/badge/JDK-FFFFFF?style=flat-square&logo=openjdk&logoColor=black"> <img src="https://img.shields.io/badge/ORACLE-F80000?style=flat-square&logo=oracle&logoColor=white">
-
-### Communication
-<img src="https://img.shields.io/badge/SLACK-4A154B?style=flat-square&logo=slack&logoColor=white"> <img src="https://img.shields.io/badge/GITHUB PROJECTS-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/DISCORD-5865F2?style=flat-square&logo=discord&logoColor=white">
-
-<hr style="border:0; height:2px; background:gray;">
 
 ## 📖 주요 기능
 ### 로그인<br>
 ### Open Api<br>
 ### Crawling<br>
+
+## 📖 주요 페이지
 ### 메인 페이지
 ```
 ✔️ 영상화면
@@ -140,33 +127,43 @@ For building and running the application you need:
     </tr>
     <tr>
         <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/2c38bfdc-38f7-4669-88dd-7d896db11f20" alt="메인페이지"></span></td>
-        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/559cc2fc-acb4-4673-8fd9-eef8f45bc134) alt="나의자산"></span></td>
-        <td align="center"><span><img width="300px" src=![image](https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/f663be14-397a-4285-8142-be5d0c728a8e)
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/559cc2fc-acb4-4673-8fd9-eef8f45bc134" alt="나의자산"></span></td>
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/f663be14-397a-4285-8142-be5d0c728a8e"
  alt="금융투자상품"></span></td>
     </tr>
     <tr>
-        <td align="center">프로필</td>
-        <td align="center">계좌 현황</td>
-        <td align="center">계좌 개설</td>
+        <td align="center">펀드</td>
+        <td align="center">주식파생상품</td>
+        <td align="center">해외주식파생상품</td>
     </tr>
     <tr>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/864e0366-c17c-4a23-ba17-45e990a4a2b7" alt="프로필"></span></td>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/d747b360-4b06-4fa6-a82f-ce35c2a28131" alt="계좌현황"></span></td>
-        <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/010ace79-4bb5-41b0-95e8-efa2a1fff540" alt="계좌개설"></span></td>
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/020faa24-d878-4cf5-9be1-bfad8db8f13c" alt="펀드"></span></td>
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/d38247c4-0cf4-4b0e-a12c-4efcb67d0245" alt="주식파생상품"></span></td>
+        <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/229f4a8a-8782-45e0-bf3b-663a436aea68" alt="해외주식파생상품"></span></td>
     </tr>
     <tr>
-          <td align="center">입금</td>
-          <td align="center">계좌이체</td>
-          <td align="center">거래내역</td>
+          <td align="center">연금</td>
+          <td align="center">뱅킹</td>
+          <td align="center">고객지원</td>
       </tr>
       <tr>
-          <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/96cbecfe-67a2-4645-b2b8-34bdec8da24d" alt="입금"></span></td>
-          <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/c59ede5d-10f1-4541-a377-94510722d87f" alt="계좌이체"></span></td>
-          <td align="center"><span><img width="300px" src="https://github.com/Ansix1207/ERP/assets/39394642/d48d60b1-6170-46b3-951b-954d4d89805b" alt="거래내역"></span></td>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/9d0e1d1f-9790-4ed1-9823-8b04c08607eb" alt="연금"></span></td>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/1d7a2063-cecc-47b6-b500-3184b8c4c3f2" alt="뱅킹"></span></td>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/e7d52fc1-4103-4fe7-a8e2-f03566046177"
+ alt="고객지원"></span></td>
+      </tr>
+     <tr>
+          <td align="center">연금</td>
+          <td align="center">뱅킹</td>
+          <td align="center">고객지원</td>
+      </tr>
+      <tr>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/9d0e1d1f-9790-4ed1-9823-8b04c08607eb" alt="연금"></span></td>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/1d7a2063-cecc-47b6-b500-3184b8c4c3f2" alt="뱅킹"></span></td>
+          <td align="center"><span><img width="300px" src="https://github.com/Hanaro-FirstAssignment-Team2/FrontEnd/assets/118495934/e7d52fc1-4103-4fe7-a8e2-f03566046177"
+ alt="고객지원"></span></td>
       </tr>
 </table>
 
 <br>
 
-## 🛠️ 시스템 아키텍처
-<p align="center"><img width="500px" src="https://github.com/Ansix1207/ERP/assets/39394642/13722b59-42cc-4880-b9f1-2faa35f02634"></p>
